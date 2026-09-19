@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Husqvarna Viking Klasa 21 - Instrukcja Serwisowa</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Great+Vibes&display=swap');
+
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background-color: #f0f0f0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto 20px auto;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    page-break-after: always;
+    page-break-inside: avoid;
+    overflow: hidden;
+    padding: 0.65in 0.8in 0.65in 0.8in;
+  }
+
+  @media print {
+    body {
+      background: transparent;
+    }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 8.5in;
+      height: 11in;
+    }
+  }
+
+  /* Cover Page */
+  .page-cover {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #e8d3b4 url('obrazy/cover_bg.png') center/cover no-repeat;
+  }
+
+  .cover-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2in 0;
+  }
+
+  .cover-manual {
+    font-size: 26pt;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #1b263b;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .cover-for {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 22pt;
+    color: #2b2b2b;
+    margin-bottom: 35px;
+  }
+
+  .cover-viking {
+    font-size: 58pt;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #142850;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .cover-automatic {
+    font-family: 'Great Vibes', 'Brush Script MT', cursive;
+    font-size: 56pt;
+    color: #142850;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    transform: rotate(-3deg);
+  }
+
+  .cover-desc {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 12px;
+  }
+
+  .cover-class {
+    font-size: 24pt;
+    font-weight: 800;
+    color: #222222;
+    letter-spacing: 1px;
+  }
+
+  .cover-footer {
+    position: absolute;
+    bottom: 0.8in;
+    width: 100%;
+    text-align: center;
+    font-size: 11pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+  }
+
+  /* Table of Contents */
+  .page-toc {
+    padding: 0.9in 0.9in;
+  }
+
+  .toc-title {
+    font-size: 26pt;
+    font-weight: 800;
+    color: #c4161c;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #c4161c;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .toc-header-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-item {
+    display: flex;
+    align-items: baseline;
+    font-size: 11.5pt;
+    line-height: 2.1;
+    color: #222;
+  }
+
+  .toc-item-title {
+    order: 1;
+    font-weight: 500;
+  }
+
+  .toc-item-dots {
+    order: 2;
+    flex-grow: 1;
+    border-bottom: 1px dotted #888;
+    margin: 0 10px;
+  }
+
+  .toc-item-page {
+    order: 3;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #c4161c;
+    width: 30px;
+    text-align: right;
+  }
+
+  /* Content Pages Common */
+  .section-title {
+    color: #c4161c;
+    font-size: 13pt;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    line-height: 1.35;
+  }
+
+  .section-text {
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: #111;
+    text-align: justify;
+    margin: 0 0 14px 0;
+  }
+
+  .section-text strong {
+    font-weight: 700;
+  }
+
+  .figure-box {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .figure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .figure-caption {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #222;
+    margin-top: 6px;
+    text-align: left;
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 0.45in;
+    font-size: 13pt;
+    font-weight: 800;
+    color: #222;
+  }
+
+  .page-number.right {
+    right: 0.8in;
+  }
+
+  .page-number.left {
+    left: 0.8in;
+  }
+
+  /* Split layout */
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .col-text {
+    flex: 1;
+  }
+
+  .col-img {
+    flex: 1;
+  }
+</style>
+</head>
+<body>
+
+  <!-- STRONA OKŁADKOWA -->
+  <div class="page page-cover">
+    <div class="cover-content">
+      <div class="cover-manual">INSTRUKCJA SERWISOWA</div>
+      <div class="cover-for">dla</div>
+      <div class="cover-viking">VIKING</div>
+      <div class="cover-automatic">Automatic</div>
+      <div class="cover-desc">domowej maszyny do szycia</div>
+      <div class="cover-class">klasa 21</div>
+    </div>
+    <div class="cover-footer">
+      Husqvarna Vapenfabriks AB &bull; Szwecja
+    </div>
+  </div>
+
+  <!-- SPIS TREŚCI -->
+  <div class="page page-toc">
+    <div class="toc-title">Spis treści</div>
+    <div class="toc-header-row">
+      <span>Czynność regulacyjna</span>
+      <span>Strona</span>
+    </div>
+    <ul class="toc-list">
+      <li class="toc-item">
+        <span class="toc-item-title">1. Regulacja maszyny do ściegu prostego</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">1</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">2. Ustawienie momentu wychylenia igły</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">1</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">3. Ustawienie wysokości drążka stopki dociskowej</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">2</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">4. Centrowanie igły w otworze płytki ściegowej</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">3</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">5. Ustawienie pozycji środkowej dla ściegu zygzakowego</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">3</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">6. Regulacja styczna chwytacza</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">3</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">7. Ustawienie wysokości igielnicy</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">4</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">8. Ustawienie odstępu (luzu) między chwytaczem a igłą</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">4</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">9. Ustawienie wysokości ząbków transportera</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">5</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">10. Synchronizacja transportu</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">6</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">11. Poprzeczne ustawienie ząbków transportera</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">6</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">12. Ustawienie regulatora podawania nici</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">6</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">13. Ustawienie naciągu sprężynki szarpacza nici</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">7</span>
+      </li>
+      <li class="toc-item">
+        <span class="toc-item-title">14. Wymiana paska napędowego wałka krzywkowego</span>
+        <span class="toc-item-dots"></span>
+        <span class="toc-item-page">8</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- STRONA 1 -->
+  <div class="page">
+    <div class="section-title">1. Regulacja maszyny do ściegu prostego</div>
+    <div class="section-text">
+      Ustaw pokrętło wychylenia igły (szerokości ściegu) na osi <strong>(1 Rys. 1)</strong> w pozycji 0, a pokrętło pozycji wyjściowej przekręć maksymalnie w prawo. Wyreguluj dźwignię <strong>(2 Rys. 1)</strong> tak, aby uzyskać minimalny luz pomiędzy najwyższym punktem (wierzchołkiem) krzywki a popychaczem <strong>(3 Rys. 1)</strong>. Regulację tę należy przeprowadzić przy przełączniku ściegów ustawionym w pozycji 5. Poluzuj śrubę <strong>(5 Rys. 1)</strong> za pomocą wkrętaka <strong>(4 Rys. 1)</strong> i dokręć ją mocno po dokonaniu ustawienia.
+    </div>
+
+    <div class="figure-box" style="margin: 15px 0 20px 0;">
+      <img class="figure-img" src="obrazy/fig-01.png" alt="Rysunek 1" style="max-height: 4.85in;">
+      <div class="figure-caption">Rys. 1.</div>
+    </div>
+
+    <div class="section-title">2. Ustawienie momentu wychylenia igły</div>
+    <div class="section-text">
+      Ustaw pokrętło wychylenia igły na maksymalną szerokość ściegu. Obracaj przekładnię ślimakową <strong>(1 Rys. 2)</strong> na wałku krzywkowym, odpowiedzialną za napęd zygzaka, dopóki ruchy lewo-prawo ramki igielnicy <strong>(3 Rys. 3)</strong> nie zakończą się, gdy czubek igły znajduje się powyżej 7 mm (9/32 cala) nad płytką ściegową podczas ruchu w dół. Poluzuj śruby <strong>(2 Rys. 2)</strong> i dokręć je ponownie po wykonaniu regulacji.
+    </div>
+
+    <div class="page-number right">1</div>
+  </div>
+
+  <!-- STRONA 2 -->
+  <div class="page">
+    <div class="figure-box" style="margin-top: 0; margin-bottom: 25px;">
+      <img class="figure-img" src="obrazy/fig-02.png" alt="Rysunek 2" style="max-height: 3.4in;">
+      <div class="figure-caption">Rys. 2.</div>
+    </div>
+
+    <div class="two-col" style="align-items: flex-start;">
+      <div class="col-text" style="flex: 1.05;">
+        <div class="section-title">3. Ustawienie wysokości drążka stopki dociskowej</div>
+        <div class="section-text">
+          Wysokość drążka stopki dociskowej reguluje się poprzez przesunięcie drążka <strong>(6 Rys. 3)</strong> wzdłużnie względem prowadnicy drążka stopki <strong>(7 Rys. 3)</strong>. Poluzuj śrubę <strong>(8 Rys. 3)</strong> i dokręć ją ponownie po wykonaniu ustawienia.
+        </div>
+        <div class="section-text">
+          Do typowych prac szyciowych ustaw odległość od spodu stopki dociskowej do płytki ściegowej na <strong>7 mm (9/32 cala)</strong> — minimalna odległość wynosi <strong>6,5 mm (1/4 cala)</strong> — przy dźwigni podnoszenia stopki dociskowej uniesionej do góry.
+        </div>
+      </div>
+      <div class="col-img" style="flex: 0.95; text-align: center;">
+        <img class="figure-img" src="obrazy/fig-03.png" alt="Rysunek 3" style="max-height: 5.1in;">
+        <div class="figure-caption" style="text-align: center;">Rys. 3.</div>
+      </div>
+    </div>
+
+    <div class="page-number left">2</div>
+  </div>
+
+  <!-- STRONA 3 -->
+  <div class="page">
+    <div class="section-title">4. Centrowanie igły w otworze płytki ściegowej</div>
+    <div class="section-text">
+      Ustaw pokrętło wychylenia igły na maksymalną szerokość ściegu. Obracaj mimośród <strong>(1 Rys. 3)</strong> na ramce igielnicy <strong>(3 Rys. 3)</strong>, który służy jako łożysko łącznika <strong>(4 Rys. 3)</strong> z napędu zygzaka, aż igła przy obracaniu kołem pasowym będzie poruszać się w otworze płytki ściegowej z jednakowym odstępem z obu stron. Przed regulacją poluzuj śrubę ustalającą <strong>(2 Rys. 3)</strong>, a po jej zakończeniu dokręć ją.
+    </div>
+
+    <div class="figure-box" style="margin: 18px 0 25px 0;">
+      <img class="figure-img" src="obrazy/fig-04.png" alt="Rysunek 4" style="max-height: 3.7in;">
+      <div class="figure-caption">Rys. 4.</div>
+    </div>
+
+    <div class="section-title">5. Ustawienie pozycji środkowej dla ściegu zygzakowego</div>
+    <div class="section-text">
+      Ustaw pokrętło pozycji wyjściowej w pozycji środkowej, a pokrętło wychylenia igły na 0. Poluzuj śrubę <strong>(1 Rys. 4)</strong> i dokonaj regulacji poprzez dociśnięcie lub poluzowanie popychacza <strong>(2 Rys. 4)</strong>, aż igła znajdzie się dokładnie pośrodku otworu płytki ściegowej.
+    </div>
+
+    <div class="section-title" style="margin-top: 25px;">6. Regulacja styczna chwytacza</div>
+    <div class="section-text">
+      Ustaw maszynę do ściegu prostego w prawej pozycji wyjściowej oraz na ścieg zygzakowy o szerokości 2 mm (5/64 cala). Za pomocą koła pasowego podnieś igłę o około 2 mm (5/64 cala) powyżej dolnego punktu zwrotnego podczas ruchu w górę. Poluzuj koło zębate stożkowe <strong>(1 Rys. 6)</strong> na dolnym wałku i dokręć je ponownie w takim położeniu, aby ostrze <strong>(1 Rys. 5)</strong> chwytacza pokrywało się z osią igły <strong>(2 Rys. 5)</strong>. Do wykonania tej regulacji należy zdemontować osłonę wolnego ramienia.
+    </div>
+
+    <div class="page-number right">3</div>
+  </div>
+
+  <!-- STRONA 4 -->
+  <div class="page">
+    <div class="two-col" style="align-items: flex-start; margin-bottom: 15px;">
+      <div class="col-text" style="flex: 1.1;">
+        <div class="section-title">7. Ustawienie wysokości igielnicy</div>
+        <div class="section-text">
+          Ustaw chwytacz i igłę w pozycjach opisanych w punkcie 6. Poluzuj igielnicę i ustaw ją ponownie w takim położeniu, aby górna krawędź oczka igły znajdowała się około 1 mm (3/64 cala) poniżej ostrza chwytacza. W celu dokonania tej regulacji poluzuj śrubę <strong>(5 Rys. 3)</strong>, a następnie dokręć ją z powrotem.
+        </div>
+      </div>
+      <div class="col-img" style="flex: 0.9; text-align: center;">
+        <img class="figure-img" src="obrazy/fig-05.png" alt="Rysunek 5" style="max-height: 3.2in;">
+        <div class="figure-caption" style="text-align: center;">Rys. 5.</div>
+      </div>
+    </div>
+
+    <div class="figure-box" style="margin: 20px 0 30px 0;">
+      <img class="figure-img" src="obrazy/fig-06.png" alt="Rysunek 6" style="max-height: 2.6in;">
+      <div class="figure-caption">Rys. 6.</div>
+    </div>
+
+    <div class="section-title">8. Ustawienie odstępu (luzu) między chwytaczem a igłą</div>
+    <div class="section-text">
+      Do tej regulacji użyj nowej igły o rozmiarze 90. Ustaw chwytacz i igłę w tych samych pozycjach co w punkcie 7. Po dociśnięciu chwytacza do wewnątrz w kierunku zabieraka...
+    </div>
+
+    <div class="page-number left">4</div>
+  </div>
+
+  <!-- STRONA 5 -->
+  <div class="page">
+    <div class="section-text" style="margin-top: 0; margin-bottom: 15px;">
+      ...jego ostrze powinno mijać igłę z luzem wynoszącym około <strong>0,1 mm (0,004 cala)</strong>. Jeżeli chwytacz znajduje się zbyt daleko od igły, odkręć zabierak od koła zębatego <strong>(S-11515 Rys. 7)</strong> i umieść jedną lub więcej podkładek <strong>S-11539</strong> pomiędzy zabierakiem a kołem zębatym.
+    </div>
+
+    <div class="figure-box" style="margin: 10px 0 20px 0;">
+      <img class="figure-img" src="obrazy/fig-07.png" alt="Rysunek 7" style="max-height: 3.8in;">
+      <div class="figure-caption">Rys. 7.</div>
+    </div>
+
+    <div class="section-title">9. Ustawienie wysokości ząbków transportera</div>
+    <div class="section-text">
+      Gdy ząbki transportera znajdują się w najwyższym punkcie swojego ruchu, czubki zębów powinny wystawać o <strong>1 mm (3/64 cala)</strong> ponad poziom płytki ściegowej. Aby wyregulować wysokość, obróć dźwignię <strong>(S-11599 Rys. 8)</strong> na wałku kołyskowym transportera <strong>(S-11598 Rys. 8)</strong>. W tym celu należy poluzować śrubę <strong>(1 Rys. 8)</strong>, a po ustawieniu dokręcić ją z powrotem. Aby uzyskać dostęp do tej śruby w zmontowanej maszynie, należy zdjąć klapkę/pokrywę w płycie podstawy (łoża).
+    </div>
+
+    <div class="figure-box" style="margin: 15px 0 0 0;">
+      <img class="figure-img" src="obrazy/fig-08.png" alt="Rysunek 8" style="max-height: 2.1in;">
+      <div class="figure-caption">Rys. 8.</div>
+    </div>
+
+    <div class="page-number right">5</div>
+  </div>
+
+  <!-- STRONA 6 -->
+  <div class="page">
+    <div class="figure-box" style="margin-top: 0; margin-bottom: 25px;">
+      <img class="figure-img" src="obrazy/fig-09.png" alt="Rysunek 9" style="max-height: 3.5in;">
+      <div class="figure-caption">Rys. 9.</div>
+    </div>
+
+    <div class="section-title">10. Synchronizacja transportu</div>
+    <div class="section-text">
+      Regulację tę najłatwiej przeprowadzić przy maszynie ustawionej na maksymalną długość ściegu. Przesuwanie materiału powinno zakończyć się tuż przed wbiciem się igły w tkaninę — zarówno podczas szycia do przodu, jak i wstecz. Aby dokonać regulacji, obróć mimośród <strong>(S-11574 Rys. 9)</strong> na wałku krzywkowym. Poluzuj śrubę <strong>(1 Rys. 9)</strong> w celu wykonania ustawienia, a następnie dokręć ją mocno.
+    </div>
+
+    <div class="section-title" style="margin-top: 20px;">11. Poprzeczne ustawienie ząbków transportera</div>
+    <div class="section-text">
+      Obróć dźwignię <strong>(1 Rys. 7)</strong> na jej osi <strong>(2 Rys. 7)</strong>. Przed przystąpieniem do tej regulacji poluzuj śrubę <strong>(3 Rys. 7)</strong>, a po poprawnym ustawieniu symetrii ząbków w szczelinach płytki ściegowej dokręć ją z powrotem.
+    </div>
+
+    <div class="section-title" style="margin-top: 20px;">12. Ustawienie regulatora podawania nici</div>
+    <div class="section-text">
+      Regulację tę wykonuje się poprzez obrót naprężacza nici. Najpierw otwórz pokrywę czołową, aby uzyskać dostęp do śruby <strong>(1 Rys. 10)</strong>, która mocuje naprężacz...
+    </div>
+
+    <div class="page-number left">6</div>
+  </div>
+
+  <!-- STRONA 7 -->
+  <div class="page">
+    <div class="two-col" style="align-items: flex-start; margin-bottom: 20px;">
+      <div class="col-text" style="flex: 1.15;">
+        <div class="section-text" style="margin-top: 0;">
+          ...Poluzuj śrubę i obróć naprężacz nici za pomocą wkrętaka, jak pokazano na <strong>Rys. 10</strong>. Po wykonaniu ustawienia dokręć ponownie śrubę <strong>(1 Rys. 10)</strong>.
+        </div>
+        <div class="section-text">
+          Nić nie może być nadmiernie napięta w chwili, gdy igła przebija materiał podczas ruchu w dół. Sprężynka szarpacza (nawrotna) nie powinna wykonywać zauważalnego ruchu w momencie, gdy nić omiata chwytacz.
+        </div>
+      </div>
+      <div class="col-img" style="flex: 0.85; text-align: center;">
+        <img class="figure-img" src="obrazy/fig-10.png" alt="Rysunek 10" style="max-height: 2.7in;">
+        <div class="figure-caption" style="text-align: center;">Rys. 10.</div>
+      </div>
+    </div>
+
+    <div class="section-title" style="margin-top: 15px;">13. Ustawienie naciągu sprężynki szarpacza nici</div>
+    <div class="section-text">
+      Zdemontuj zespół naprężacza nici z maszyny. Obróć oś <strong>(1 Rys. 11)</strong> względem korpusu naprężacza <strong>(2 Rys. 11)</strong>. Aby dokonać tej regulacji, najpierw poluzuj śrubę <strong>(3 Rys. 11)</strong>, która blokuje oś, a po wyregulowaniu pożądanego naciągu sprężynki dokręć ją z powrotem.
+    </div>
+
+    <div class="figure-box" style="margin: 25px 0 0 0;">
+      <img class="figure-img" src="obrazy/fig-11.png" alt="Rysunek 11" style="max-height: 3.7in;">
+      <div class="figure-caption">Rys. 11.</div>
+    </div>
+
+    <div class="page-number right">7</div>
+  </div>
+
+  <!-- STRONA 8 -->
+  <div class="page">
+    <div class="two-col" style="align-items: flex-start;">
+      <div class="col-text" style="flex: 1.15;">
+        <div class="section-title">14. Wymiana paska napędowego wałka krzywkowego</div>
+        <div class="section-text">
+          Zdejmij osłonę paska z boku maszyny. Wyjmij przekładnię redukcyjną, unosząc ją na tyle, aby zwolnić ją z paska napędowego <strong>(3 Rys. 12)</strong>. Wykręć śrubę w centrum koła pasowego <strong>(1 Rys. 12)</strong>, która mocuje je do wałka krzywkowego.
+        </div>
+        <div class="section-text">
+          Wysuń koło pasowe z maszyny, wsuwając luźny pasek <strong>(3 Rys. 12)</strong> pod koło w kierunku środka maszyny z obu stron, tak aby koło pasowe wraz z paskiem mogło przejść na zewnątrz przez otwór <strong>(2 Rys. 12)</strong> w głowicy maszyny.
+        </div>
+        <div class="section-text">
+          Aby zamontować koło pasowe i nowy pasek, postępuj w odwrotnej kolejności. Załóż nowy pasek w rowek koła pasowego; wsuń wolny koniec paska na właściwe miejsce, przytrzymując wolny odcinek paska od spodu koła skierowany do wewnątrz w stronę środka maszyny.
+        </div>
+      </div>
+      <div class="col-img" style="flex: 0.85; text-align: center;">
+        <img class="figure-img" src="obrazy/fig-12.png" alt="Rysunek 12" style="max-height: 5.2in;">
+        <div class="figure-caption" style="text-align: center;">Rys. 12.</div>
+      </div>
+    </div>
+
+    <div class="page-number left">8</div>
+  </div>
+
+</body>
+</html>
