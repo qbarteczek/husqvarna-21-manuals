@@ -1,6 +1,6 @@
-# Husqvarna Viking Automatic - Klasa 21 / 21E - Instrukcje i Dokumentacja
+# Husqvarna Viking Automatic - Klasa 21 / 21A / 21E - Instrukcje i Dokumentacja
 
-Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukcje serwisowe oraz obsługi do legendarnej szwedzkiej maszyny do szycia **Husqvarna Viking Automatic Klasa 21 / 21E**.
+Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukcje serwisowe oraz obsługi do legendarnej szwedzkiej maszyny do szycia **Husqvarna Viking Automatic Klasa 21 / 21A / 21E**.
 
 ---
 
@@ -9,7 +9,7 @@ Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukc
 ### 1. Instrukcja Serwisowa (Język Polski)
 - **Plik PDF:** [Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf](Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf)
 - **Wersja źródłowa HTML:** [index.html](index.html)
-- **Oryginał:** Opracowano na podstawie fabrycznej instrukcji *Service Manual for Viking Automatic home sewing machine class 21*.
+- **Oryginał:** Opracowano na podstawie fabrycznej instrukcji regulacyjnej *Service Manual for Viking Automatic home sewing machine class 21*.
 
 #### Spis treści instrukcji serwisowej:
 1. Regulacja maszyny do ściegu prostego
@@ -29,13 +29,20 @@ Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukc
 
 ---
 
-## 🛠️ Generowanie PDF ze źródła HTML
-
-Dokument PDF generowany jest za pomocą silnika Chromium w trybie headless:
-```bash
-chromium --headless --no-sandbox --disable-gpu --print-to-pdf="Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf" index.html
-```
+### 2. Operating Manual / Instrukcja Obsługi (Język Angielski, Format A4)
+- **Plik PDF:** [Husqvarna_21A_Automatic_Operating_Manual_EN_A4.pdf](Husqvarna_21A_Automatic_Operating_Manual_EN_A4.pdf)
+- **Opis:** Pełny, 48-stronicowy podręcznik użytkownika w języku angielskim zorientowany w standardowym pionowym formacie A4 (zoptymalizowany pod kątem czytania na ekranie i drukowania, z zachowaniem wszystkich rycin, schematów, tabel doboru igieł/nici oraz rozkładówek akcesoriów).
 
 ---
 
-*Opracowano na podstawie oryginalnych materiałów technicznych Husqvarna Vapenfabriks AB.*
+## 🛠️ Generowanie dokumentów
+
+- **Instrukcja PL:** wygenerowana ze sformatowanego szablonu HTML przy pomocy silnika Chromium headless:
+  ```bash
+  chromium --headless --no-sandbox --disable-gpu --print-to-pdf="Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf" index.html
+  ```
+- **Instrukcja EN (A4):** wygenerowana z zachowaniem oryginalnych rycin i prawidłowej orientacji stron na formacie A4.
+
+---
+
+*Opracowano na podstawie oryginalnych materiałów technicznych Husqvarna Vapenfabriks AB • Sweden.*
