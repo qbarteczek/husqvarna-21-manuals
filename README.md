@@ -4,6 +4,13 @@ Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukc
 
 ---
 
+> [!TIP]
+> **Kontynuacja prac na innym komputerze:**
+> - [CONTINUATION_GUIDE.md](CONTINUATION_GUIDE.md) — Kompletny przewodnik po architekturze projektu, skryptach i kolejnych zadaniach.
+> - [RESUME_PROMPT.md](RESUME_PROMPT.md) — Gotowy prompt do skopiowania i wklejenia w asystencie AI na nowej maszynie.
+
+---
+
 ## 📄 Dostępne dokumenty
 
 ### 1. Operating Manual / Instrukcja Obsługi (Język Angielski, Format Broszury 56 stron A5 Poziomo) 🌟
