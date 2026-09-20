@@ -1,6 +1,7 @@
 import os
 
-html_path = "/home/qba/Dokumenty/Husqvarna_Automatic_Class_21_Operating_Manual_EN.html"
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+html_path = os.path.join(base_dir, "Husqvarna_Automatic_Class_21_Operating_Manual_EN.html")
 
 pages = []
 
@@ -982,16 +983,16 @@ pages.append(f"""
     <div class="grid-2col">
         <div class="col-text">
             <h2>Scallops, Applique & Braiding</h2>
-            <p><strong>Scalloped Borders (Fig. 46):</strong> Set Cam A to pattern 3. Sew along hemline. After sewing, trim excess fabric close to the stitched scallop edge with fine embroidery scissors; the dense satin stitches prevent fraying.</p>
+            <p><strong>Scalloped Borders:</strong> Set Cam A to pattern 3. Sew along hemline. After sewing, trim excess fabric close to the stitched scallop edge with fine embroidery scissors; the dense satin stitches prevent fraying.</p>
             
-            <h3>Applique Work & Soutache Braiding (Fig. 47)</h3>
-            <p>Baste applique motif onto base fabric. Outline with narrow zigzag, trim excess border, and finish with dense automatic scallop or satin zigzag.</p>
-            <p>To sew braiding or soutache yarn, guide braid through the hole in the special presser foot toe; the needle secures it perfectly centered.</p>
+            <h3>Applique Work & Soutache Braiding (Fig. 54 & 55)</h3>
+            <p>Baste applique motif onto base fabric. Outline with narrow zigzag, trim excess border, and finish with dense automatic scallop or satin zigzag (<strong>Fig. 54</strong>).</p>
+            <p>To sew braiding or soutache yarn, guide braid through the hole in the special presser foot toe (<strong>Fig. 55</strong>); the needle secures it perfectly centered.</p>
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_46_47_scalloped_braiding.png" alt="Fig. 46-47 Scallops and Braiding">
-                <div class="fig-caption">Fig. 46. Scalloped Edge &bull; Fig. 47. Soutache Braiding</div>
+                <img src="images_manual_en/fig_46_47_scalloped_braiding.png" alt="Fig. 54-55 Applique and Braiding">
+                <div class="fig-caption">Fig. 54. Applique Outline &bull; Fig. 55. Soutache Braiding Foot</div>
             </div>
         </div>
     </div>
@@ -1008,7 +1009,7 @@ pages.append(f"""
             <h2>Twin Needle & Raised Cording</h2>
             <p>Sewing with the twin needle produces exquisite parallel seams with a zigzag lockstitch underneath &mdash; identical to professional knitwear seams.</p>
             
-            <h3>Raised Cording Seams (Fig. 48&ndash;50):</h3>
+            <h3>Raised Cording Seams (Fig. 47&ndash;50):</h3>
             <ol>
                 <li>Insert twin needle (5/64" or 3/32" needle spread).</li>
                 <li>Attach grooved twin-needle foot (<strong>41 15419</strong>).</li>
@@ -1018,8 +1019,8 @@ pages.append(f"""
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_48_50_twin_needle.png" alt="Fig. 48-50 Twin Needle">
-                <div class="fig-caption">Fig. 48&ndash;50. Twin Needle Foot & Corded Raised Seams</div>
+                <img src="images_manual_en/fig_48_50_twin_needle.png" alt="Fig. 47-50 Twin Needle">
+                <div class="fig-caption">Fig. 47&ndash;50. Twin Needle Foot & Corded Raised Seams</div>
             </div>
         </div>
     </div>
@@ -1060,7 +1061,7 @@ pages.append(f"""
     <div class="grid-2col">
         <div class="col-text">
             <h2>It's Easier to Sew on a Zipper Than You Think!</h2>
-            <p>Attach adjustable zipper foot (<strong>41 15236, Fig. 52</strong>). This specialized foot allows stitching immediately alongside the raised zipper teeth without slipping:</p>
+            <p>Attach adjustable zipper foot (<strong>41 15236, Fig. 18</strong>). This specialized foot allows stitching immediately alongside the raised zipper teeth without slipping:</p>
             <ol>
                 <li>Baste zipper opening closed. Press seam open.</li>
                 <li>Loosen adjustment screw on zipper foot and slide foot to the right of the needle to sew the left zipper tape.</li>
@@ -1071,8 +1072,8 @@ pages.append(f"""
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_52_zipper.png" alt="Fig. 52 Zipper Foot">
-                <div class="fig-caption">Fig. 52. Zipper Foot (41 15236) Adjusted for Close Seaming</div>
+                <img src="images_manual_en/fig_52_zipper.png" alt="Fig. 18 Zipper Foot">
+                <div class="fig-caption">Fig. 18. Zipper Foot (41 15236) Adjusted for Close Seaming</div>
             </div>
         </div>
     </div>
@@ -1086,16 +1087,16 @@ pages.append(f"""
     {p_header("Corners & Circular Stitching")}
     <div class="grid-2col">
         <div class="col-text">
-            <h2>Sewing Corners & Circular Motifs</h2>
-            <p><strong>Pivoting at Corners (Fig. 53):</strong> When turning a sharp square corner with straight or zigzag stitch, always stop the machine with the <strong>needle down in the fabric</strong> at the outer pivot point. Raise presser foot, turn fabric 90 degrees, lower foot, and resume sewing.</p>
+            <h2>Sewing Corners & Applique Motifs</h2>
+            <p><strong>Corner Applique (Fig. 53):</strong> Pleasant and amusing decorative effects can be obtained simply by appliqueing flowers, animals, and initials. When turning a corner with zigzag stitch, stop the machine with the <strong>needle down in the fabric</strong> at the outer edge. Raise presser foot, pivot fabric, lower foot, and resume stitching.</p>
             
-            <h3>Circular Stitching (Fig. 54 & 55)</h3>
-            <p>Insert a thumb tack or pin up through a piece of adhesive tape affixed to the extension plate at the desired radius distance from the needle. Impale the center of your fabric over the pin; the machine will rotate and sew a perfect geometric circle automatically!</p>
+            <h3>Circular Stitching & Free Motifs</h3>
+            <p>For circular designs or rounded appliques, insert a thumb tack or pin up through adhesive tape affixed to the machine bed at the desired radius distance from the needle. Impale the center of the fabric over the pin; rotate smoothly while stitching around the contours.</p>
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_53_55_corners_circles.png" alt="Fig. 53-55 Corners and Circles">
-                <div class="fig-caption">Fig. 53. Turning Corners &bull; Fig. 54&ndash;55. Circular Sewing</div>
+                <img src="images_manual_en/fig_53_55_corners_circles.png" alt="Fig. 53 Corner Applique and Motifs">
+                <div class="fig-caption">Fig. 53. Corner Applique &bull; Decorative Animal Motifs</div>
             </div>
         </div>
     </div>
@@ -1240,7 +1241,7 @@ pages.append(f"""
             <h2>Look After Your Husqvarna Automatic</h2>
             <p>Regular cleaning ensures silent running and decades of peak performance. The 100% jam-proof shuttle requires only occasional cleaning of lint and dust.</p>
             
-            <h3>Cleaning the Shuttle Race (Fig. 63):</h3>
+            <h3>Cleaning the Shuttle Race (Fig. 11):</h3>
             <ol>
                 <li>Turn handwheel until needle bar is at highest position. Remove needle, presser foot, and bobbin case.</li>
                 <li>Remove throat plate by loosening the screws.</li>
@@ -1250,8 +1251,8 @@ pages.append(f"""
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_63_cleaning_shuttle.png" alt="Fig. 63 Cleaning Shuttle">
-                <div class="fig-caption">Fig. 63. Disassembling the Shuttle Race for Cleaning</div>
+                <img src="images_manual_en/fig_63_cleaning_shuttle.png" alt="Fig. 11 Cleaning Shuttle">
+                <div class="fig-caption">Fig. 11. Disassembling the Shuttle Race for Cleaning</div>
             </div>
         </div>
     </div>
@@ -1268,15 +1269,15 @@ pages.append(f"""
             <h2>Cleaning Feed Dog & Thread Cutter</h2>
             <p>Lint and fluff packed between the feed dog teeth can prevent the fabric from feeding smoothly:</p>
             <ul>
-                <li>With the throat plate removed, use the stiff bristles of the cleaning brush to sweep out all accumulated lint between the feed dog teeth (<strong>Fig. 64</strong>).</li>
+                <li>With the throat plate removed, use the stiff bristles of the cleaning brush to sweep out all accumulated lint between the feed dog teeth (<strong>Fig. 66</strong>).</li>
                 <li>Wipe the shuttle cavity clean with a soft cloth.</li>
                 <li>Check the built-in thread cutter knife (<strong>30</strong>) on the rear of the presser bar; ensure it is clean and sharp.</li>
             </ul>
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_64_feed_dog_cleaning.png" alt="Fig. 64 Feed Dog">
-                <div class="fig-caption">Fig. 64. Brushing Lint from Feed Dog Teeth</div>
+                <img src="images_manual_en/fig_64_feed_dog_cleaning.png" alt="Cleaning Feed Dog Teeth">
+                <div class="fig-caption">Brushing Lint from Feed Dog Teeth</div>
             </div>
         </div>
     </div>
@@ -1291,7 +1292,7 @@ pages.append(f"""
     <div class="grid-2col">
         <div class="col-text">
             <h2>Reassembling the Hook Mechanism</h2>
-            <p>Reassembly of the rotary hook is quick and foolproof (<strong>Fig. 65</strong>):</p>
+            <p>Reassembly of the rotary hook is quick and foolproof (<strong>Fig. 7</strong>):</p>
             <ol>
                 <li>Place one drop of high-grade sewing machine oil on the outer rim of the hook race.</li>
                 <li>Hold hook by center pin and fit it into the race, matching the hook driver position.</li>
@@ -1302,8 +1303,8 @@ pages.append(f"""
         </div>
         <div class="col-fig">
             <div class="fig-card">
-                <img src="images_manual_en/fig_65_hook_assembly.png" alt="Fig. 65 Hook Assembly">
-                <div class="fig-caption">Fig. 65. Reassembling Hook and Retaining Ring</div>
+                <img src="images_manual_en/fig_65_hook_assembly.png" alt="Fig. 7 Hook Assembly">
+                <div class="fig-caption">Fig. 7. Reassembling Hook and Retaining Ring</div>
             </div>
         </div>
     </div>

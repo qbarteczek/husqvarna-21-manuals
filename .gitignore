@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Scratch & Temporary Folders
+scratch/
+temp/
+*.tmp
+
+# Temporary test images in root
+check_*.png
+test_*.png
+thumb_*.png
+scratch_*.png
+new_pdf_*.png
+pdf_preview_*.png
