@@ -6,9 +6,22 @@ Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukc
 
 ## 📄 Dostępne dokumenty
 
-### 1. Instrukcja Serwisowa (Język Polski)
+### 1. Operating Manual / Instrukcja Obsługi (Język Angielski, Format Broszury 56 stron A5 Poziomo) 🌟
+- **Plik PDF:** [Husqvarna_Automatic_Class_21_Operating_Manual_EN.pdf](Husqvarna_Automatic_Class_21_Operating_Manual_EN.pdf)
+- **Wersja źródłowa HTML:** [Husqvarna_Automatic_Class_21_Operating_Manual_EN.html](Husqvarna_Automatic_Class_21_Operating_Manual_EN.html)
+- **Katalog ilustracji:** [images_manual_en/](images_manual_en/)
+- **Opis:** Wierne odtworzenie 1:1 oryginalnej fabrycznej książeczki Husqvarna Viking (*Operating Manual for Viking Automatic home sewing machine class 21*) w układzie **poziomej broszury A5 (56 stron)**. 
+  - Pełny, edytowalny i przeszukiwalny tekst (ponad 8200 słów) pozbawiony zanieczyszczeń skanu i odręcznych dopisków.
+  - Elegancki skład typograficzny oparty na oryginalnych proporcjach i czcionkach szwedzkiego wydania.
+  - Ponad 60 starannie wykadrowanych i oczyszczonych rycin instruktażowych (m.in. nawlekanie nici, szpulka, dobór igieł, stopki, wzorniki krzywek automatycznych A, B, C, D, obszywanie dziurek, konserwacja).
+  - Pełne, dwustronicowe rozkładówki schematów maszyny (**Fig. 1 – Front View** oraz **Fig. 2 – Rear View**) z czytelnymi angielskimi oznaczeniami podzespołów (klucz numeryczny 1–40).
+
+---
+
+### 2. Instrukcja Serwisowa (Język Polski)
 - **Plik PDF:** [Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf](Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf)
 - **Wersja źródłowa HTML:** [index.html](index.html)
+- **Katalog ilustracji:** [obrazy/](obrazy/)
 - **Oryginał:** Opracowano na podstawie fabrycznej instrukcji regulacyjnej *Service Manual for Viking Automatic home sewing machine class 21*.
 
 #### Spis treści instrukcji serwisowej:
@@ -29,19 +42,23 @@ Repozytorium zawiera zrekonstruowane, przetłumaczone i zoptymalizowane instrukc
 
 ---
 
-### 2. Operating Manual / Instrukcja Obsługi (Język Angielski, Format A4)
+### 3. Wersja pomocnicza A4 (Język Angielski, Format Pionowy A4)
 - **Plik PDF:** [Husqvarna_21A_Automatic_Operating_Manual_EN_A4.pdf](Husqvarna_21A_Automatic_Operating_Manual_EN_A4.pdf)
-- **Opis:** Pełny, 48-stronicowy podręcznik użytkownika w języku angielskim zorientowany w standardowym pionowym formacie A4 (zoptymalizowany pod kątem czytania na ekranie i drukowania, z zachowaniem wszystkich rycin, schematów, tabel doboru igieł/nici oraz rozkładówek akcesoriów).
+- **Opis:** 48-stronicowy podręcznik użytkownika zorientowany w standardowym pionowym formacie A4 (do szybkiego podglądu na tradycyjnych drukarkach pionowych).
 
 ---
 
 ## 🛠️ Generowanie dokumentów
 
-- **Instrukcja PL:** wygenerowana ze sformatowanego szablonu HTML przy pomocy silnika Chromium headless:
+- **Instrukcja Obsługi EN (56 stron, broszura A5 landscape):**
+  Wygenerowana ze zoptymalizowanego szablonu HTML o geometrii `@page { size: 210mm 148mm; margin: 0; }`:
+  ```bash
+  chromium --headless --no-sandbox --disable-gpu --print-to-pdf="Husqvarna_Automatic_Class_21_Operating_Manual_EN.pdf" Husqvarna_Automatic_Class_21_Operating_Manual_EN.html
+  ```
+- **Instrukcja Serwisowa PL (pionowy format A4):**
   ```bash
   chromium --headless --no-sandbox --disable-gpu --print-to-pdf="Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf" index.html
   ```
-- **Instrukcja EN (A4):** wygenerowana z zachowaniem oryginalnych rycin i prawidłowej orientacji stron na formacie A4.
 
 ---
 
