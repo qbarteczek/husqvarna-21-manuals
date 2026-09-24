@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Husqvarna Automatic 21 A &mdash; Operating Manual</title>
+<style>
+@page { size: 210mm 148mm; margin: 0; }
+
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Light.ttf') format('truetype'); font-weight: 300; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Regular.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Medium.ttf') format('truetype'); font-weight: 500; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-SemiBold.ttf') format('truetype'); font-weight: 600; }
+
+:root {
+  --paper: #FCFBF3;
+  --ink: #1b1b18;
+  --green: #CCE9CA;
+  --green-soft: #DCEFD9;
+  --rule: #9fc7a2;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; background: #6d6d6d; }
+
+body {
+  font-family: 'Garamond EB', Garamond, serif;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 148mm;
+  background: var(--paper);
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  margin: 0 auto 6mm;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+  padding: 9mm 13mm 10mm 13mm;
+}
+.page:last-child { page-break-after: auto; }
+
+@media print {
+  html, body { background: #fff; }
+  .page { margin: 0; box-shadow: none; }
+}
+
+/* ---------- typography ---------- */
+p {
+  margin: 0;
+  font-size: 8.3pt;
+  line-height: 1.26;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-indent: 4.2mm;
+}
+p.flush { text-indent: 0; }
+p + h3, p + h4, ol + h3, ol + h4, ul + h3 { margin-top: 3.2mm; }
+p.it { font-style: italic; }
+
+h3, h4 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 8.7pt;
+  line-height: 1.2;
+  margin: 3.2mm 0 1.2mm;
+  letter-spacing: .005em;
+}
+h3:first-child, h4:first-child { margin-top: 0; }
+h4 { font-weight: 500; font-size: 8.6pt; }
+h5 {
+  font-family: 'Garamond EB', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 8.8pt;
+  margin: 2.6mm 0 1.2mm;
+}
+h5:first-child { margin-top: 0; }
+
+ol, ul { margin: 0 0 1.4mm 0; padding-left: 4.6mm; }
+ol { padding-left: 5.2mm; }
+li {
+  font-size: 8.3pt;
+  line-height: 1.25;
+  margin-bottom: .9mm;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+ol.alpha { list-style: lower-alpha; }
+
+/* ---------- grid helpers ---------- */
+.cols2, .cols3 { display: grid; column-gap: 7mm; height: 100%; align-content: start; }
+.cols2 { grid-template-columns: 1fr 1fr; }
+.cols3 { grid-template-columns: 1fr 1fr 1fr; column-gap: 5.5mm; }
+.col { min-width: 0; }
+.stack { display: flex; flex-direction: column; gap: 3mm; }
+.spread { display: flex; gap: 6mm; }
+.grow { flex: 1 1 auto; min-width: 0; }
+
+/* ---------- figures ---------- */
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; }
+figcaption {
+  font-style: italic;
+  font-size: 7.8pt;
+  text-align: center;
+  margin-top: .9mm;
+  letter-spacing: .01em;
+}
+.plain img { display: block; width: 100%; height: auto; }
+
+/* line art keeps its paper; multiplying it into the page hides the crop edge */
+.mul { mix-blend-mode: multiply; }
+
+/* a figure that must fit a box of known height */
+figure.fit { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+figure.fit .iw { flex: 1 1 auto; min-height: 0; display: flex; align-items: flex-end; justify-content: center; }
+figure.fit .iw.top { align-items: flex-start; }
+figure.fit img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+
+/* a row of figures pinned to the foot of the page */
+.footrow {
+  position: absolute;
+  left: 13mm; right: 13mm; bottom: 11mm;
+  display: grid;
+  column-gap: 6mm;
+  align-items: end;
+}
+
+/* ---------- side panel ---------- */
+.page.sided { padding-left: 62mm; }
+.side {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 49mm;
+  background: var(--green);
+  padding: 9mm 6mm 8mm 6mm;
+  display: flex;
+  flex-direction: column;
+}
+.side .head {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.5;
+  text-align: right;
+  color: #16281a;
+}
+.side .head.left { text-align: left; }
+.side .art { margin-top: auto; }
+.side .art img { width: 100%; display: block; }
+
+/* vertical hairline of pale green between columns */
+.vrule {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 2.6mm;
+  background: var(--green-soft);
+}
+
+/* ---------- page furniture ---------- */
+.folio {
+  position: absolute;
+  bottom: 5mm;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 9.5pt;
+  color: #23331f;
+}
+.folio.l { left: 13mm; }
+.folio.r { right: 13mm; }
+.page.sided .folio.l { left: 6mm; }
+
+.banner {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 17pt;
+  text-align: center;
+  color: #16281a;
+  margin: 0 0 4mm;
+  letter-spacing: .01em;
+}
+
+/* ---------- tables ---------- */
+table { border-collapse: collapse; width: 100%; font-size: 7.4pt; }
+table.rule th, table.rule td { border: .25mm solid #7d7d75; padding: .7mm 1.2mm; vertical-align: top; }
+table.rule th { font-family: 'Jost', sans-serif; font-weight: 500; text-align: left; }
+caption { font-style: italic; font-size: 8.4pt; text-align: left; padding-bottom: 1mm; }
+
+.notebox {
+  border: .4mm solid var(--rule);
+  background: #F3FAF2;
+  padding: 3.5mm 4mm;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 8.6pt;
+  line-height: 1.45;
+}
+.notebox .n { letter-spacing: .28em; display: block; margin-bottom: 2mm; }
+
+/* ---------- covers ---------- */
+.page.cover { padding: 0; }
+.page.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.plate { padding: 7mm 9mm; }
+</style>
+</head>
+<body>

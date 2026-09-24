@@ -1,109 +1,116 @@
-# Husqvarna Viking Automatic — Klasa 21 / 21A / 21E — instrukcje i dokumentacja
+﻿# Husqvarna Viking Automatic â€” Klasa 21 / 21A / 21E â€” instrukcje i dokumentacja
 
 Repozytorium zawiera instrukcje do szwedzkiej maszyny do szycia
 **Husqvarna Viking Automatic klasa 21 / 21A / 21E** (Husqvarna Vapenfabriks AB, Huskvarna).
 
 ---
 
-## 1. Instrukcja obsługi EN — wydanie A4 do druku 🌟
+## 1. Instrukcja obsĹ‚ugi EN â€” wydanie A4 do druku đźŚź
 
-**[`Husqvarna_Automatic_21A_Operating_Manual_EN_A4.pdf`](Husqvarna_Automatic_21A_Operating_Manual_EN_A4.pdf)** — 36 stron A4.
+**[`Husqvarna_Automatic_21A_Operating_Manual_EN_A4.pdf`](Husqvarna_Automatic_21A_Operating_Manual_EN_A4.pdf)** â€” 36 stron A4.
 
-Pełna instrukcja obsługi przepisana **ze skanu oryginału**
-(`original_scans/Husqvarna_21A_Automatic_Manual_EN.pdf`) i złożona od nowa.
-Wszystkie ryciny wycięto z tego samego skanu w rozdzielczości 400 dpi.
+PeĹ‚na instrukcja obsĹ‚ugi przepisana **ze skanu oryginaĹ‚u**
+(`original_scans/Husqvarna_21A_Automatic_Manual_EN.pdf`) i zĹ‚oĹĽona od nowa.
+Wszystkie ryciny wyciÄ™to z tego samego skanu w rozdzielczoĹ›ci 400 dpi.
 
-- Format **A4 pionowy, dwie kolumny**, EB Garamond 9,6 pt + Jost w nagłówkach.
-- **Marginesy lustrzane** pod oprawę: wewnętrzny 24 mm, zewnętrzny 15 mm.
-  Strony nieparzyste są prawe (recto), parzyste lewe (verso) — drukować dwustronnie,
-  „odwracaj wzdłuż dłuższej krawędzi". 36 stron to wielokrotność 4, więc pasuje też
-  do składu zeszytowego.
-- Skład **wzorowany** na oryginale (zielone belki, pas rycin u dołu strony), ale nie
-  odtwarza go strona w stronę.
-- **Odsyłacze w tekście i spis treści przeliczone na nową paginację** — numery stron
-  nie odpowiadają już wydaniu z lat 50.
+- Format **A4 pionowy, dwie kolumny**, EB Garamond 9,6 pt + Jost w nagĹ‚Ăłwkach.
+- **Marginesy lustrzane** pod oprawÄ™: wewnÄ™trzny 24 mm, zewnÄ™trzny 15 mm.
+  Strony nieparzyste sÄ… prawe (recto), parzyste lewe (verso) â€” drukowaÄ‡ dwustronnie,
+  â€žodwracaj wzdĹ‚uĹĽ dĹ‚uĹĽszej krawÄ™dzi". 36 stron to wielokrotnoĹ›Ä‡ 4, wiÄ™c pasuje teĹĽ
+  do skĹ‚adu zeszytowego.
+- SkĹ‚ad **wzorowany** na oryginale (zielone belki, pas rycin u doĹ‚u strony), ale nie
+  odtwarza go strona w stronÄ™.
+- **OdsyĹ‚acze w tekĹ›cie i spis treĹ›ci przeliczone na nowÄ… paginacjÄ™** â€” numery stron
+  nie odpowiadajÄ… juĹĽ wydaniu z lat 50.
 
-### Uwaga o brakujących stronach 22–23 oryginału
+### Uwaga o brakujÄ…cych stronach 22â€“23 oryginaĹ‚u
 
-W angielskim skanie brakuje barwnej rozkładówki z przykładami ściegów ozdobnych
-(skan przeskakuje ze strony 21 na 24). Odtworzono ją z odpowiadających stron wydania
-norweskiego (`original_scans/Husqvarna-21E_User-Manual_NO.pdf` — ta sama książka),
-a norweskie podpisy zastąpiono angielskimi. W wydaniu A4 to **strona 21**.
-Wszystkie pozostałe strony pochodzą wyłącznie ze skanu angielskiego.
+W angielskim skanie brakuje barwnej rozkĹ‚adĂłwki z przykĹ‚adami Ĺ›ciegĂłw ozdobnych
+(skan przeskakuje ze strony 21 na 24). Odtworzono jÄ… z odpowiadajÄ…cych stron wydania
+norweskiego (`original_scans/Husqvarna-21E_User-Manual_NO.pdf` â€” ta sama ksiÄ…ĹĽka),
+a norweskie podpisy zastÄ…piono angielskimi. W wydaniu A4 to **strona 21**.
+Wszystkie pozostaĹ‚e strony pochodzÄ… wyĹ‚Ä…cznie ze skanu angielskiego.
 
-### Jak przebudować
+### Jak przebudowaÄ‡
 
 ```bash
-python scripts/detect_figures.py     # wykrywa bloki zdjęć na stronach skanu
+python scripts/detect_figures.py     # wykrywa bloki zdjÄ™Ä‡ na stronach skanu
 python scripts/detect_lineart.py     # wykrywa rysunki kreskowe
 python scripts/extract_figures.py    # wycina ryciny wg data/figure_map.json -> figures/
-python scripts/prepare_assets.py     # skaluje je do rozdzielczości druku    -> build/img/
+python scripts/prepare_assets.py     # skaluje je do rozdzielczoĹ›ci druku    -> build/img/
 python scripts/build_manual_a4.py    # skleja build/parts_a4/*.html i drukuje do PDF
 ```
 
-Ostatni krok drukuje przez Chrome w trybie headless. Skład edytuje się w
-`build/parts_a4/` (jeden plik na partię stron), kadry rycin w `data/figure_map.json`.
-Katalog `figures/` nie jest wersjonowany — odtwarza go `extract_figures.py`.
+Ostatni krok drukuje przez Chrome w trybie headless. SkĹ‚ad edytuje siÄ™ w
+`build/parts_a4/` (jeden plik na partiÄ™ stron), kadry rycin w `data/figure_map.json`
+(wspĂłĹ‚rzÄ™dne w pikselach strony skanu przy 150 dpi, po obrĂłceniu do poziomu).
+Katalog `figures/` nie jest wersjonowany â€” odtwarza go `extract_figures.py`.
 
-> **Po każdej zmianie sprawdź liczbę stron w PDF.** Kolumny mają stałą wysokość, nadmiar
-> jest po cichu ucinany, a strona, która się przelewa, tworzy w PDF-ie dodatkową kartkę.
-> Liczba stron musi równać się liczbie `<div class="page">` w `build/manual_a4.html`.
+> **Po kaĹĽdej zmianie sprawdĹş liczbÄ™ stron w PDF.** Kolumny majÄ… staĹ‚Ä… wysokoĹ›Ä‡, nadmiar
+> jest po cichu ucinany, a strona, ktĂłra siÄ™ przelewa, tworzy w PDF-ie dodatkowÄ… kartkÄ™.
+> Liczba stron musi rĂłwnaÄ‡ siÄ™ liczbie `<div class="page">` w `build/manual_a4.html`.
 
 ---
 
-## 2. Instrukcja obsługi EN — wydanie A5 poziome (wierne 1:1)
+## 2. Instrukcja obsĹ‚ugi EN â€” wydanie A5 poziome (wierne 1:1)
 
-[`archive/Husqvarna_Automatic_21A_Operating_Manual_EN.pdf`](archive/) — 52 strony
-w **oryginalnym formacie A5 poziomym (210 × 148 mm)**, odtworzone strona w stronę,
-z zachowaną paginacją oryginału. Obok wersja 2-up na A4 do druku domowego.
+[`archive/Husqvarna_Automatic_21A_Operating_Manual_EN.pdf`](archive/) â€” 52 strony
+w **oryginalnym formacie A5 poziomym (210 Ă— 148 mm)**, odtworzone strona w stronÄ™,
+z zachowanÄ… paginacjÄ… oryginaĹ‚u. Obok wersja 2-up na A4 do druku domowego
+(przeciÄ…Ä‡ wzdĹ‚uĹĽ Ĺ›rodka, zszyÄ‡ przy lewej krawÄ™dzi).
 
-To ta sama, przepisana ze skanu treść co wydanie A4 — różni się tylko formatem i tym,
-że trzyma się układu oryginału. Budowane przez `scripts/build_manual.py`
-i `scripts/impose_a4.py`.
+To ta sama, przepisana ze skanu treĹ›Ä‡ co wydanie A4 â€” rĂłĹĽni siÄ™ tylko formatem i tym,
+ĹĽe trzyma siÄ™ ukĹ‚adu oryginaĹ‚u. Budowane przez `scripts/build_manual.py`
+(ĹşrĂłdĹ‚o w `build/parts/`, ktĂłrego tu nie ma â€” do odtworzenia z historii) oraz
+`scripts/impose_a4.py`.
 
 ---
 
 ## 3. Instrukcja serwisowa PL
 
 [`Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf`](Husqvarna_Class_21_Instrukcja_Serwisowa_PL.pdf)
-— polskie tłumaczenie fabrycznej instrukcji regulacyjnej
+â€” polskie tĹ‚umaczenie fabrycznej instrukcji regulacyjnej
 (*Service Manual for Viking Automatic home sewing machine class 21*).
-Źródło HTML: [`index.html`](index.html), ilustracje w [`obrazy/`](obrazy/).
+ĹąrĂłdĹ‚o HTML: [`index.html`](index.html), ilustracje w [`obrazy/`](obrazy/).
 
-Spis treści: regulacja ściegu prostego · synchronizacja zygzaka · wysokość drążka stopki ·
-centrowanie igły · pozycja środkowa zygzaka · punkt chwytania pętli · wysokość igielnicy ·
-luz chwytacz–igła · wysokość ząbków transportera · synchronizacja transportu · poprzeczne
-ustawienie ząbków · regulator podawania nici · naciąg sprężynki szarpacza · wymiana paska
-wałka krzywkowego.
+Spis treĹ›ci: regulacja Ĺ›ciegu prostego Â· synchronizacja zygzaka Â· wysokoĹ›Ä‡ drÄ…ĹĽka stopki Â·
+centrowanie igĹ‚y Â· pozycja Ĺ›rodkowa zygzaka Â· punkt chwytania pÄ™tli Â· wysokoĹ›Ä‡ igielnicy Â·
+luz chwytaczâ€“igĹ‚a Â· wysokoĹ›Ä‡ zÄ…bkĂłw transportera Â· synchronizacja transportu Â· poprzeczne
+ustawienie zÄ…bkĂłw Â· regulator podawania nici Â· naciÄ…g sprÄ™ĹĽynki szarpacza Â· wymiana paska
+waĹ‚ka krzywkowego.
 
 ---
 
-## 4. Materiały wcześniejsze (2026-09, archiwalne)
+## 4. `legacy/` â€” wczeĹ›niejsze podejĹ›cie (wrzesieĹ„ 2026)
 
-Pliki [`Husqvarna_Automatic_Class_21_Operating_Manual_EN.html`](Husqvarna_Automatic_Class_21_Operating_Manual_EN.html),
-`Husqvarna_Automatic_Class_21_Operating_Manual_EN.pdf`,
-`Husqvarna_21A_Automatic_Operating_Manual_EN_A4.pdf` oraz katalog
-[`images_manual_en/`](images_manual_en/) pochodzą z wcześniejszego podejścia do tematu.
+[`legacy/`](legacy/) zawiera dokumentacjÄ™ pierwszego podejĹ›cia do tematu: ĹşrĂłdĹ‚owy HTML
+56-stronicowej broszury, notatki projektowe i dane OCR pobrane z archive.org.
 
-> ⚠️ **Tekst w tych plikach został zredagowany i sparafrazowany, a nie przepisany ze skanu**
-> — nie jest wierną transkrypcją oryginalnej instrukcji. Część rycin wycięto ze skanu
-> norweskiego i zostały w nich norweskie podpisy. Jako źródło treści służą wyłącznie
+> âš ď¸Ź **Tekst tamtej wersji zostaĹ‚ zredagowany i sparafrazowany, a nie przepisany ze skanu**
+> â€” nie jest wiernÄ… transkrypcjÄ… oryginalnej instrukcji. CzÄ™Ĺ›Ä‡ rycin wyciÄ™to ze skanu
+> norweskiego i zostaĹ‚y w nich norweskie podpisy. Jako ĹşrĂłdĹ‚o treĹ›ci sĹ‚uĹĽÄ… wyĹ‚Ä…cznie
 > wydania opisane w punktach 1 i 2 oraz same skany.
+>
+> Warstwa OCR w `legacy/data/` jest praktycznie bezuĹĽyteczna: strony w skanie sÄ… obrĂłcone
+> o 90Â°, wiÄ™c rozpoznany tekst to w wiÄ™kszoĹ›ci Ĺ›mieci. TreĹ›Ä‡ wydaĹ„ 1 i 2 przepisano
+> ze zrenderowanych stron, nie z OCR.
 
-Zostawione dla porządku i historii prac. Dokumentacja tamtego etapu:
-[`CONTINUATION_GUIDE.md`](CONTINUATION_GUIDE.md), [`RESUME_PROMPT.md`](RESUME_PROMPT.md),
-[`docs/`](docs/), dane OCR w [`data/`](data/).
+Wygenerowane wtedy PDF-y i katalog `images_manual_en/` usuniÄ™to przy odchudzaniu
+repozytorium â€” sÄ… odtwarzalne ze skanĂłw.
 
 ---
 
-## Skany źródłowe
+## Skany ĹşrĂłdĹ‚owe
 
 [`original_scans/`](original_scans/)
 
-| Plik | Zawartość |
+| Plik | ZawartoĹ›Ä‡ |
 |---|---|
-| `Husqvarna_21A_Automatic_Manual_EN.pdf` | instrukcja obsługi EN, 48 stron skanu (44 numerowane strony książki, A5 poziomo) |
-| `Husqvarna-21E_User-Manual_NO.pdf` | to samo wydanie po norwesku, 56 stron |
-| `Husqvarna-Class-21_Service-Manual_EN.pdf` | fabryczna instrukcja serwisowa EN |
+| `Husqvarna_21A_Automatic_Manual_EN.pdf` | instrukcja obsĹ‚ugi EN, 48 stron skanu (44 numerowane strony ksiÄ…ĹĽki, A5 poziomo) â€” ĹşrĂłdĹ‚o wydaĹ„ 1 i 2 |
+| `Husqvarna-21E_User-Manual_NO.pdf` | to samo wydanie po norwesku, 56 stron â€” ĹşrĂłdĹ‚o brakujÄ…cych stron 22â€“23 |
+| `Husqvarna-Class-21_Service-Manual_EN.pdf` | fabryczna instrukcja serwisowa EN â€” ĹşrĂłdĹ‚o tĹ‚umaczenia PL |
 
-*Opracowano na podstawie oryginalnych materiałów Husqvarna Vapenfabriks AB • Sweden.*
+Wszystkie trzy sÄ… wejĹ›ciem do przebudowy, dlatego zostajÄ… w repozytorium.
+
+*Opracowano na podstawie oryginalnych materiaĹ‚Ăłw Husqvarna Vapenfabriks AB â€˘ Sweden.*
+

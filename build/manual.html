@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Husqvarna Automatic 21 A &mdash; Operating Manual</title>
+<style>
+@page { size: 210mm 148mm; margin: 0; }
+
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Garamond EB'; src: url('fonts/EBGaramond-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Light.ttf') format('truetype'); font-weight: 300; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Regular.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-Medium.ttf') format('truetype'); font-weight: 500; }
+@font-face { font-family: 'Jost'; src: url('fonts/Jost-SemiBold.ttf') format('truetype'); font-weight: 600; }
+
+:root {
+  --paper: #FCFBF3;
+  --ink: #1b1b18;
+  --green: #CCE9CA;
+  --green-soft: #DCEFD9;
+  --rule: #9fc7a2;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; background: #6d6d6d; }
+
+body {
+  font-family: 'Garamond EB', Garamond, serif;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 148mm;
+  background: var(--paper);
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  margin: 0 auto 6mm;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+  padding: 9mm 13mm 10mm 13mm;
+}
+.page:last-child { page-break-after: auto; }
+
+@media print {
+  html, body { background: #fff; }
+  .page { margin: 0; box-shadow: none; }
+}
+
+/* ---------- typography ---------- */
+p {
+  margin: 0;
+  font-size: 8.3pt;
+  line-height: 1.26;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-indent: 4.2mm;
+}
+p.flush { text-indent: 0; }
+p + h3, p + h4, ol + h3, ol + h4, ul + h3 { margin-top: 3.2mm; }
+p.it { font-style: italic; }
+
+h3, h4 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 8.7pt;
+  line-height: 1.2;
+  margin: 3.2mm 0 1.2mm;
+  letter-spacing: .005em;
+}
+h3:first-child, h4:first-child { margin-top: 0; }
+h4 { font-weight: 500; font-size: 8.6pt; }
+h5 {
+  font-family: 'Garamond EB', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 8.8pt;
+  margin: 2.6mm 0 1.2mm;
+}
+h5:first-child { margin-top: 0; }
+
+ol, ul { margin: 0 0 1.4mm 0; padding-left: 4.6mm; }
+ol { padding-left: 5.2mm; }
+li {
+  font-size: 8.3pt;
+  line-height: 1.25;
+  margin-bottom: .9mm;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+ol.alpha { list-style: lower-alpha; }
+
+/* ---------- grid helpers ---------- */
+.cols2, .cols3 { display: grid; column-gap: 7mm; height: 100%; align-content: start; }
+.cols2 { grid-template-columns: 1fr 1fr; }
+.cols3 { grid-template-columns: 1fr 1fr 1fr; column-gap: 5.5mm; }
+.col { min-width: 0; }
+.stack { display: flex; flex-direction: column; gap: 3mm; }
+.spread { display: flex; gap: 6mm; }
+.grow { flex: 1 1 auto; min-width: 0; }
+
+/* ---------- figures ---------- */
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; }
+figcaption {
+  font-style: italic;
+  font-size: 7.8pt;
+  text-align: center;
+  margin-top: .9mm;
+  letter-spacing: .01em;
+}
+.plain img { display: block; width: 100%; height: auto; }
+
+/* line art keeps its paper; multiplying it into the page hides the crop edge */
+.mul { mix-blend-mode: multiply; }
+
+/* a figure that must fit a box of known height */
+figure.fit { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+figure.fit .iw { flex: 1 1 auto; min-height: 0; display: flex; align-items: flex-end; justify-content: center; }
+figure.fit .iw.top { align-items: flex-start; }
+figure.fit img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+
+/* a row of figures pinned to the foot of the page */
+.footrow {
+  position: absolute;
+  left: 13mm; right: 13mm; bottom: 11mm;
+  display: grid;
+  column-gap: 6mm;
+  align-items: end;
+}
+
+/* ---------- side panel ---------- */
+.page.sided { padding-left: 62mm; }
+.side {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 49mm;
+  background: var(--green);
+  padding: 9mm 6mm 8mm 6mm;
+  display: flex;
+  flex-direction: column;
+}
+.side .head {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.5;
+  text-align: right;
+  color: #16281a;
+}
+.side .head.left { text-align: left; }
+.side .art { margin-top: auto; }
+.side .art img { width: 100%; display: block; }
+
+/* vertical hairline of pale green between columns */
+.vrule {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 2.6mm;
+  background: var(--green-soft);
+}
+
+/* ---------- page furniture ---------- */
+.folio {
+  position: absolute;
+  bottom: 5mm;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 9.5pt;
+  color: #23331f;
+}
+.folio.l { left: 13mm; }
+.folio.r { right: 13mm; }
+.page.sided .folio.l { left: 6mm; }
+
+.banner {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 17pt;
+  text-align: center;
+  color: #16281a;
+  margin: 0 0 4mm;
+  letter-spacing: .01em;
+}
+
+/* ---------- tables ---------- */
+table { border-collapse: collapse; width: 100%; font-size: 7.4pt; }
+table.rule th, table.rule td { border: .25mm solid #7d7d75; padding: .7mm 1.2mm; vertical-align: top; }
+table.rule th { font-family: 'Jost', sans-serif; font-weight: 500; text-align: left; }
+caption { font-style: italic; font-size: 8.4pt; text-align: left; padding-bottom: 1mm; }
+
+.notebox {
+  border: .4mm solid var(--rule);
+  background: #F3FAF2;
+  padding: 3.5mm 4mm;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 8.6pt;
+  line-height: 1.45;
+}
+.notebox .n { letter-spacing: .28em; display: block; margin-bottom: 2mm; }
+
+/* ---------- covers ---------- */
+.page.cover { padding: 0; }
+.page.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.plate { padding: 7mm 9mm; }
+</style>
+</head>
+<body>
+
+<!-- ============ FRONT COVER ============ -->
+<div class="page cover">
+  <img src="img/cover_front.jpg" alt="Operating Manual — Husqvarna Automatic 21 A">
+</div>
+
+<!-- ============ INSIDE FRONT FLAP — NOTE! ============ -->
+<div class="page">
+  <div style="display:flex; height:100%; align-items:center; justify-content:center;">
+    <div style="width:118mm;">
+      <div style="display:flex; align-items:flex-start; gap:8mm;">
+        <div style="flex:1 1 auto;">
+          <h3 style="font-size:15pt; font-weight:400; margin-bottom:4mm;">Note!</h3>
+          <p class="flush" style="font-size:9.4pt; line-height:1.4;">Your study of this Operating Manual will be greatly
+          facilitated if you fold out the flaps of the front and back cover. By so doing you will all the time have easy
+          access to the illustrations of the machine with numeral references to the various parts.</p>
+        </div>
+        <img class="mul" src="img/p01_emblem.jpg" style="width:17mm; height:auto; margin-top:1mm;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FRONT FLAP — FIG. 1 AND PARTS KEY ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 52mm; column-gap:8mm; height:100%;">
+    <figure style="align-self:center;">
+      <img src="img/foldout_fig1.jpg" alt="Fig. 1 — the Husqvarna Automatic, front view">
+      <figcaption>Fig. 1.</figcaption>
+    </figure>
+    <div style="font-family:'Garamond EB',serif; font-size:8.1pt; line-height:1.36; align-self:center;">
+      <ol style="list-style:none; padding:0; margin:0;">
+        <li style="text-align:left;">&nbsp;1.&nbsp; Presser foot</li>
+        <li style="text-align:left;">&nbsp;2.&nbsp; Presser foot screw</li>
+        <li style="text-align:left;">&nbsp;3.&nbsp; Presser bar</li>
+        <li style="text-align:left;">&nbsp;4.&nbsp; Thread guide</li>
+        <li style="text-align:left;">&nbsp;5.&nbsp; Needle clamp</li>
+        <li style="text-align:left;">&nbsp;6.&nbsp; Needle set screw</li>
+        <li style="text-align:left;">&nbsp;7.&nbsp; Needle bar</li>
+        <li style="text-align:left;">&nbsp;8.&nbsp; Thread guide</li>
+        <li style="text-align:left;">&nbsp;9.&nbsp; Slash thread regulator</li>
+        <li style="text-align:left;">10.&nbsp; Three tension discs</li>
+        <li style="text-align:left;">11.&nbsp; Graduated tension regulator knob</li>
+        <li style="text-align:left;">12.&nbsp; Take-up spring</li>
+        <li style="text-align:left;">13.&nbsp; Take-up lever</li>
+        <li style="text-align:left;">14.&nbsp; Thread guide</li>
+        <li style="text-align:left;">15.&nbsp; Markings for needle starting positions</li>
+        <li style="text-align:left;">16.&nbsp; Needle position control</li>
+        <li style="text-align:left;">17.&nbsp; Pattern selector</li>
+        <li style="text-align:left;">18.&nbsp; Scale for pattern selector</li>
+        <li style="text-align:left;">19.&nbsp; Balance wheel</li>
+        <li style="text-align:left;">20.&nbsp; Stitch length knob</li>
+        <li style="text-align:left;">21.&nbsp; Reverse feed knob</li>
+        <li style="text-align:left;">22.&nbsp; Scale for stitch width</li>
+        <li style="text-align:left;">23.&nbsp; Stop for buttonhole sewing</li>
+        <li style="text-align:left;">24.&nbsp; Stitch width control</li>
+        <li style="text-align:left;">25.&nbsp; Drop feed knob</li>
+        <li style="text-align:left;">26.&nbsp; Shuttle access door</li>
+        <li style="text-align:left;">27.&nbsp; Throat plate</li>
+        <li style="text-align:left;">28.&nbsp; Feed dog</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FRONT FLAP — ATTACHMENTS ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 62mm 1fr; column-gap:8mm; height:100%;">
+    <div class="stack">
+      <img src="img/foldout_case.jpg" style="width:100%; display:block;" alt="The machine in its carrying case">
+      <div style="font-size:7.8pt; line-height:1.34;">
+        <h4 style="margin:0 0 1.5mm;">Standard attachments</h4>
+        S. 15229&nbsp; Jointed presser foot (attached to the machine) for straight and zigzag stitching<br>
+        S. 15237&nbsp; Button foot<br>
+        S. 15428&nbsp; Buttonhole foot<br>
+        S. 15419&nbsp; Twin-needle foot with 3 grooves<br>
+        S. 15427&nbsp; Raised-seam attachment<br>
+        S. 15399&nbsp; Buttonhole knife<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3035&nbsp; Hemmer for straight and zigzag stitching<br>
+        S. 15236&nbsp; Hemmer for roll seam<br>
+        S. 15395&nbsp; Presser foot for zip fasteners<br>
+        S. 15460&nbsp; Darning foot<br>
+        S. 15423&nbsp; Needle plate for 1/8 in. eyelets<br>
+        S. 15420&nbsp; Edge guide<br>
+        S. 15232&nbsp; Pattern presser foot<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Twin needle, 3/32 in. needle spread
+      </div>
+    </div>
+    <img src="img/foldout_attachments.jpg" style="width:100%; align-self:center;" alt="The attachments supplied with the machine">
+  </div>
+</div>
+
+<!-- ============ PAGE 1 ============ -->
+<div class="page">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; padding:0 10mm 0 24mm; height:40mm;">
+    <img class="mul" src="img/p01_emblem.jpg" style="width:13mm; margin-top:8mm;" alt="">
+    <img class="mul" src="img/p01_mother_daughter.jpg" style="height:100%; width:auto;" alt="">
+  </div>
+  <div style="margin:8mm 16mm 0 24mm;">
+    <p class="it" style="font-size:8.9pt; line-height:1.38;">This manual has been prepared to help you learn to use
+    your new Husqvarna Automatic in such a way that you will get the very best out of it &mdash; to enable you to take
+    full advantage of all the machine&rsquo;s special features which put skill into your fingers and make sewing fun.</p>
+    <p class="it" style="font-size:8.9pt; line-height:1.38;">Maybe you are thoroughly accustomed to sewing by machine and
+    feel you can skip reading these instructions. Our advice is: Don&rsquo;t. We can say with fair certainty that you
+    will find quite a number of ideas here that you hadn&rsquo;t thought of before, as well as simple sewing tricks that
+    you had forgotten.</p>
+    <p class="it" style="font-size:8.9pt; line-height:1.38;">Have the machine in front of you as you read, and try out the
+    various operations. Even if you have had some previous instruction in the use of your Husqvarna Automatic, this is
+    probably the first time you have been alone with it &mdash; so here is a splendid opportunity to get acquainted.
+    You&rsquo;ll find it well worth while, too. For this machine can be used for all kinds of sewing operations &mdash;
+    sewing the most beautiful straight seams, doing ordinary zigzag stitching, and producing without any trouble at all
+    an amazing variety of automatic embroidery patterns.</p>
+    <p class="it" style="font-size:8.9pt; line-height:1.38;">Even after you have acquired the general technique of sewing
+    on the Husqvarna Automatic, you will probably want to consult the manual from time to time in regard to details. So
+    keep this booklet always at hand &mdash; preferably in the case with the machine.</p>
+    <p class="it" style="font-size:8.9pt; line-height:1.38;">Good luck &mdash; and good sewing with your Husqvarna
+    Automatic!</p>
+  </div>
+</div>
+
+<!-- ============ PAGE 2 ============ -->
+<div class="page sided">
+  <div class="side">
+    <div class="head left" style="font-size:13.5pt; line-height:1.55;">It&rsquo;s easy to<br>get acquainted<br>with your<br>HUSQVARNA<br>AUTOMATIC</div>
+    <div class="art" style="display:flex; align-items:flex-end; gap:3mm;">
+      <img class="mul" src="img/p02_spool.jpg" style="width:62%;" alt="">
+      <img src="img/p02_needles.jpg" style="width:20%;" alt="">
+    </div>
+  </div>
+  <div style="display:grid; grid-template-columns: 42mm 1fr; column-gap:6mm; height:100%;">
+    <div>
+      <h3>Needle and Thread</h3>
+      <p>Unless a contrasting effect is desired, the stitching should match the fabric as closely as
+      possible. It is therefore important to select a needle and thread suited to the material which is being sewn.
+      The table on this page will help you to do this.</p>
+      <p>Needle System 705 (15&times;1) is the one used for the Husqvarna Automatic. In case you forget the number, it
+      is engraved on a plate attached to the rear of the machine.</p>
+    </div>
+    <div>
+      <div style="font-family:'Jost',sans-serif; font-weight:500; font-size:9.5pt; margin-bottom:1.8mm;">Needle and thread selector</div>
+      <table class="rule" style="font-size:6.2pt; line-height:1.2;">
+        <tr>
+          <th style="width:13%;">Grades</th>
+          <th style="width:7%;">Sizes</th>
+          <th>Types of fabric and work</th>
+          <th style="width:10%;">Cotton</th>
+          <th style="width:10%;">Silk</th>
+          <th style="width:9%;">Linen</th>
+        </tr>
+        <tr><td>Fine</td><td>60</td><td>Delicate fabrics like georgette, chiffon, batiste, fine lace, fine linen and other sheer fabrics. For fine lingerie, infants&rsquo; clothes and fine lace work.</td><td>100 to 150</td><td>00 and 000 twist</td><td></td></tr>
+        <tr><td>Medium&#8209;fine</td><td>70</td><td>Medium light-weight and summertime fabrics. For house dresses, children&rsquo;s dresses, cottons, aprons, curtains.</td><td>80 to 100</td><td>0 twist</td><td></td></tr>
+        <tr><td>Medium</td><td>80</td><td>Dress silks and cottons, light weight to woollens and decorators&rsquo; fabrics. For dressmaking and general household sewing, men&rsquo;s dress shirts and light weight draperies.</td><td>60 to 80</td><td>A &amp; B twist</td><td></td></tr>
+        <tr><td>Light&#8209;heavy</td><td>90</td><td>Heavy cretonne, madras, muslin, brocades and quilts. For men&rsquo;s work shirts and other work clothes, heavy quilting and decorators&rsquo; articles.</td><td>40 to 60</td><td>C twist</td><td></td></tr>
+        <tr><td>Medium&#8209;heavy</td><td>100<br>110</td><td>Heavy woollens and suiting, light-weight canvas, bed ticking, upholstery and awning materials, slipcover fabrics. For men&rsquo;s suits, work and sports clothes, awnings, slipcovers, upholstery and mattresses.</td><td>30 to 40</td><td>D twist</td><td></td></tr>
+        <tr><td>Heavy</td><td>120</td><td>Heavy overcoating, duck, ticking, drills, canvas and sacking. For heavy washable uniforms, bedding for hospitals, hotels and camps. Extra heavy and coarse goods.</td><td>24 to 30</td><td>E twist</td><td>60 to 80</td></tr>
+        <tr><td>Extra&#8209;heavy</td><td>130</td><td>For canvas bags and heavy canvas products.</td><td>20 to 24</td><td></td><td>40 to 60</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="folio l">2</div>
+</div>
+
+<!-- ============ PAGE 3 ============ -->
+<div class="page">
+  <div class="vrule" style="left:101mm; top:0; height:52mm; bottom:auto;"></div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:14mm;">
+    <div>
+      <h3>How to insert a needle</h3>
+      <p>Loosen the needle screw (A, Fig. 3). Insert the needle in the clamp (B) and push it up as far as
+      it will go. See that the flat side of the needle is turned away from you. Tighten the screw securely, and check
+      again to make sure that the needle is correctly inserted. The long groove over the needle&rsquo;s eye should be
+      facing you.</p>
+      <p>When using a twin or triple needle, insert in the same way.</p>
+    </div>
+    <div>
+      <h3>Removing the bobbin case from the shuttle</h3>
+      <p>Turn the hand wheel (19, Fig. 1) towards you until the needle is in its highest position. Open the
+      shuttle access door (26, Fig. 1).</p>
+      <p>Take hold of the bobbin case with the thumb and forefinger (Fig. 4), so that the latch (A, Fig. 5) is depressed,
+      and lift the case out.</p>
+      <p>As long as the latch is depressed, the bobbin is held in its case. To remove the bobbin, release the latch and
+      turn the case downwards. The bobbin then falls out.</p>
+    </div>
+  </div>
+  <div class="footrow" style="grid-template-columns: 1fr 1fr 1fr; height:72mm;">
+    <figure class="fit"><div class="iw"><img src="img/fig03.jpg" alt=""></div><figcaption>Fig. 3.</figcaption></figure>
+    <figure class="fit"><div class="iw"><img src="img/fig04.jpg" alt=""></div><figcaption>Fig. 4.</figcaption></figure>
+    <figure class="fit"><div class="iw"><img src="img/fig05.jpg" alt=""></div><figcaption>Fig. 5.</figcaption></figure>
+  </div>
+  <div class="folio r">3</div>
+</div>
+
+<!-- ============ PAGE 4 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:42mm; margin-bottom:3mm;"><div class="iw top"><img src="img/fig06.jpg" alt=""></div><figcaption>Fig. 6.</figcaption></figure>
+      <h3>Bobbin winding is simple</h3>
+      <p>Place a spool of thread on the spool pin nearest the hand wheel. Run the thread through the thread
+      guide (A, fig. 6) and down under the guide (B) on the tension device and back between the tension discs (C).</p>
+      <p>Wind the thread two or three times around the bobbin (D), and push the bobbin as far as it will go onto the
+      winder spindle. This automatically disengages the sewing mechanism.</p>
+    </div>
+    <div style="padding-top:46mm;">
+      <p>Start the bobbin winder by pressing the foot pedal, and wind at a moderate speed. Stop winding
+      when the bobbin is filled to about 1/16 in. from the rim.</p>
+      <p>The spindle automatically engages the sewing mechanism again, when the bobbin is pulled off.</p>
+      <h3>Bobbin must be evenly wound to produce an even seam</h3>
+      <p>If you find the machine is winding unevenly as in (I), loosen the screw (36, Fig. 2) and move the
+      tension device slightly inwards toward the machine. Tighten the screw and test to see if the winding is now even.
+      If the machine winds unevenly in the other direction, as in (II), move the tension device outwards, to the right.
+      A correctly wound bobbin should look like (III) (somewhat higher in the middle).</p>
+    </div>
+    <div>
+      <figure class="fit" style="height:42mm;"><div class="iw top"><img src="img/fig07.jpg" alt=""></div><figcaption>Fig. 7.</figcaption></figure>
+      <div style="height:26mm;"></div>
+      <img class="mul" src="img/p04_bobbins.jpg" style="width:100%;" alt="I, II, III &mdash; bobbin winding">
+    </div>
+  </div>
+  <div class="folio l">4</div>
+</div>
+
+<!-- ============ PAGE 5 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; height:58mm;">
+    <div>
+      <h3>Threading the bobbin case</h3>
+      <p>Hold the bobbin case in your left hand with the slot in the edge upwards or facing you (Fig. 7).
+      Take the bobbin in your right hand, so that the thread end leads away from you, and drop it into the case. Then,
+      still with your right hand, draw the thread into the slot in the edge of the case (Fig. 8).</p>
+      <p>Now lead the thread under the tension spring and let it come out at the notch in the end of the spring (Fig. 9).
+      Pull the thread out a few inches, and check to see that the bobbin rotates clockwise in the case.</p>
+    </div>
+    <figure class="fit"><div class="iw top"><img src="img/fig09.jpg" alt=""></div><figcaption>Fig. 9.</figcaption></figure>
+    <figure class="fit"><div class="iw top"><img src="img/fig10.jpg" alt=""></div><figcaption>Fig. 10.</figcaption></figure>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 2fr; column-gap:7mm; margin-top:5mm; height:60mm;">
+    <figure class="fit"><div class="iw top"><img src="img/fig08.jpg" alt=""></div><figcaption>Fig. 8.</figcaption></figure>
+    <div>
+      <h3 style="margin-top:0;">Lower thread tension</h3>
+      <p>The machine comes from the factory with the lower thread tension adjusted for normal use. Do not
+      alter the tension unless it is absolutely necessary &mdash; as for example, when sewing very loosely or tightly
+      woven fabrics, or when doing special jobs, such as sewing buttonholes, eyelets, etc. To adjust the lower thread
+      tension, use the small screwdriver which you will find in the attachment box. Take out the bobbin case and turn the
+      spring screw (Fig. 10) to the right to increase the tension or to the left to decrease it.</p>
+      <p class="it">Do not turn the spring screw more than 1/8 of a turn without testing to see if the adjustment is
+      sufficient.</p>
+    </div>
+  </div>
+  <div class="folio r">5</div>
+</div>
+
+<!-- ============ PAGE 6 ============ -->
+<div class="page">
+  <div class="vrule" style="left:61.5mm; top:0; height:98mm; bottom:auto;"></div>
+  <div style="display:grid; grid-template-columns: 47mm 1fr 58mm; column-gap:7mm; height:98mm; align-content:start;">
+    <div>
+      <figure class="fit" style="height:32mm; margin-bottom:2.5mm;"><div class="iw top"><img src="img/fig11.jpg" alt=""></div><figcaption>Fig. 11.</figcaption></figure>
+      <h3 style="margin-top:1mm;">Inserting the bobbin case</h3>
+      <p>Turn the hand wheel (19, Fig. 1) towards you until the needle is in its highest position. Open the
+      access door (26, Fig. 1) and pick up the bobbin case with the thumb and forefinger, gripping the latch (A, Fig. 5)
+      firmly so the bobbin does not fall out.</p>
+      <p>Push the bobbin case onto the centre post of the shuttle (A, Fig. 11), with its projection upwards so as to fit
+      the notch (B) in the shuttle race. Press the case firmly into place.</p>
+      <p>Leave the thread end hanging down from the bobbin case, and close the access door.</p>
+    </div>
+    <div>
+      <h3>Upper thread:<br>This is the way to thread it</h3>
+      <p>Bring the thread take-up lever (6, Fig. 12) to its highest position by turning the hand wheel
+      towards you. Put a spool of thread on one of the spool pins (41 and 42, Fig. 2).</p>
+      <p>Pass thread through the thread guides (1 and 2, Fig. 12), then round from right to left between the innermost
+      tension discs (3), over the crotch of the thread take-up spring (4), under the slack thread regulator (5) and up
+      through one of the eyes in the thread take-up lever (6). From the take-up lever take the thread down through thread
+      guide (7) and the guide on the needle clamp (8) and thread it through the needle from the front through the needle
+      point, pulling out 3 or 4 inches behind.</p>
+      <p>To sew with thin or triple needles, you thread the machine with two or three threads in the same way as with
+      one, except that the threads are passed between separate pairs of tension discs and through separate holes in the
+      take-up lever (6).</p>
+      <p class="it">Once the machine is threaded, be careful not to run it unless there is some fabric between the
+      presser foot and the throat plate.</p>
+    </div>
+    <figure class="fit" style="height:96mm;"><div class="iw"><img src="img/fig12.jpg" alt=""></div><figcaption>Fig. 12.</figcaption></figure>
+  </div>
+  <div style="margin-top:4mm; padding-right:62mm;">
+    <h3 style="margin-top:0;">Upper thread tension</h3>
+    <p>The tension of the upper thread is regulated by the pressure of the tension discs (3, Fig. 12)
+    against each other. This pressure is adjusted by means of a knob calibrated from 0 to 9 with 0 as lowest and 9 as
+    highest thread tension (Fig. 13). When the machine leaves the factory, it is adjusted for linen-sewing with
+    mercerized thread No. 50.</p>
+  </div>
+  <div class="folio l">6</div>
+</div>
+
+<!-- ============ PAGE 7 ============ -->
+<div class="page" style="padding-left:0;">
+  <div style="position:absolute; left:0; top:38mm; bottom:0; width:44mm; background:var(--green);"></div>
+  <div class="vrule" style="left:96mm;"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 44mm 1fr 1fr; column-gap:6mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:34mm; padding:0 5mm;"><div class="iw top"><img src="img/fig13.jpg" alt=""></div><figcaption>Fig. 13.</figcaption></figure>
+      <div class="stack" style="margin-top:9mm; gap:8mm; padding:0 3mm;">
+        <img class="mul" src="img/p07_stitch1.jpg" style="width:100%;" alt="">
+        <img class="mul" src="img/p07_stitch2.jpg" style="width:100%;" alt="">
+        <img class="mul" src="img/p07_stitch3.jpg" style="width:100%;" alt="">
+      </div>
+    </div>
+    <div>
+      <h3>Correct tension</h3>
+      <p>When the tension of the upper and lower threads is correctly regulated, the stitches look alike on
+      both sides of the material. The tieing up then occurs in the middle of the layer of the material.</p>
+      <h3>Upper thread tension<br>too tight</h3>
+      <p>Upper thread is stretched out along the top of the material, while the lower thread is pulled up
+      in small loops. (This will also happen if the tension of the lower thread is too light, but always try to correct
+      by adjusting the upper thread tension.) Loosen the upper thread tension by turning the knob to a lower figure.</p>
+      <h3>Tension of upper thread<br>too light</h3>
+      <p>Lower thread is stretched along the underside of the material, and the upper thread pulled down in
+      loops. (Again, this will happen with too tight a tension on the lower thread, but before adjusting the lower thread
+      tension, try adjusting the tension of the upper thread). Increase the upper thread tension by turning the knob to a
+      higher figure.</p>
+    </div>
+    <div style="padding-right:13mm;">
+      <div style="display:grid; grid-template-columns: 28mm 1fr; column-gap:4mm;">
+        <div>
+          <h3>Bringing up the<br>lower thread</h3>
+          <p>After the upper thread has been threaded through the needle, hold the end loosely in your left
+          hand, and with your right hand turn the balance wheel slowly towards you so that the needle goes down and comes
+          up again to its highest position.</p>
+          <p>Now pull the upper thread, and the lower thread will come up through the hole in the throat plate
+          (Fig. 14).</p>
+        </div>
+        <figure><img src="img/fig14.jpg" alt=""><figcaption>Fig. 14.</figcaption></figure>
+      </div>
+      <h3>Increasing and decreasing of pressure of the presser foot</h3>
+      <p>If the pressure on the presser foot is insufficient, increase it by turning the regulating screw
+      (A, fig. 64) to the right; if pressure is too great turn the screw to the left.</p>
+      <h3>The feed dog</h3>
+      <p>When darning, embroidering, sewing on buttons, etc., you want the fabric to be free so you can
+      move it by hand in any desired direction. This is made possible by lowering the feed dog (28, Fig. 1).</p>
+      <p>To lower the feed dog, turn the knob (25, Fig. 1) half a turn to the right &mdash; so the mark on it points
+      downwards.</p>
+      <p>When you want the feed mechanism to function again, simply turn the feed-drop knob to the left so that the mark
+      comes uppermost.</p>
+    </div>
+  </div>
+  <div class="folio r">7</div>
+</div>
+
+<!-- ============ PAGE 8 ============ -->
+<div class="page sided">
+  <div class="side" style="width:46mm; padding:9mm 5mm 0 5mm;">
+    <div class="head left" style="font-size:14pt; line-height:1.55;">Now we<br>are ready<br>to sew!</div>
+    <div class="art" style="margin-top:6mm;"><img class="mul" src="img/p08_lady.jpg" style="width:100%;" alt=""></div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1.35fr 1fr; column-gap:8mm; height:100%; align-content:start;">
+    <div>
+      <h3>Ordinary straight stitching</h3>
+      <p>The Husqvarna Automatic does straight sewing and ordinary zigzag stitching and &mdash; in addition &mdash;
+      embroiders repeating zigzag patterns automatically. Each of these three sewing techniques will be dealt with in
+      turn.</p>
+      <p>When all is said and done, straight stitching remains the most important function of a sewing machine. With its
+      jam-proof shuttle, the Husqvarna Automatic produces an excellent straight stitch. This shuttle is designed so as to
+      release exactly the same length of thread at each revolution &mdash; no matter how fast the machine is run. A
+      further advantage is that the zigzag mechanism is completely disengaged when the machine is doing straight
+      stitching.</p>
+      <p>Now, if you have selected the right needle and thread, and have checked the thread tension, we are ready to
+      start sewing.</p>
+      <p>The machine sews straight when the zigzag width control (24, Fig. 1) is set at 0.</p>
+      <p>Place the fabric under the presser foot and lower the presser bar. Place the motor foot control for greatest
+      comfort and start the machine by depressing it gently. Remember that with the Husqvarna Automatic you have no need
+      to manipulate the hand wheel to help the machine get started or slow it down. The foot control ensures smooth
+      starts and accurate stopping &mdash; thus leaving both hands free for sewing.</p>
+      <p class="it">Mind you, start the seam in the fabric, not outside.</p>
+      <p>When you have got the seam started, the machine speed can be increased as desired. Regulate the sewing speed by
+      means of the foot control <i>only</i> &mdash; and never try to alter the rate of feed by manipulating the fabric.
+      If you try to pull the fabric forward or hold it back, you may easily bend or break a needle, and you may even
+      damage other moving parts of the machine.</p>
+    </div>
+    <div>
+      <h3>Turning a corner</h3>
+      <p>To turn a corner, stop the machine with the needle in the fabric, raise the presser foot and rotate the fabric
+      around the needle until it is in position for the new seam. Then lower the presser foot and continue sewing.</p>
+      <div style="height:34mm;"></div>
+      <h3>Setting the stitch length</h3>
+      <p>You can obtain different lengths of stitch by turning the stitch length knob (Fig. 15). The knob is graduated
+      from 0 to 4, each of these units representing one millimetre. (N. B. 1 m. m. is approx 1/25 inch.) To facilitate
+      accurate sewing of buttonholes and decorative stitching, knob has an even finer graduation between 0 and 0,5 each
+      mark representing one-tenth of a millimetre (or about 1/250 inch.)</p>
+    </div>
+  </div>
+  <div class="folio l">8</div>
+</div>
+
+<!-- ============ PAGE 9 ============ -->
+<div class="page" style="padding-top:0;">
+  <div style="position:absolute; left:0; right:0; top:0; height:32mm; background:var(--green);"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 1fr 62mm; column-gap:9mm; height:44mm; align-items:start;">
+    <div class="banner" style="margin-top:9mm; text-align:left; padding-left:6mm;">Speed reducer for<br>extra slow sewing</div>
+    <figure class="fit" style="height:44mm; padding-top:2mm;"><div class="iw top"><img src="img/fig16.jpg" alt=""></div><figcaption>Fig. 16.</figcaption></figure>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 62mm; column-gap:9mm; margin-top:6mm;">
+    <div>
+      <h3 style="margin-top:0;">Reverse stitching,<br>locking seams</h3>
+      <p>When you want to sew backwards, for instance at locking seams, press in the knob (A fig. 15). The machine moves
+      the fabric backwards with unaltered stitch length, as long as the knob is pressed in.</p>
+      <figure class="fit" style="height:44mm; margin-top:4mm; width:62mm;"><div class="iw top"><img src="img/fig15.jpg" alt=""></div><figcaption>Fig. 15.</figcaption></figure>
+      <h3>Finishing off</h3>
+      <p>After stopping the machine, turn the hand wheel towards you until the needle is in its highest position. Raise
+      the presser bar lifter (29, Fig. 2) and draw the work out backwards &mdash; away from you. Pull out the thread 4-5
+      inches, and cut it off against the thread cutter at the back of the presser bar (30, Fig. 2).</p>
+    </div>
+    <div>
+      <p>You will find the special speed control invaluable when you want to sew particularly slowly &mdash; for
+      instance, when doing careful work or embroidering. The reduction gear is engaged by pulling out the knob (Fig. 16)
+      as far as it will go. This causes the machine to sew at about one/fifth its normal speed.</p>
+      <p>The speed reducer enables you to sew extremely slowly, stitch by stitch, and thus gives you complete control.</p>
+      <p>Push the knob in, and the machine again sews at normal speed.</p>
+    </div>
+  </div>
+  <div class="folio r">9</div>
+</div>
+
+<!-- ============ PAGE 10 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:42mm;"><div class="iw top"><img src="img/fig16a.jpg" alt=""></div><figcaption>Fig. 16a.</figcaption></figure>
+      <h3 style="margin-top:6mm;">Extension plate</h3>
+      <p>To facilitate the sewing of flat work, the extension plate can be installed on the machine. To secure this
+      extension plate, slip open end into the free arm as shown in Fig. 16a. Guide fork (A) at underside of extension
+      plate into pin (B) projecting from rear of free arm. At the same time pull bolt (C) on underside of extension plate
+      near its right end and permit it to enter its seat hole (D) in the side of the arm. Finally swing the supporting
+      leg downwards from the left end of extension plate. If necessary, screw in or out its ball-shaped bottom in order
+      to obtain the required support and also for the purpose of levelling the extension plate.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Find it difficult to sew straight?</h3>
+      <p>Even those who are used to sewing on a machine sometimes have difficulty in running a straight seam. This
+      difficulty can be overcome simply and easily, by learning to use the presser foot as a guide &mdash; or by using
+      the practical edge guide. Read how you can do this on pages 10 and 11.</p>
+      <h3>Presser foot as guide</h3>
+      <img class="mul" src="img/p10_presser_steps.jpg" style="float:right; width:13mm; margin:0 0 1mm 3mm;" alt="">
+      <p>You can use the edge of the presser foot as a guide by letting the edge of the fabric (or a previous seam) run
+      past it. Alternatively, let the edge of the cloth or a row of stitching pass at a certain distance from the steps
+      in the presser foot or from its edges.</p>
+      <p>The distance from the needle to the outer edges of the presser foot is 9/32 in. (7 mm). If you let the edge of
+      the material run along the edge of the presser foot, the stitching will of course also be 9/32 in. (7 mm) from the
+      edge. But if you guide the fabric by the first step in the presser foot, you get a distance of only 5/64 in.
+      (2 mm), which is suitable for stitched edges, raised seams, etc. From the second step in the presser foot to the
+      needles is 5/32 in. (4 mm).</p>
+      <p>You can also guide the edge of the fabric or the stitching directly under centre line of the right-hand toe of
+      the presser foot, or at a certain distance from centre line. This leaves a suitable space for gathering. Whatever
+      you use as a guide, though, the main thing is to keep the same distance all along the row.</p>
+    </div>
+    <div>
+      <figure class="fit" style="height:40mm;"><div class="iw top"><img src="img/fig17.jpg" alt=""></div><figcaption>Fig. 17.</figcaption></figure>
+      <h3 style="margin-top:6mm;">For quilting and marking,<br>use the edge guide</h3>
+      <p>You attach the edge guide (Fig. 17) by sliding it from left to right into the hole in the presser bar. Set it at
+      the desired distance from the needle and fix it there by screwing the attachment screw into the hole in the back of
+      the presser bar.</p>
+      <p>Use markings to guide you when sewing the first seam. To sew parallel rows of stitching, move the work to the
+      right so that the row already sewn comes under the guide.</p>
+      <p>You will find quilting, as well as marking, quite easy when you use this guide.</p>
+    </div>
+  </div>
+  <div class="folio l">10</div>
+</div>
+
+<!-- ============ PAGE 11 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 34mm 1fr 62mm; column-gap:8mm; height:46mm; align-items:start;">
+    <img class="mul" src="img/p11_zipper_foot.jpg" style="width:100%;" alt="">
+    <div style="font-family:'Jost',sans-serif; font-weight:500; font-size:13pt; line-height:1.7; padding-top:2mm;">
+      It&rsquo;s easier<br>to sew on a Zipper<br>than you think!
+    </div>
+    <figure class="fit" style="height:46mm;"><div class="iw top"><img src="img/fig18.jpg" alt=""></div><figcaption>Fig. 18.</figcaption></figure>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; margin-top:8mm;">
+    <div>
+      <h3 style="margin-top:0;">Tucks and<br>stitched edges</h3>
+      <p>The important thing when sewing tucks or stitching edges is that the tucks should be of even depth all along
+      their length, and that the stitching is parallel to the edge of the fabric. This is where you can make use of the
+      presser foot or the edge guide. Mark the distance between the folds of the tuck by machine stitching without
+      thread, then fold the cloth along the markings. Guide the folded edge by the presser foot or the guide
+      attachment.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Zipper in centre of opening</h3>
+      <p>Baste together the opening with long stitches and the upper thread lightly tensioned. Leave about 3/4 in.
+      (19 mm) open at the end. Force the seam apart and baste in the zipper by hand on the underside.</p>
+      <p>Change to the special presser foot for attaching zip fasteners (Fig. 18).</p>
+      <p>Open the zipper about 3/4 in. (19 mm) and start stitching down the left side of the opening (with the work right
+      side out). Stitch a bit, then leaving the needle in the fabric, raise the presser foot. Close the zipper and
+      continue stitching round it. Finish off by opening the fastener slightly as before. Remove the basting.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Zipper under the fly</h3>
+      <p>Baste the fly along the edge with long stitches and lightly tensioned upper thread. Then make a fold in the
+      lower piece of cloth, about 1/16 in. (1.5 mm) from the basting stitches, and stitch the zipper to it, beginning at
+      the bottom and running the zipper foot closely along its right side. Open the zipper as above to finish off. Turn
+      the garment around, and with the right side of the cloth still uppermost, stitch the other side of the zipper from
+      the top downwards.</p>
+    </div>
+  </div>
+  <div class="folio r">11</div>
+</div>
+
+<!-- ============ PAGE 12 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 62mm; column-gap:8mm; height:46mm;">
+    <div>
+      <img class="mul" src="img/p12_ruffle.jpg" style="width:82mm; display:block;" alt="">
+      <div style="margin-top:3mm;">
+        <h3 style="margin:0 0 1mm;">Gathering</h3>
+        <div style="font-family:'Garamond EB',serif; font-size:9pt; line-height:1.4; padding-left:7mm;">
+          You can use<br>
+          <span style="padding-left:4mm;">the Husqvarna Automatic</span><br>
+          <span style="padding-left:9mm;">for gathering,</span><br>
+          <span style="padding-left:16mm;">in several ways.</span>
+        </div>
+      </div>
+    </div>
+    <figure class="fit" style="height:46mm;"><div class="iw top"><img src="img/fig20.jpg" alt=""></div><figcaption>Fig. 20.</figcaption></figure>
+  </div>
+  <hr style="border:none; border-top:.35mm solid #55554e; margin:5mm 0 4mm;">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm;">
+    <div>
+      <h3 style="margin-top:0;">Simple gathering</h3>
+      <p>Use the jointed presser foot (S 15229, inside front cover) which is mounted on the machine on delivery. Stitches
+      should be rather long, and the upper thread tension sufficiently light to enable the lower thread to be pulled. Sew
+      as usual, but preferably stitch two rows, using the presser foot as a guide. Instructions on page 10 tell you how
+      to do this. When both rows have been stitched, pull the lower thread so as to form gathers in the fabric
+      (Fig. 19).</p>
+      <h3>Gathering in<br>several rows</h3>
+      <p>This is where the edge guide comes in useful. Set it so that you guide by the row adjacent to the one you are
+      stitching.</p>
+    </div>
+    <figure class="fit" style="height:62mm;"><div class="iw top"><img src="img/fig19.jpg" alt=""></div><figcaption>Fig. 19.</figcaption></figure>
+    <div>
+      <h3 style="margin-top:0;">Gathering with elastic thread</h3>
+      <p>By using Lastex thread you can make elastic gathers. Wind the elastic thread by hand on to the bobbin, and use
+      ordinary thread for the upper thread. This kind of gathering is especially suitable for underwear,
+      children&rsquo;s clothes, beachwear, etc.</p>
+      <h3>&hellip; or elastic band</h3>
+      <p>By using zigzag stitching, you can also gather over an elastic band. To do so, stretch the band while sewing;
+      the fabric then gathers naturally (Fig. 20).</p>
+    </div>
+  </div>
+  <div class="folio l">12</div>
+</div>
+
+<!-- ============ PAGE 13 ============ -->
+<div class="page">
+  <div class="vrule" style="left:70mm; top:0; height:60mm; bottom:auto;"></div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Making narrow hems</h3>
+      <p>Among the attachments are hemmer feet for two widths of hem. To sew the hem shown below (Fig. 21), use hemmer
+      foot No. 3035.</p>
+      <p>Remove the presser foot and attach the hemmer. Clip off 1/8 in. (3 mm) or so from the corner of the fabric where
+      the hem starts, and fold over the edge for about 1/2 in. (13 mm) to a depth suited to the cloth and the hemmer
+      foot. Sew a single stitch where the hem starts. Then holding the threads firmly with your right hand, lift the
+      hemmer foot slightly in order to get the folded edge into the scroll more easily. Once started, the hemmer folds
+      the fabric automatically &mdash; you just have to make sure that not too much cloth (particularly from a hard
+      multiple-layer hem) gets into the scroll.</p>
+      <p>To produce an extra-narrow hem, use hemmer foot No. 3002 and sew as above.</p>
+      <figure class="fit" style="height:50mm; margin-top:5mm;"><div class="iw"><img src="img/fig21.jpg" alt=""></div><figcaption>Fig. 21.</figcaption></figure>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Felled seams</h3>
+      <p>The hemmer feet can also be used for felling. Place the pieces of cloth one on top of the other with the edge of
+      the bottom piece sticking out slightly &mdash; just enough to enable the lower edge to be felled easily without
+      folding. When stitching the two pieces together, see that their edges are the same distance apart all the way
+      (Fig. 22).</p>
+      <p>After sewing together, spread out the work so that the hem stands up. Then insert the hem in the hemmer and run
+      the second seam (Fig. 23).</p>
+      <h3 style="margin-top:22mm;">Basting and marking (tailor tacks)</h3>
+      <p>Avoid unnecessary hand work by using the machine as much as possible. You have the machine out anyway, so you
+      might as well take advantage of it. Basting is done with long stitches and light upper thread tension so that the
+      threads can easily be pulled out.</p>
+      <p>To mark by machine, lower the feed dog so you can move the work about in any direction you like. Light tension
+      of the thread should be employed.</p>
+    </div>
+    <div>
+      <img class="mul" src="img/p13_needle_thread.jpg" style="width:100%; margin-bottom:3mm;" alt="">
+      <figure class="fit" style="height:38mm;"><div class="iw"><img src="img/fig22.jpg" alt=""></div><figcaption>Fig. 22.</figcaption></figure>
+      <figure class="fit" style="height:38mm; margin-top:6mm;"><div class="iw"><img src="img/fig23.jpg" alt=""></div><figcaption>Fig. 23.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">13</div>
+</div>
+
+<!-- ============ PAGE 14 ============ -->
+<div class="page sided">
+  <div class="side" style="width:46mm; padding:8mm 4mm;">
+    <div style="flex:1 1 auto; display:flex; align-items:center; justify-content:center;">
+      <img class="mul" src="img/p14_needle_lady.jpg" style="width:80%;" alt="">
+    </div>
+    <img class="mul" src="img/p14_green_garment.jpg" style="width:70%; align-self:center;" alt="">
+  </div>
+  <div style="height:100%;">
+    <div class="banner" style="font-size:16pt; margin-bottom:6mm;">Zigzag stitching is sheer fun!</div>
+    <div style="display:grid; grid-template-columns: 1fr 1.25fr; column-gap:8mm;">
+      <div>
+        <h3 style="margin-top:0;">Advantage of zigzag</h3>
+        <p>By making it possible to do hand finishing by machine, the Husqvarna Automatic has revolutionized home sewing.
+        This machine turns out straight stitching and zigzag work with equal elegance &mdash; enabling you to sew
+        complete garments by machine and thus avoid the wearisome hand work which was formerly necessary for finishing
+        off.</p>
+        <p>Now we are going to show you how to do hand finishing by machine.</p>
+      </div>
+      <div>
+        <h3 style="margin-top:0;">Setting the controls for zigzag stitching</h3>
+        <p>The machine is set for straight stitching when the zigzag width control (24, Fig. 1) is at 0. Settings 1 to 4
+        make it sew zigzag stitches of increasing width &mdash; up to 5/32 in. (4 mm).</p>
+        <p>On the knob for the needle starting positions (See Fig. 24 below) there is a sliding control with a dial
+        marked 1 to 5. This is the pattern selector for automatic zigzag work, about which there is more on page 25.</p>
+        <p class="it">For all ordinary zigzag stitching the pattern selector should be set at 5 &mdash; no matter which
+        cam set you have in the machine.</p>
+      </div>
+    </div>
+    <div class="footrow" style="left:62mm; grid-template-columns: 1fr 1fr; height:52mm;">
+      <figure class="fit"><div class="iw"><img src="img/fig24.jpg" alt=""></div><figcaption>Fig. 24.</figcaption></figure>
+      <figure class="fit"><div class="iw"><img class="mul" src="img/p14_middle_position.jpg" alt=""></div><figcaption style="font-style:normal;">Middle position.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio l">14</div>
+</div>
+
+<!-- ============ PAGE 15 ============ -->
+<div class="page">
+  <div class="vrule" style="left:118mm;"></div>
+  <div style="display:grid; grid-template-columns: 1fr 66mm; column-gap:10mm; height:100%; align-content:start;">
+    <div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:14mm; height:44mm; padding:0 6mm;">
+        <figure class="fit"><div class="iw"><img class="mul" src="img/p15_left_start.jpg" alt=""></div>
+          <figcaption style="font-style:normal;">Left<br>starting position.</figcaption></figure>
+        <figure class="fit"><div class="iw"><img class="mul" src="img/p15_right_start.jpg" alt=""></div>
+          <figcaption style="font-style:normal;">Right<br>starting position.</figcaption></figure>
+      </div>
+      <div style="margin-top:9mm;">
+        <p>For most zigzag sewing the needle starting position knob is set in the middle position, as in the picture.
+        With the knob set thus, the machine will sew zigzag stitches which extend equally on either side of the straight
+        stitching line.</p>
+        <p>With the starting position knob turned to the left, zigzag stitches extending to the right of the straight
+        stitching line are produced.</p>
+        <p>And if the knob is switched to the right, the zigzag stitches will, on the contrary, all go to the left of the
+        straight stitching line.</p>
+        <p>While the machine is running, the zigzag width can be altered precisely as desired. But if you want to alter
+        the bight when the machine is stopped, see that the needle is not in its down position in the fabric &mdash;
+        otherwise you may end up with a bent or broken needle.</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Overcasting edges</h3>
+      <p>Machine overcasting done with the Husqvarna Automatic (Fig. 25) looks better and is actually stronger than when
+      done by hand. You can do it so much quicker, too.</p>
+      <p>Use the regular presser foot and set the zigzag width control at 3 or 4. For the stitch length, setting at 2 or
+      3 is usually about right. If the fabric is very loosely woven, however, you should increase both the bight setting
+      and the stitch length to 3&frac12; or 4. If in doubt, test the settings on an odd scrap of material before starting
+      to sew.</p>
+      <p>The needle starting position knob should be set in the middle position.</p>
+      <p>Place the edge which is to be overcast under the presser foot so that the needle just clears the material with
+      each right-hand stroke.</p>
+      <figure class="fit" style="height:40mm; margin-top:4mm;"><div class="iw"><img src="img/fig25.jpg" alt=""></div><figcaption>Fig. 25.</figcaption></figure>
+      <img class="mul" src="img/p15_pincushion.jpg" style="width:38mm; display:block; margin:6mm 0 0 auto;" alt="">
+    </div>
+  </div>
+  <div class="folio r">15</div>
+</div>
+
+<!-- ============ PAGE 16 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 52mm 1fr; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Using the zigzag to sew<br>buttonholes</h3>
+      <p class="it flush" style="margin-bottom:1.5mm;">Set up the machine like this:</p>
+      <ol>
+        <li>Exchange the regular presser foot for the buttonhole foot (S 15428, inside front cover).</li>
+        <li>Switch the knob (16, Fig. 1) controlling the needle starting position to the left.</li>
+        <li>Try to get a suitable stitch length by switching the knob (20, Fig. 1) to 0.2&mdash;0.3.</li>
+        <li>Set the zigzag width control (24, Fig. 1) at 2.</li>
+        <li>Adjust the gauge on the buttonhole-foot (A, Fig. 26) to the length required for the buttonhole. The size of
+        the buttonhole will correspond to the distance from the needle to the gauge. (Make buttonhole about 3/16 to 1/4
+        in. longer than size of button.)</li>
+        <li>Loosen the tension of the upper thread by turning the tension regulator knob (11, Fig. 1) to the next lower
+        figure. This will cause the upper and lower threads to lock at the underside of the fabric. Check to see whether
+        you get a good looking stitch by sewing on a scrap of material.</li>
+      </ol>
+    </div>
+    <div>
+      <img class="mul" src="img/p16_buttonhole_emblem.jpg" style="width:30mm; display:block; margin:2mm auto 6mm;" alt="">
+      <figure class="fit" style="height:42mm;"><div class="iw"><img src="img/fig26.jpg" alt=""></div><figcaption>Fig. 26.</figcaption></figure>
+      <figure class="fit" style="height:38mm; margin-top:6mm;"><div class="iw"><img src="img/fig26a.jpg" alt=""></div><figcaption>Fig. 26a.</figcaption></figure>
+    </div>
+    <div style="position:relative; padding-right:11mm;">
+      <img class="mul" src="img/p16_sample_a.jpg" style="position:absolute; right:-1mm; top:12mm; width:8mm;" alt="a">
+      <img class="mul" src="img/p16_sample_b.jpg" style="position:absolute; right:-1mm; top:56mm; width:8mm;" alt="b">
+      <img class="mul" src="img/p16_sample_c.jpg" style="position:absolute; right:-1mm; top:92mm; width:8mm;" alt="c">
+      <p class="it flush" style="margin-bottom:1.5mm;">Then, to sew the buttonholes:</p>
+      <ol>
+        <li>Mark off the length of the buttonhole on the fabric.</li>
+        <li>Place one end of the buttonhole marking under the needle, with the rest facing towards you. Lower the presser
+        foot and start sewing. Stop when the first stitch reaches the gauge (A, Fig. 26).</li>
+        <li>See that the needle is in the material, and in its right-hand position. The part you have sewn should now
+        look like (a).</li>
+        <li>Raise the presser foot and turn the work round the needle. The buttonhole will now look like (b).</li>
+        <li>Lower the presser foot and raise the needle.</li>
+        <li>Set the zigzag width control (24, Fig. 1) at 3&frac12;, drop the feed dog by turning the knob (25, Fig. 1)
+        and sew three or four stitches on top of each other to form the first closing bar. Stop the machine with the
+        needle raised. The half-finished buttonhole will appear as in (c).</li>
+        <li>While the needle is still raised, press in the stop (Fig. 26 a) and turn the control to the right. The stitch
+        width will then be automatically stopped at 3/32&Prime; (2 mm). Then sew the second line of stitches, stopping
+        the machine when the needle is in its lefthand position. The buttonhole, almost finished, now looks like (d).</li>
+      </ol>
+    </div>
+  </div>
+  <div class="folio l">16</div>
+</div>
+
+<!-- ============ PAGE 17 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap:7mm; height:78mm; align-content:start;">
+    <div style="position:relative; padding-left:9mm;">
+      <img class="mul" src="img/p17_sample_d.jpg" style="position:absolute; left:-1mm; top:1mm; width:7mm;" alt="d">
+      <img class="mul" src="img/p17_sample_e.jpg" style="position:absolute; left:-1mm; top:34mm; width:7mm;" alt="e">
+      <ol start="8">
+        <li>Turn the control to the left, setting at 4. Make the second closing bar by sewing three or four stitches on
+        top of each other as before &mdash; and you have a finished buttonhole as in (e).</li>
+        <li>Lock the threads by moving the width control to 0. Move the stop (See 23, Fig. 1) backwards, and sew a few
+        stitches. (Remember to keep the needle raised when you alter the bight settings.)</li>
+        <li>Carefully cut the material between the two rows of stitches with the buttonhole cutter (S 15399, inside front
+        cover) which is included among the attachments (Fig. 27).</li>
+      </ol>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Corded buttonholes</h3>
+      <p>In soft woollens, and garments in which the buttonholes are particularly subject to wear, it may be wise to sew
+      corded buttonholes (Fig. 28).</p>
+      <p>A corded buttonhole is made in exactly the same way as an ordinary buttonhole, except that a gimp is sewn in as
+      well. It is best to start from within the garment and work toward the edge, so that the gimp goes round that end of
+      the buttonhole which is most subject to stress.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Machine sews on buttons too</h3>
+      <p>Fit the button sewing foot (S 15237 inside front cover) on the presser bar and drop the feed dog by turning the
+      knob (25, Fig. 1). Switch the needle position knob (16, Fig. 1) to the left starting position, and set the zigzag
+      width control (24, Fig. 1) at 3.</p>
+      <p>Place the work under the button foot so that two of the holes in the button come under the needle opening in the
+      foot. Slowly turn handwheel to check whether the needle passes through the centre of each hole on its left and
+      right-hand strokes. If necessary, move the button or alter the bight setting. Sew on the button with 5 or 6
+      stitches, and lock the threads by sewing a few stitches into the same hole (making sure the needle is up before you
+      move the bight setting to 0). When attaching four-hole buttons, first sew two holes and then move the work to the
+      next pair of holes. (Fig. 29.)</p>
+    </div>
+  </div>
+  <div class="footrow" style="grid-template-columns: 1fr 1fr 1fr; height:48mm;">
+    <figure class="fit"><div class="iw"><img src="img/fig27.jpg" alt=""></div><figcaption>Fig. 27.</figcaption></figure>
+    <figure class="fit"><div class="iw"><img src="img/fig28.jpg" alt=""></div><figcaption>Fig. 28.</figcaption></figure>
+    <figure class="fit"><div class="iw"><img src="img/fig29.jpg" alt=""></div><figcaption>Fig. 29.</figcaption></figure>
+  </div>
+  <div class="folio r">17</div>
+</div>
+
+<!-- ============ PAGE 18 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 52mm 1fr 58mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:38mm;"><div class="iw top"><img src="img/fig29a.jpg" alt=""></div><figcaption>Fig. 29a.</figcaption></figure>
+      <h3 style="margin-top:6mm;">Making bar tacks</h3>
+      <p>Fig. 30 shows how you can secure pocket openings by sewing bar tacks across the ends. The procedure is this:</p>
+      <p>Set the zigzag width control at 1&frac12;, and the stitch length almost at 0. Then sew bar tacks, about 1/4 in.
+      (6 mm) long, across the seam at either end of the pocket.</p>
+      <p>Lock the threads by straight stitching a couple of times &mdash; with the width control at 0 and the feed dog
+      lowered.</p>
+      <figure class="fit" style="height:34mm; margin-top:5mm;"><div class="iw"><img src="img/fig30.jpg" alt=""></div><figcaption>Fig. 30.</figcaption></figure>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Hemstitching</h3>
+      <p>The hemstitcher (Part S 15367) produces a hemstitch-like effect through butt seaming the pieces of material and
+      subsequent finishing, according to these instructions:</p>
+      <ol>
+        <li>Place the two pieces of fabric to be hemstitched with their right sides facing one another.</li>
+        <li>Insert between them the hemstitcher, close to the edge to be hemstitched, so that its open end is at the spot
+        where the hemstitching is to begin. The rounded (looped) end of the hemstitcher points towards you, with the
+        bulge to the right.</li>
+        <li>Adjust machine to sew a stitch length suitable to the type of material to be hemstitched. (Shorter stitches
+        for thin fabrics, longer stitches for coarsely woven material.) Slightly loosen thread tension.</li>
+        <li>Now enter two pieces of material with hemstitcher between them under presser foot, making sure that the
+        needle makes a straight stitch between the two arms of the hemstitcher. Sew along its length and move the
+        hemstitcher towards you as the needle gets close to the looped end. The inserted hemstitcher keeps the two pieces
+        of material apart while they are being stitched. The hemstitch will appear when they are spread out. After
+        completion of the hemstitched seam, readjust machine for normal sewing tension and stitch along both edges of the
+        hemstitch. Trim off excess material near hemstitched seam.</li>
+      </ol>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Zigzag hemming</h3>
+      <p>It is especially useful to be able to sew zigzag stitches when hemming garments of stretchable material, such as
+      knitwear, tricot, etc.</p>
+      <p>You do this with the hemmer foot, in the same way as straight hemming (page 13), except that a zigzag stitch of
+      suitable width is used (Fig. 31).</p>
+      <p>A decorative effect can be obtained, on children&rsquo;s clothes, for instance, by sewing the hem with a thread
+      of contrasting colour.</p>
+      <figure class="fit" style="height:38mm; margin-top:22mm;"><div class="iw"><img src="img/fig31.jpg" alt=""></div><figcaption>Fig. 31.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio l">18</div>
+</div>
+
+<!-- ============ PAGE 19 ============ -->
+<div class="page">
+  <div class="vrule" style="left:58mm; top:0; height:60mm; bottom:auto;"></div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 68mm; column-gap:8mm; height:64mm; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Rolled edges</h3>
+      <p>To sew rolled edges (Fig. 32), use the narrow hemmer foot (S 15236, inside front cover).</p>
+      <p>Set the width control at 3 and the stitch length at 2 and insert the edge of the fabric in the hemmer in the
+      manner described for making narrow hems (page 13).</p>
+      <p>See that the stitch straddles the hem &mdash; in other words, the needle should enter alternatively along the
+      left and right edges. The tension of the upper thread should be rather tight.</p>
+      <p>Rolled edges look well on thin silk scarves, insertions, ruffles on curtains, etc. You can learn very quickly to
+      sew the most beautiful rolled edges on the machine.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Shell stitching</h3>
+      <p>The most appropriate application for shell stitching (Fig. 33) is when hemming light, soft materials like
+      tricot, cr&ecirc;pe de chine, etc. When thus used, it gives the impression of French hand hemming.</p>
+      <p>To do this you have to use the special hemmer foot, No. S 15240. Otherwise the procedure is the same as when
+      sewing rolled edges, except that the settings for the zigzag width and the stitch length should both be increased
+      to 4. Tension on the upper thread should be extra tight, so as to make each shell stand out prominently.</p>
+    </div>
+    <img class="mul" src="img/p19_fashion.jpg" style="width:100%; align-self:start; margin-top:-4mm;" alt="">
+  </div>
+  <div class="footrow" style="grid-template-columns: 1fr 1fr; height:54mm; column-gap:14mm;">
+    <figure class="fit"><div class="iw"><img src="img/fig32.jpg" alt=""></div><figcaption>Fig. 32.</figcaption></figure>
+    <figure class="fit"><div class="iw"><img src="img/fig33.jpg" alt=""></div><figcaption>Fig. 33.</figcaption></figure>
+  </div>
+  <div class="folio r">19</div>
+</div>
+
+<!-- ============ PAGE 20 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 62mm; column-gap:7mm; height:100%; align-content:start;">
+    <div style="grid-column: span 2;">
+      <h3 style="margin-top:0;">Blindstitching of hems</h3>
+      <p>Perhaps you&rsquo;ve just finished a dress and have only the hem left to complete. You thinks, maybe, that you
+      ought to do this by hand so that it shows as little as possible? Well you don&rsquo;t have to, you know! Use your
+      Husqvarna Automatic. If you fit a special blindstitching attachment plate S 15818 (Fig. 34) and pattern cam set D,
+      you can sew a hem which is almost completely invisible on the right side. Both these attachments are available, at
+      extra cost. Do it like this:</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:7mm;">
+        <ol>
+          <li>Insert pattern cam set D and fix blindstitching plate with presser foot screw (2, Fig. 1). The plate must
+          be attached so that it covers the left part of the standard presser foot (Fig. 34).</li>
+          <li>Set the needle position control (16, Fig. 1) to the right and the pattern selector (17, Fig. 1) at 4. The
+          stitch length will depend on the distance you want to have between the invisible stitches, normal position
+          about 2.5 on the stitch length regulator knob. Stitch width will be at position 2.5 to 3, depending on the
+          thickness of the material.</li>
+          <li>Fold a hem and then turn it with the right sides of the material facing one upon the other. Allow the edge
+          of the hem to project about 1/8 in. (3 mm) beyond the fold (see Fig. 34).</li>
+        </ol>
+        <ol start="4">
+          <li>Place the work so that the blindstitching-plate follows the folded edge. The straight stitches will then
+          fall in the edge of the hem and the zigzag stitches in the edge of the fold. See that the needle barely sews
+          into the fold &mdash; catching only one or two threads; this is essential if the stitching is to be made as
+          invisible as possible. Finish off by straightening out the hem and pressing as usual.</li>
+          <li>You can also use zigzag sewing (stitch length 4, stitch width 2.5 to 2.75).</li>
+        </ol>
+      </div>
+      <figure class="fit" style="height:31mm; width:78mm; margin-top:3mm;"><div class="iw"><img src="img/fig34.jpg" alt=""></div><figcaption>Fig. 34.</figcaption></figure>
+    </div>
+    <div>
+      <figure class="fit" style="height:34mm;"><div class="iw top"><img src="img/fig35.jpg" alt=""></div><figcaption>Fig. 35.</figcaption></figure>
+      <h3>Picot</h3>
+      <p>A picot edge is produced by sewing small zigzag stitches over a folded edge. This is an attractive way of
+      finishing off ruffles, flounces, insertions, etc. (Fig. 35).</p>
+      <figure class="fit" style="height:34mm; margin-top:6mm;"><div class="iw"><img src="img/fig36.jpg" alt=""></div><figcaption>Fig. 36.</figcaption></figure>
+      <h3>Fringing</h3>
+      <p>Whenever you want to prevent threads from unravelling &mdash; in tablecloths, place mats, scarves, etc. &mdash;
+      fringe the edge with zigzag stitching. You can either do this with thread in the same colour as the material, or
+      use a contrasting colour as a decorative effect (Fig. 36).</p>
+    </div>
+  </div>
+  <div class="folio l">20</div>
+</div>
+
+<!-- ============ PAGE 21 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 88mm; column-gap:10mm; height:100%; align-items:center;">
+    <div>
+      <h3 style="font-size:10.5pt; margin-top:0;">Key helps you set the machine for various patterns</h3>
+      <p>By using the plastic pattern key that comes with each machine, you can easily get an idea of the patterns which
+      can be sewn with one or two needles. At the same time, it will also give you information on how to set the controls
+      for the stitch pattern you have chosen. You can produce many of your own variations on these basic patterns just by
+      altering stitch lengths and stitch widths.</p>
+      <p>The stitch length on the pattern key refers to twin needle with 5/64 in. (2 mm) needle distance which is
+      supplied with the machine as standard.</p>
+    </div>
+    <img src="img/p21_pattern_key.jpg" style="width:100%;" alt="The plastic pattern key">
+  </div>
+  <div class="folio r">21</div>
+</div>
+
+<!-- ============ PAGE 22 (colour plate, reconstructed from the Norwegian edition) ============ -->
+<div class="page plate" style="padding:0;">
+  <div style="position:relative; width:100%; height:100%;">
+    <img src="img/p22_ribbon_red.jpg" style="position:absolute; left:16mm; top:0; height:100%; width:18mm; object-fit:cover;" alt="">
+    <img src="img/p22_ribbon_green.jpg" style="position:absolute; left:46mm; top:0; height:100%; width:18mm; object-fit:cover;" alt="">
+    <div style="position:absolute; left:72mm; top:8mm; font-size:9pt; line-height:1.35;">Gathering and rolled edges on<br>frills and flounces.</div>
+    <img class="mul" src="img/p22_pram.jpg" style="position:absolute; left:110mm; top:3mm; width:31mm;" alt="">
+    <div style="position:absolute; left:148mm; top:8mm; font-size:9pt;">Pattern stitching on children&rsquo;s clothes.</div>
+    <div style="position:absolute; left:76mm; top:66mm; width:70mm; font-size:8.6pt; line-height:1.35; text-align:center;">
+      Here follow some examples of effective patterns, sewn with one needle as well as two, together with some
+      colourful suggestions for garments on which decorative pattern stitching has been conjured up with the greatest of
+      ease on the Husqvarna Automatic.
+    </div>
+    <img class="mul" src="img/p22_napkins.jpg" style="position:absolute; left:69mm; top:88mm; width:75mm;" alt="">
+    <div style="position:absolute; left:73mm; bottom:5mm; font-size:9pt;">Pattern stitching on napkin cases.</div>
+    <img class="mul" src="img/p22_child.jpg" style="position:absolute; right:6mm; top:24mm; width:56mm;" alt="">
+  </div>
+</div>
+
+<!-- ============ PAGE 23 (colour plate, reconstructed from the Norwegian edition) ============ -->
+<div class="page plate" style="padding:0;">
+  <div style="position:relative; width:100%; height:100%;">
+    <div style="position:absolute; left:13mm; top:10mm; font-size:9pt; line-height:1.35;">Appliques<br>on a bedspread.</div>
+    <img class="mul" src="img/p23_bedspread.jpg" style="position:absolute; left:4mm; top:14mm; width:114mm;" alt="">
+    <div style="position:absolute; left:0; top:92mm; width:134mm; height:6mm; background:#F5D64E;"></div>
+    <img class="mul" src="img/p23_blouse.jpg" style="position:absolute; left:23mm; top:72mm; width:58mm;" alt="">
+    <div style="position:absolute; left:16mm; bottom:10mm; font-size:9pt; line-height:1.35;">Pattern stitching<br>and buttonholes on blouses.</div>
+    <img class="mul" src="img/p23_dress.jpg" style="position:absolute; right:4mm; top:0; height:100%; width:auto;" alt="">
+    <div style="position:absolute; left:116mm; top:60mm; font-size:9pt; line-height:1.35;">Borders of<br>pattern stitching on<br>finer dresses.</div>
+  </div>
+</div>
+
+<!-- ============ PAGE 24 (colour plate) ============ -->
+<div class="page plate">
+  <div style="display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:6mm 10mm; height:100%;">
+    <figure class="fit">
+      <div class="iw"><img class="mul" src="img/p24_napkin.jpg" alt=""></div>
+      <figcaption style="font-style:normal;">Monogramming and sewing hems on towels and napkins.</figcaption>
+    </figure>
+    <figure class="fit">
+      <div class="iw"><img src="img/p24_towels.jpg" alt=""></div>
+      <figcaption style="font-style:normal;">Corded monograms on terry cloth towels.</figcaption>
+    </figure>
+    <figure class="fit">
+      <div class="iw"><img src="img/p24_hanky.jpg" alt=""></div>
+      <figcaption style="font-style:normal;">Monogramming handkerchiefs with narrow zigzag stitches.</figcaption>
+    </figure>
+    <figure class="fit">
+      <div class="iw" style="gap:5mm;">
+        <img src="img/p24_placemat_a.jpg" style="max-width:48%;" alt="">
+        <img src="img/p24_placemat_b.jpg" style="max-width:48%;" alt="">
+      </div>
+      <figcaption style="font-style:normal;">Hemstitching and embroidering tablecloths and place mats.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ============ PAGE 25 ============ -->
+<div class="page sided">
+  <div class="side" style="width:47mm; padding:9mm 5mm;">
+    <div class="head left" style="font-size:13pt; line-height:1.55;">Select a<br>pattern&hellip;<br>and the<br>HUSQVARNA<br>AUTOMATIC<br>sews it<br>for you!</div>
+    <div class="art"><img class="mul" src="img/p25_girl.jpg" style="width:100%;" alt=""></div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:8mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Decorative stitches produced<br>automatically</h3>
+      <p>The amazing variety of continuous embroidery patterns which the Husqvarna Automatic can turn out completely
+      &mdash; automatically &mdash; means that you have here a creative tool, which enables you to do intricate work,
+      whether you are skilled or not. It won&rsquo;t take you long, either, to find applications for the skills the
+      machine literally puts at your fingertips: Baby&rsquo;s dress will be lovelier still with a pretty border on the
+      collar and yoke &hellip; those place mats with decorative stitching will look as if they were hand embroidered.</p>
+      <figure class="fit" style="height:32mm; margin:4mm 0;"><div class="iw"><img src="img/fig37.jpg" alt=""></div><figcaption>Fig. 37.</figcaption></figure>
+      <h3>Pattern selector</h3>
+      <p>To set the machine for the zigzag pattern you wish to sew, there is a numbered scale (A, Fig. 37) with a pointer
+      (B, Fig. 37) on the left-hand side of the needle position knob. The numbers on the pattern key on page 21
+      correspond to the numbers on this dial. If you want to do ordinary zigzag stitching &mdash; for overcasting edges,
+      for instance &mdash; set the pattern selector at 5. This applies to whichever cam set you happen to have in the
+      machine.</p>
+    </div>
+    <div>
+      <figure class="fit" style="height:38mm;"><div class="iw top"><img src="img/fig38.jpg" alt=""></div><figcaption>Fig. 38.</figcaption></figure>
+      <h3 style="margin-top:5mm;">Cam sets produce patterns</h3>
+      <p>When the machine is sewing decorative stitches automatically, the movements of the needle are controlled by
+      cams, which are built together in one solid piece to form a set. If you open the door at the back of the machine
+      (39, Fig. 2) you will find a set installed. Use pattern presser foot S 15801 (inside front cover), except while
+      doing pattern stitching in very thin material. In that case use the standard presser foot S 15229. The sets which
+      come with the machine, are marked A, B, C etc, and the various patterns they produce will be found on the chart in
+      the centre spread.</p>
+      <p>If you want further patterns, more pattern cam sets can be supplied at extra cost through your Husqvarna dealer.
+      By altering the stitch length and the stitch width you can produce an infinite number of variations from these
+      basic patterns. The chart also shows decorative stitches made with twin needles; still further variations can be
+      obtained by using different coloured threads.</p>
+    </div>
+  </div>
+  <div class="folio l">25</div>
+</div>
+
+<!-- ============ PAGE 26 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 66mm; column-gap:10mm; height:100%; align-content:start;">
+    <div style="padding-right:8mm;">
+      <h3 style="margin-top:0;">Switching from one automatic pattern to another</h3>
+      <p>Whether you have the machine set for plain zigzag stitching, with pattern selector at 5, or for some decorative
+      pattern, a cam will always be engaged. Before you move the selector to another number, be sure to turn the stitch
+      width control (24, Fig. 1) to 0. But you need only do this if the machine is stopped &mdash; when it is running,
+      you can switch from one pattern to another just by moving the pattern selector and without bothering about the
+      width control.</p>
+      <h3 style="margin-top:12mm;">Cam sets are easily changed &hellip; like this:</h3>
+      <ol>
+        <li>Set the stitch width control at 0, as for straight stitching.</li>
+        <li>Set the pattern selector at 5.</li>
+        <li>Open the door at the back of the machine (Fig. 39).</li>
+        <li>Take hold of the cam set with the thumb and forefinger of your right hand, and push down the locking arm
+        (A, Fig. 40) into the vertical position. Pull out the cam set.</li>
+        <li>Holding the new cam set in the same way, push it into the shaft with its code letter uppermost so that the
+        locking arm (A, Fig. 40) will fall into the groove (Fig. 38).</li>
+      </ol>
+    </div>
+    <div>
+      <figure class="fit" style="height:52mm;"><div class="iw top"><img src="img/fig39.jpg" alt=""></div><figcaption>Fig. 39.</figcaption></figure>
+      <figure class="fit" style="height:52mm; margin-top:8mm;"><div class="iw"><img src="img/fig40.jpg" alt=""></div><figcaption>Fig. 40.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">26</div>
+</div>
+
+<!-- ============ PAGE 27 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:10mm; height:100%; align-content:start;">
+    <div>
+      <div class="notebox" style="text-align:center;">
+        <span class="n">N O T E.</span>
+        Never start the machine unless you are<br>sure a pattern cam set has been inserted!
+      </div>
+      <h3 style="margin-top:7mm;">Basic patterns</h3>
+      <p>Basic pattern of cam sets A, B and C can be varied by altering the settings of the stitch width and stitch
+      length controls, see the pattern key.</p>
+      <div style="margin-top:10mm;">
+        <div style="font-style:italic; font-size:8.4pt; margin-bottom:1.2mm;">Pattern cam set A. Basic pattern.</div>
+        <table class="rule" style="font-size:7pt;">
+          <tr><td>Pattern selector</td><td style="text-align:center;">1</td><td style="text-align:center;">2</td><td style="text-align:center;">3</td><td style="text-align:center;">4</td><td style="text-align:center;">5</td></tr>
+          <tr><td>Stitch width</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td></tr>
+          <tr><td>Stitch length</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">1</td><td style="text-align:center;">0.3</td><td style="text-align:center;">1.5</td></tr>
+        </table>
+        <img src="img/p27_samples_A.jpg" style="height:34mm; width:auto; display:block; margin:2mm auto 0;" alt="">
+      </div>
+    </div>
+    <div>
+      <div style="font-style:italic; font-size:8.4pt; margin-bottom:1.2mm;">Pattern cam set B. Basic pattern.</div>
+      <table class="rule" style="font-size:7pt;">
+        <tr><td>Pattern selector</td><td style="text-align:center;">1</td><td style="text-align:center;">2</td><td style="text-align:center;">3</td><td style="text-align:center;">4</td><td style="text-align:center;">5</td></tr>
+        <tr><td>Stitch width</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td></tr>
+        <tr><td>Stitch length</td><td style="text-align:center;">1.5</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">1.5</td></tr>
+      </table>
+      <img src="img/p27_samples_B.jpg" style="height:32mm; width:auto; display:block; margin:2mm auto 0;" alt="">
+      <div style="font-style:italic; font-size:8.4pt; margin:6mm 0 1.2mm;">Pattern cam set C. Basic pattern.</div>
+      <table class="rule" style="font-size:7pt;">
+        <tr><td>Pattern selector</td><td style="text-align:center;">1</td><td style="text-align:center;">2</td><td style="text-align:center;">3</td><td style="text-align:center;">4</td><td style="text-align:center;">5</td></tr>
+        <tr><td>Stitch width</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td><td style="text-align:center;">4</td></tr>
+        <tr><td>Stitch length</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">0.3</td><td style="text-align:center;">1.5</td></tr>
+      </table>
+      <img src="img/p27_samples_C.jpg" style="height:32mm; width:auto; display:block; margin:2mm auto 0;" alt="">
+    </div>
+  </div>
+  <div class="folio r">27</div>
+</div>
+
+<!-- ============ PAGE 28 ============ -->
+<div class="page sided">
+  <div class="side" style="width:47mm; padding:6mm 4mm;">
+    <img class="mul" src="img/p28_floral_top.jpg" style="width:86%; display:block;" alt="">
+    <div class="head" style="font-size:13pt; line-height:1.6; margin-top:2mm;">Give your<br>imagination<br>a free<br>rein!</div>
+    <img class="mul" src="img/p28_floral_left.jpg" style="width:38%; display:block; margin-top:2mm;" alt="">
+  </div>
+  <div style="height:100%;">
+    <div class="banner" style="font-size:12.5pt; font-weight:500; margin-bottom:5mm;">All sorts of possibilities for embroidering on the machine</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:8mm;">
+      <div style="border-right:.3mm solid #6a6a62; padding-right:7mm;">
+        <h3 style="margin-top:0;">Feather stitch</h3>
+        <p>This beautiful type of embroidery looks much more difficult than it actually is. To do it you use the regular
+        presser foot and set the stitch width at 4. Stretch the fabric over an embroidery hoop (Fig. 41).</p>
+        <p>Run the machine at high speed, moving the hoop with the fabric stretched over it backwards and forwards to
+        make the embroidery pattern.</p>
+        <p>Feather stitching can also be done with a twin needle and threads of different colours &mdash; with striking
+        decorative effect. Feather stitching is suitable for embroidering place mats, aprons, bed jackets, blouses,
+        etc.</p>
+      </div>
+      <div>
+        <h3 style="margin-top:0;">Embroidery with zigzag stitching</h3>
+        <p>is another type of embroidery which is easily carried out (Fig. 42). Start by outlining the contour of the
+        pattern with fine zigzag stitches. Then remove the presser foot, and, with the feed dog lowered, cover the areas
+        which are to be filled in, with rows of extended stitches all going in the same direction. To do this you move
+        the hoop with the work stretched on it backvards and forwards. The zigzag width control&rsquo;s set at 1.5.
+        Embroidery done in this way can be very goodlooking &mdash; producing somewhat the effect of applique.</p>
+      </div>
+    </div>
+    <div class="footrow" style="left:62mm; right:26mm; grid-template-columns: 1fr 1fr; height:56mm; column-gap:10mm;">
+      <figure class="fit"><div class="iw"><img src="img/fig41.jpg" alt=""></div><figcaption>Fig. 41.</figcaption></figure>
+      <figure class="fit"><div class="iw"><img src="img/fig42.jpg" alt=""></div><figcaption>Fig. 42.</figcaption></figure>
+    </div>
+    <img class="mul" src="img/p28_flowers_right.jpg" style="position:absolute; right:4mm; bottom:14mm; width:20mm;" alt="">
+  </div>
+  <div class="folio l">28</div>
+</div>
+
+<!-- ============ PAGE 29 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr 58mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Embroidery with solid<br>raised stitching</h3>
+      <p>Remove the presser foot and lower the feed dog. Thread the machine with an embroidery thread intended for sewing
+      machines (silk or mercerized thread). Stretch the fabric with the outline design over an embroidery hoop. First sew
+      a stitch or two by turning the hand wheel to bring up the lower thread; then holding both the upper and lower
+      threads lock them again by sewing a couple of stitches. Run around the contours of the design with fine stitches
+      (Fig. 43).</p>
+      <p>Set the width control as you want it &mdash; either at 0 for straight stitching or 1 to 3 for zigzagging. Start
+      filling in the design with rows of stitches by guiding the hoop slowly backwards and forwards under the needle. You
+      will probably find it helpful to use the machine&rsquo;s slow speed (see page 9). After an even padding has been
+      obtained, finish off with long straight stitches exactly as in hand work.</p>
+      <figure class="fit" style="height:44mm; margin-top:6mm;"><div class="iw"><img src="img/fig43.jpg" alt=""></div><figcaption>Fig. 43.</figcaption></figure>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Eyelet embroidery attachment</h3>
+      <p>With the aid of the eyelet embroidery attachment the Husqvarna Automatic permits the sewing of eyelets for
+      embroidery, belts or lacing (Fig. 45).</p>
+      <p>Eyelets can be made on nearly all types of fabric, those tightly woven and not excessively heavy being
+      preferable.</p>
+      <p>The thread for sewing eyelets should be selected corresponding to the kind of material used.</p>
+      <p>For sewing eyelets prepare machine and work as follows:</p>
+      <ol class="alpha">
+        <li>Remove presser foot from presser foot bar.</li>
+        <li>Select eyelet embroidery cover plate with center stud matching the desired size of eyelet (1/8&Prime;,
+        3/16&Prime; or 7/32&Prime; diameter, fig. 44) and place it on the needle plate.</li>
+        <li>Set needle position control (16, Fig. 1) to &rdquo;left&rdquo; needle position. Turn handwheel of machine
+        towards you, making sure that needle passes through center of stud in cover plate.</li>
+        <li>Adjust stitch width control (24, Fig. 1) to marking &rdquo;3&rdquo; on dial. Needle, on right hand stitch,
+        should enter material well past the edge of hole.</li>
+        <li>Stretch material tightly over an embroidery hoop and cut holes with scissors, a bodkin or stiletto in
+        material where marked. Holes should be made small enough to fit snugly over the center stud of the respective
+        cover plates, as this will produce better looking and more uniform eyelet embroidery.</li>
+      </ol>
+    </div>
+    <div>
+      <figure class="fit" style="height:40mm;"><div class="iw top"><img src="img/fig44.jpg" alt=""></div><figcaption>Fig. 44.</figcaption></figure>
+      <figure class="fit" style="height:44mm; margin-top:26mm;"><div class="iw"><img src="img/fig45.jpg" alt=""></div><figcaption>Fig. 45.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">29</div>
+</div>
+
+<!-- ============ PAGE 30 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 46mm 1fr 34mm; column-gap:7mm; height:78mm; align-content:start;">
+    <div>
+      <ol class="alpha" start="6">
+        <li>Adjust thread tensions by slightly loosening the tension of the needle (upper) thread. Increase somewhat the
+        tension of the bobbin (lower) thread to obtain a desirable appearance of the eyelet embroidery.</li>
+        <li>Place the hole in material over center stud on cover plate. Turn hand wheel towards you to pick up the bobbin
+        thread, hold it and the needle thread down onto the cloth when making the first few stitches.</li>
+        <li>Start sewing, turning the embroidery hoop two to three times slowly and uniformly clockwise around the center
+        stud in the cover plate. To lock the threads of the embroidered eyelet, return stitch width control to
+        &rdquo;0&rdquo; and sew once around with straight stitches.</li>
+        <li>Even out the complete eyelet by turning a bodkin (stiletto) in it a few times.</li>
+      </ol>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Sewing with twin and triple needles</h3>
+      <p>With twin and triple needles (Fig. 46) you can sew a great variety of fancy seams &mdash; gathered and raised
+      &mdash; which can be most effective on dresses, blouses, tablecloths, place mats, curtains and so on.</p>
+      <p>A size 14 (90) twin needle, with a spread of 5/64 in., is provided with the machine. If you want needles with a
+      different spread (distance between the needles), you can obtain them from any Husqvarna dealer.</p>
+      <p>For heavier fabrics you need a greater distance between the needles to get the right effect.</p>
+      <div class="notebox" style="margin-top:4mm; font-family:'Garamond EB',serif; font-weight:400; font-size:8pt;">
+        <div style="font-family:'Jost',sans-serif; font-weight:600; font-size:8.6pt; margin-bottom:1.5mm;">Zigzag Sewing with twin and triple needles</div>
+        <div style="text-align:justify; line-height:1.25;">When sewing with twin and triple needles the maximum zigzag
+        width is automatically decreased, depending on the increased needle distance. It is important therefore that the
+        following maximum widths are not exceeded, otherwise a broken needle may result.</div>
+        <table style="margin-top:2mm; font-size:7.6pt; line-height:1.3;">
+          <tr><td style="width:14%;">Twin</td><td style="width:42%;">1/16 in. 1,6 mm needle spread</td><td style="width:26%;">max. zigzag width</td><td>1/8 in. 3 mm</td></tr>
+          <tr><td>Twin</td><td>5/64 in. 2 mm</td><td style="text-align:center;">&mdash;</td><td>3/32 in. 2,5 mm</td></tr>
+          <tr><td>Twin</td><td>1/8 in. 3 mm</td><td style="text-align:center;">&mdash;</td><td>1/16 in. 1,5 mm</td></tr>
+          <tr><td>Twin</td><td>5/32 in. 4 mm</td><td style="text-align:center;">&mdash;</td><td>0 in. 0 mm</td></tr>
+          <tr><td>Triple</td><td>3/32 in. 2,5 mm</td><td style="text-align:center;">&mdash;</td><td>5/64 in. 2 mm</td></tr>
+          <tr><td>Triple</td><td>7/64 in. 3 mm</td><td style="text-align:center;">&mdash;</td><td>1/16 in. 1,5 mm</td></tr>
+        </table>
+      </div>
+    </div>
+    <figure class="fit" style="height:70mm;"><div class="iw top"><img class="mul" src="img/fig46.jpg" alt=""></div><figcaption>Fig. 46.</figcaption></figure>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:8mm; margin-top:7mm;">
+    <div>
+      <h3 style="margin-top:0;">Before you start sewing with<br>twin and triple needles &hellip;</h3>
+      <p>Before actually sewing, it is best to experiment a little on a scrap piece of material to make sure you get
+      seams of the desired breadth and width. The kind of seam produced depends largely on the material. Check also to
+      see whether the weave permits sewing seams that cross each other &mdash; as not all fabrics allow this. With some
+      materials it is impossible to sew a raised seam on the bias.</p>
+      <p>Use the regular presser foot and see that the needle starting control is in its centre position.</p>
+    </div>
+    <div style="padding-top:8.5mm;">
+      <p>With the twin needle supplied with the machine you can do straight stitching and zigzag up to dial setting 3.</p>
+      <p class="it">Make absolutely sure that the needles clear the opening in the presser foot. Otherwise you may find
+      yourself with a broken needle.</p>
+      <p>If you want an even higher raised seam than you can obtain with the regular presser foot, use the special
+      twin-needle foot (S 15419, inside front cover). This has three grooves for the raised seams to run in. You can sew
+      both straight and curved seams with either presser foot (Fig. 47, 48).</p>
+    </div>
+  </div>
+  <div class="folio l">30</div>
+</div>
+
+<!-- ============ PAGE 31 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 56mm 1fr 56mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:40mm;"><div class="iw top"><img src="img/fig47.jpg" alt=""></div><figcaption>Fig. 47.</figcaption></figure>
+      <figure class="fit" style="height:40mm; margin-top:8mm;"><div class="iw"><img src="img/fig48.jpg" alt=""></div><figcaption>Fig. 48.</figcaption></figure>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Raised seams with cord insertion</h3>
+      <p>To sew these you need the twin-needle presser foot (S 15419) and the raised seam attachment (S 15427, inside
+      front cover). Fit the raised seam attachment in the holes in the throat plate and insert the cord as shown in
+      Fig. 49. When you sew, the cord will be sewn in, forming a firm raised seam (Fig. 50).</p>
+      <h3>Parallel twin-needle seams</h3>
+      <p>There are several ways of guiding the work when sewing parallel raised seams (Fig. 47, 50). You can either let a
+      previous one run in one of the grooves on the bottom of the presser foot, or let it run alongside the edge of the
+      foot &mdash; depending on the distance required between the seams. For sewing widely spaced seams, the edge guide
+      is useful (see page 10).</p>
+      <h3>Sewing corners and angles</h3>
+      <p>Leave the needle in the material and turn the work in the required direction. The needle bar should preferably
+      be on the way up, with only the points of the twin needle remaining in the material.</p>
+      <h3>Want to make a rug?</h3>
+      <p>Your Husqvarna Automatic comes from Sweden. So why not make a handsome, longpile Swedish rya rug &mdash; on the
+      machine?</p>
+      <p>This type of rug was not originally intended as a floor covering. Rya rugs were widely used in the Middle Ages
+      instead of animal furs on beds and later as decorative wall hangings. Today they are widely used in the
+      Scandinavian countries both as floor rugs and wall hangings, and the technique is often employed to decorate
+      pillows as well.</p>
+    </div>
+    <div>
+      <figure class="fit" style="height:40mm;"><div class="iw top"><img src="img/fig49.jpg" alt=""></div><figcaption>Fig. 49.</figcaption></figure>
+      <figure class="fit" style="height:40mm; margin-top:8mm;"><div class="iw"><img src="img/fig50.jpg" alt=""></div><figcaption>Fig. 50.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">31</div>
+</div>
+
+<!-- ============ PAGE 32 ============ -->
+<div class="page" style="padding-left:0;">
+  <div style="position:absolute; left:0; top:0; bottom:0; width:56mm; background:var(--green);"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 56mm 1fr; column-gap:8mm; height:100%;">
+    <div style="padding:6mm 5mm; display:flex; flex-direction:column; gap:6mm;">
+      <img class="mul" src="img/p32_interior.jpg" style="width:100%;" alt="">
+      <figure class="fit" style="flex:1 1 auto;"><div class="iw"><img src="img/fig51.jpg" alt=""></div><figcaption>Fig. 51.</figcaption></figure>
+    </div>
+    <div style="padding-right:22mm; position:relative;">
+      <img class="mul" src="img/p32_scissors.jpg" style="position:absolute; right:-6mm; top:0; width:56mm;" alt="">
+      <img class="mul" src="img/p32_yarn.jpg" style="position:absolute; right:-12mm; top:24mm; width:14mm;" alt="">
+      <div style="padding-top:12mm;">
+        <h3 style="margin-top:0;">This is how you sew a &rdquo;rya,&rdquo; rug &hellip;</h3>
+        <p>When making a rug on the Husqvarna Automatic a so-called weaver&rsquo;s reed is used in combination with the
+        regular presser foot (Fig. 51). This reed is a flat piece of steel with a long slot and a device for locking the
+        ends together. The machine stitches along the slot, fastening the wool loops to the rug base.</p>
+        <p>In addition to wool for the pile, you need No. 40 sewing thread in the same shade as the yarn, and 110 or 120
+        size needle. Get the thread tension tight and set for medium-length stitches.</p>
+        <p>As a base for pillows or wall hanging, canvas can be very effective, but for rugs a heavy jute weave is best.
+        Divide the base into 7/16 in. (11 mm) squares with pencil lines, leaving about 3/8 in. (9.5 mm) around the
+        edges.</p>
+        <p>Lock the ends of the reed and wind the yarn loosely around it, in close turns. If you wind too tightly, the
+        narrow tongue of the reed may come too close to the broad part, leaving insufficient space for the needle to
+        stitch in &mdash; and a bent or broken needle may result.</p>
+        <p>Push the yarn up towards the middle of the reed, lower the presser foot and sew along the slot to fasten the
+        loops to the base. Wind more yarn on the reed &mdash; changing colour as required by the pattern &mdash; and
+        stitch again. Cut the loops as you go along, without removing the work from the machine.</p>
+        <p>Open the lock and move the reed forward as you sew. As each row is completed, turn the work round and stitch
+        back again in order to fasten the loops extra firmly. Repeat the whole procedure row by row until the rug is
+        finished.</p>
+      </div>
+    </div>
+  </div>
+  <div class="folio l" style="left:6mm;">32</div>
+</div>
+
+<!-- ============ PAGE 33 ============ -->
+<div class="page" style="padding-top:0;">
+  <img class="mul" src="img/p33_lace_band.jpg" style="display:block; width:210mm; margin-left:-13mm;"
+       alt="Lace + Applique + Braiding + Soutache">
+  <div style="display:grid; grid-template-columns: 40mm 1fr 58mm; column-gap:8mm; margin-top:7mm;">
+    <div style="font-family:'Jost',sans-serif; font-weight:500; font-size:9pt; line-height:1.85; text-align:right;
+                border-right:.3mm solid #55554e; padding-right:5mm;">
+      Here are<br>directions for<br>sewing on lace,<br>appliques,<br>cording,<br>braiding,<br>soutache
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Attaching lace edging</h3>
+      <p>Set the stitch width and stitch length controls to produce a zigzag stitch suitable for the fabric to which the
+      lace is to be attached. Use a darning or embroidery thread which is intended for sewing machines &mdash; your
+      Husqvarna dealer has it.</p>
+      <p>Lace edging can be attached in various ways:</p>
+      <ol>
+        <li>Attach with zigzag stitches a short distance from the edge of the material and trim off the fabric close to
+        the seam.</li>
+        <li>After attaching with straight stitches a short distance from the edge, fold over the fabric along the seam
+        (on the wrong side, of course) and sew it down with small zigzag stitches over the straight stitching. Finish by
+        trimming away the superfluous material. This method makes a stronger joint, and is recommended when attaching
+        lace to loosely woven fabrics.</li>
+        <li>Place the edge of the lace close along the folded edge of the material and sew with zigzag stitches. Make
+        sure that the needle stitches alternately into the material and the lace (Fig. 52).</li>
+        <li>Attach to pillowcases and sheets by sewing with zigzag stitches to the hem.</li>
+      </ol>
+    </div>
+    <div>
+      <figure class="fit" style="height:40mm;"><div class="iw top"><img src="img/fig52.jpg" alt=""></div><figcaption>Fig. 52.</figcaption></figure>
+      <h3 style="margin-top:6mm;">Lace insertions</h3>
+      <p>Lovely lace insertions are easily sewn with zigzag stitching. Using a fine needle and thread &mdash; preferably
+      machine darning or embroidery thread &mdash; sew short, narrow zigzag stitches. If you like, you can make the
+      stitching so short and narrow that it looks like a bar tack &mdash; but be sure that the needle stitches
+      alternately into the material and the lace insertion. Finally, turn the work over and trim the fabric to about
+      1/8 in. (3 mm) from the stitching. Your insertion is ready!</p>
+    </div>
+  </div>
+  <div class="folio r">33</div>
+</div>
+
+<!-- ============ PAGE 34 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 56mm 1fr 56mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <figure class="fit" style="height:44mm;"><div class="iw top"><img src="img/fig53.jpg" alt=""></div><figcaption>Fig. 53.</figcaption></figure>
+      <figure class="fit" style="height:44mm; margin-top:14mm;"><div class="iw"><img src="img/fig54.jpg" alt=""></div><figcaption>Fig. 54.</figcaption></figure>
+    </div>
+    <div>
+      <img class="mul" src="img/p34_applique_animals.jpg" style="width:100%; display:block; margin-bottom:3mm;" alt="">
+      <h3 style="margin-top:0;">Applique</h3>
+      <p>The applique technique would appear to have been introduced specially for the zigzag sewing machine. Pleasant
+      and often amusing effects can be obtained simply and easily by appliqueing flowers, animals, initials &mdash; and
+      decorative designs generally &mdash; to tablecloths, pillows, bedspreads, children&rsquo;s clothes and many other
+      things too.</p>
+      <p>Here again, try out the stitch length and stitch width on the material you are going to sew. You can either:</p>
+      <ol>
+        <li>Cut out the applique design and attach it either with very close or somewhat wider spaced zigzag stitches
+        with the stitch width control set at 2 (Fig. 53).</li>
+        <li>Outline the design on the material, without cutting it out, and then run narrow, short zigzag stitches around
+        the contour. The controls for stitch width and stitch length should both be set at 1 for this. Trim off the
+        material close to the stitching and sew along the edge with close zigzag stitches and a wider bight setting. The
+        upper thread tension should also be rather light in order to make the seam lie properly. Fig. 54.</li>
+      </ol>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Cording, braiding, soutache</h3>
+      <p>The regular hinged presser foot can be used to attach braiding, cords and soutache with zigzag as well as
+      straight stitching, and in straight or curved patterns.</p>
+      <p>To attach a thin cord or gimp, use the special presser foot with the cord hole. Insert the cord from the front
+      and pull it out 2 to 3 inches (50 or 75 mm) past the needle. Set the stitch width so that the needle goes down on
+      either side of the cord. The stitch length control should be set at 0.3, if you want the cord to be covered. If you
+      want it to show, set the lever for longer stitches. (Fig. 55).</p>
+      <figure class="fit" style="height:44mm; margin-top:14mm;"><div class="iw"><img src="img/fig55.jpg" alt=""></div><figcaption>Fig. 55.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio l">34</div>
+</div>
+
+<!-- ============ PAGE 35 ============ -->
+<div class="page sided" style="padding-left:53mm;">
+  <div class="side" style="width:41mm; padding:9mm 4mm;">
+    <div class="head" style="font-size:11.5pt; line-height:1.6;">Here are<br>solutions<br>to your<br>darning and<br>mending<br>problems!</div>
+    <div class="art"><img class="mul" src="img/p35_shirt.jpg" style="width:100%;" alt=""></div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 52mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <p>Both darning and mending can be done quickly and without any difficulty on our Husqvarna Automatic. All that is
+      necessary is a little practice in acquiring the technique. Before you set to work on garments that you value, it
+      will probably by as well to try out your skill on simple things like handkerchiefs.</p>
+      <h3>Darning</h3>
+      <p>Techniques vary depending on whether you are doing ordinary darning, darning edges or corners, or darning to
+      reproduce a pattern. But there are certain basic rules which are common to all these operations.</p>
+      <h3>Basic rules</h3>
+      <ol>
+        <li>It is important that you select a suitable needle and thread that really matches it. For darning, a special
+        thread should be used which you can obtain from your Husqvarna dealer.</li>
+        <li>Thread tension is important too. A lighter tension of the upper thread is required for darning than for
+        almost any other operation. You can obtain the right tension by experimenting a little; but do not alter the
+        lower thread tension unless it is absolutely necessary.</li>
+        <li>The feed dog should be lowered so you can guide the material as required.</li>
+        <li>Use the embroidery hoop that comes with the machine, stretching the fabric over it and securing it firmly. To
+        make sure that the material does not slip, it may be well to bind the inner ring of the hoop with tape. Such
+        binding is also useful for holding the temporary threads used when darning edges.</li>
+        <li>When the material has been stretched over the hoop, place the work under the darning foot and lower the
+        presser bar. Don&rsquo;t forget to lower the foot, otherwise you will get loops on the wrong side of the
+        darn.</li>
+        <li>Bring the lower thread out on top of the material, and after locking the threads with a couple of stitches,
+        cut them off.</li>
+      </ol>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">This is how you attach the<br>darning foot</h3>
+      <p>Move the needle bar up to its highest position and screw out the presser foot screw about 1/4 in. Then, holding
+      the darning foot by its tubular part (A, Fig. 56), hook the spring (B) over the needle clamp. Press the holder (C)
+      hard against the presser bar, push it up under the screw, and tighten the screw.</p>
+      <figure class="fit" style="height:56mm; margin-top:6mm;"><div class="iw"><img class="mul" src="img/fig56.jpg" alt=""></div><figcaption>Fig. 56.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">35</div>
+</div>
+
+<!-- ============ PAGE 36 ============ -->
+<div class="page">
+  <div class="vrule" style="left:96mm;"></div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:14mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Ordinary darning</h3>
+      <p>Straight stitching is used for darning. Start by sewing backwards and forwards over the hole, making long
+      stitches across the fabric (that is, in the direction of the selvage). Since the feed dog is inoperative, you have
+      to move the work by hand. The quicker you move it, the longer will be the stitches. The darn will be stronger and
+      less visible if the stitches run off unevenly into the fabric. When you have stitched the &rdquo;weft&rdquo;, turn
+      the work around a quarter turn and start on the &rdquo;warp&rdquo;. See Fig. 57.</p>
+      <figure class="fit" style="height:44mm; margin:5mm 0 5mm;"><div class="iw"><img class="mul" src="img/fig57.jpg" alt=""></div><figcaption>Fig. 57.</figcaption></figure>
+      <p>Filling in can be done lengthwise, on the bias, or round in circles &mdash; all depending on the fabric. Move
+      the work slowly, to keep the stitches short, and see that they match the material.</p>
+      <p>For a big hole you can use gauze as a base. Fold a piece double and lay it over the hole, then run a row of
+      stitching around it about 1/4 in. (6 mm) from the edge of the hole, and trim off. This saves you the trouble of
+      &rdquo;weaving&rdquo; &mdash; all you need to do is to fill in.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Darning an edge</h3>
+      <p>With the wrong side uppermost, stretch the fabric in the hoop so that the hole comes in the middle (Fig. 58).
+      Then take a needle and thread and lace the free edge to the taped inner ring of the hoop. Having placed the work in
+      the machine, bring up and lock the threads at the edge of the hole, and stitch four times up and down along the
+      line of the new edge. Move the work quickly to make these stitches long. Then continue stitching parallel to the
+      edge until the hole is covered. Fill in with short stitches (moving the work slowly) running at right angles to the
+      edge, and finally reinforce the edge by stitching along it a couple of times.</p>
+      <figure class="fit" style="height:52mm; margin-top:12mm;"><div class="iw"><img class="mul" src="img/fig58.jpg" alt=""></div><figcaption>Fig. 58.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio l">36</div>
+</div>
+
+<!-- ============ PAGE 37 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 66mm; column-gap:10mm; height:100%; align-content:start;">
+    <div style="padding-right:6mm;">
+      <h3 style="margin-top:0;">Darning corners</h3>
+      <p>The simplest way to mend worn corners is to use tarlatan or gauze as a foundation. Stretch the gauze in the hoop
+      with the worn corner on top of it (Fig. 59). First sew around the edges, and then darn the worn part in the way
+      best suited to the fabric. Sometimes buttonhole or plain stitching should be used to reinforce the edges. Trim off
+      the gauze when you have finished.</p>
+      <img class="mul" src="img/p37_basket.jpg" style="width:70mm; display:block; margin:8mm auto;" alt="">
+      <h3>Darning a patterned fabric</h3>
+      <p>If the fabric has a pattern woven into it, you can hide the repair as follows (Fig. 60). Darn the hole first,
+      then draw the missing pattern with a pencil. Remove the darning foot, and fill in the pattern by stitching at right
+      angles to the stitches of the darn. If you follow the pattern closely, it will stand out and the darn will be less
+      noticeable.</p>
+    </div>
+    <div>
+      <figure class="fit" style="height:54mm;"><div class="iw top"><img class="mul" src="img/fig59.jpg" alt=""></div><figcaption>Fig. 59.</figcaption></figure>
+      <figure class="fit" style="height:54mm; margin-top:10mm;"><div class="iw"><img class="mul" src="img/fig60.jpg" alt=""></div><figcaption>Fig. 60.</figcaption></figure>
+    </div>
+  </div>
+  <div class="folio r">37</div>
+</div>
+
+<!-- ============ PAGE 38 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:12mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Patching and mending</h3>
+      <h3 style="margin-top:2mm;">Patching woollen cloth</h3>
+      <p>One way to patch woollen cloth is to trim the hole in the form of a square, cut out a patch that fits exactly in
+      the square, and lay a piece of thin cloth underneath as reinforcement. Pin or baste the patch in place, and sew it
+      in with the darning stitch &mdash; pattern 3 on cam set A, with the stitch width control set at 4.</p>
+      <p>If garment is subject to severe wear, it may be better &mdash; and certainly quicker &mdash; simply to stitch a
+      patch over the worn spot, using the same darning stitch.</p>
+      <h3>Mending knitwear</h3>
+      <p>Use the darning stitch for this too &mdash; with cam set A and the pattern selector at 3. The darning stitch is
+      particularly suitable, since it makes an elastic seam which stretches with the material. See Fig. 61.</p>
+      <figure class="fit" style="height:44mm; margin-top:6mm;"><div class="iw"><img src="img/fig61.jpg" alt=""></div><figcaption>Fig. 61.</figcaption></figure>
+    </div>
+    <div>
+      <img class="mul" src="img/p38_linen.jpg" style="width:62mm; display:block; margin:0 auto 6mm;" alt="">
+      <h3 style="margin-top:0;">Mending rips</h3>
+      <p>Rips can be mended quickly and practically invisibly by sewing them up with the automatic darning stitch (cam
+      set A, pattern selector at 3). You can further reinforce by straight stitching in the direction of the weave.</p>
+      <h3>Reinforcing edges</h3>
+      <p>You can reinforce worn edges with ordinary zigzag stitches (pattern selector at 5, on all cams sets). Useful for
+      repairing cuffs and pockets.</p>
+      <h3>Buttonholes</h3>
+      <p>Worn buttonholes are, of course, no problem with a zigzag machine.</p>
+    </div>
+  </div>
+  <div class="folio l">38</div>
+</div>
+
+<!-- ============ PAGE 39 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 1fr; column-gap:12mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Darning with wool</h3>
+      <p>Set the pattern selector (Fig. 37) at 5, the stitch width at 3 and the stitch length at 0. Lower the feed dog
+      and see that the upper thread tension is really light. Attach the darning foot as described on page 35.</p>
+      <p>Thread the machine with darning thread for sewing machines, and lead the upper thread down under the foot.</p>
+      <p>Draw the sock or stocking over the free arm so that the hole comes under the darning foot. Bring up the lower
+      thread at the right edge of the hole, lower the presser bar and lock the threads with a few stitches.</p>
+      <figure class="fit" style="height:56mm; margin-top:8mm;"><div class="iw"><img class="mul" src="img/fig62.jpg" alt=""></div><figcaption>Fig. 62.</figcaption></figure>
+    </div>
+    <div>
+      <p>If the hole is very big, it may be as well to sew round it with short, straight, stitches in order to make a
+      firm edge.</p>
+      <p>Now take the woollen yarn, draw it through the oval opening in the darning foot, and lay it in the groove
+      (A, Fig. 62).</p>
+      <p>Stretching the sock sideways with your fingers &mdash; in the direction of the knitting rows &mdash; move it
+      backwards and forwards lengthwise to the machine, so that the wool crosses the hole from side to side. The thread,
+      which follows along, sews the wool into the edges of the hole (B, Fig. 62). When the hole has been completely
+      covered in one direction, cut off the yarn and run zigzag or straight stitching across the darn with thread only
+      (no wool).</p>
+      <img class="mul" src="img/p39_sock_yarn.jpg" style="width:72mm; display:block; margin:10mm auto 0;" alt="">
+    </div>
+  </div>
+  <div class="folio r">39</div>
+</div>
+
+<!-- ============ PAGE 40 ============ -->
+<div class="page sided">
+  <div class="side" style="width:47mm; padding:8mm 5mm;">
+    <div class="head" style="font-size:13.5pt; line-height:1.7;">A sewing<br>machine<br>needs<br>proper care</div>
+    <div class="art" style="margin-top:6mm;"><img class="mul" src="img/p40_brush_oilcan.jpg" style="width:66%; display:block;" alt=""></div>
+  </div>
+  <div style="display:grid; grid-template-columns: 44mm 1fr; column-gap:8mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Look after your<br>Husqvarna Automatic</h3>
+      <p>It&rsquo;s surprising how many people have never taken the trouble to find out how a sewing machine should be
+      cared for. True, sewing machines are unusually tough pieces of equipment, which will go on working for year without
+      being oiled or cleaned. But they don&rsquo;t like it, and they proclaim their dislike by running roughly and making
+      a whining, scraping noise.</p>
+      <p>Like any precision-made machine, the Husqvarna Automatic will always operate smoothly, silently and efficiently
+      if it is properly attended to and oiled regularly.</p>
+    </div>
+    <figure class="fit" style="height:104mm; align-self:center;"><div class="iw"><img src="img/fig63.jpg" alt=""></div><figcaption>Fig. 63.</figcaption></figure>
+  </div>
+  <div class="folio l">40</div>
+</div>
+
+<!-- ============ PAGE 41 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 52mm 1fr 58mm; column-gap:7mm; height:100%; align-content:start;">
+    <div>
+      <h3 style="margin-top:0;">Oiling</h3>
+      <p>If it is continuously in use, the machine should get a drop of oil once per week in places indicated by arrow
+      (Fig. 63 opposite). If used only occasionally, oil every three months.</p>
+      <p>Oil extremely sparingly. Over-oiling doesn&rsquo;t help &mdash; it causes the oil to run out and stain the work
+      when you are sewing.</p>
+      <p>Other places where the machine needs oiling occasionally are shown by arrows in Figs. 64 and 65. To get at them
+      you pull open the cover plates at the left end of the upper arm and at the back of the machine (with the spool pins
+      fixed to it).</p>
+      <p>The jam-proof shuttle never needs oiling &mdash; one of the reasons why your Husqvarna Automatic is unusually
+      easy to look after.</p>
+      <h3 style="margin-top:10mm;">Cleaning</h3>
+      <p>To clean the machine, use the brush you will find in the attachment box. Open the cover plate at the left end of
+      the upper arm and brush off the fuzz that has accumulated in the mechanism. Then screw off the throat plate and
+      brush the feed dog clean &mdash; brushing underneath the teeth as well as between them (Fig. 66).</p>
+    </div>
+    <figure class="fit" style="height:104mm;"><div class="iw top"><img src="img/fig64.jpg" alt=""></div><figcaption>Fig. 64.</figcaption></figure>
+    <div>
+      <figure class="fit" style="height:46mm;"><div class="iw top"><img src="img/fig65.jpg" alt=""></div><figcaption>Fig. 65.</figcaption></figure>
+      <figure class="fit" style="height:46mm; margin-top:12mm;"><div class="iw"><img src="img/fig66.jpg" alt=""></div><figcaption>Fig. 66.</figcaption></figure>
+    </div>
+  </div>
+  <img class="mul" src="img/p41_screwdriver.jpg" style="position:absolute; left:74mm; bottom:5mm; width:120mm;" alt="">
+  <div class="folio r">41</div>
+</div>
+
+<!-- ============ PAGE 42 ============ -->
+<div class="page">
+  <div style="font-family:'Jost',sans-serif; font-weight:400; font-size:13pt; line-height:1.35; text-align:center;
+              border-bottom:.3mm solid #55554e; padding-bottom:3mm; margin-bottom:4mm;">
+    How to remedy some<br>of the most common sewing machine troubles
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:12mm;">
+    <div>
+      <h5>Machine running roughly:</h5>
+      <ol>
+        <li>Cause may be lubrication with lowgrade or unsuitable oil. Pour a few drops of kerosene in each oil hole and
+        let the machine run for a few seconds. Then oil with high-grade sewing machine oil.</li>
+        <li>Drive belt may be too tight. Call your Husqvarna dealer.</li>
+      </ol>
+      <h5>Machine not feeding properly?</h5>
+      <ol>
+        <li>Make sure the stitch length control (20, Fig. 1) is not set at 0.</li>
+        <li>Feed dog may be lowered. Drop feed knob (25) should be turned so that the stitch symbol is in front.</li>
+        <li>Insufficient pressure on the pressure foot. Increase the pressure by turning the regulating screw (A, Fig.
+        64) to the right.</li>
+      </ol>
+      <h5>Bobbin winding irregularly:</h5>
+      <ol>
+        <li>See if the machine is correctly threaded for winding.</li>
+        <li>The thread may not lie between the tension discs (C, Fig. 6).</li>
+        <li>Tension device may not be set in correct position. See page 4.</li>
+      </ol>
+      <h5>Upper thread breaks:</h5>
+      <ol>
+        <li>Needle not inserted correctly. See Fig. 3.</li>
+        <li>Machine not threaded properly. See Fig. 12.</li>
+        <li>Tension on the upper thread too tight. See page 7.</li>
+        <li>Knots in thread.</li>
+        <li>Needle too fine for the thread used. See Table, page 2.</li>
+        <li>Needle bent or point broken. Change needle.</li>
+        <li>Edges of the stitch hole in the throat plate may be nicked and sharp. Either hone them smooth or get a new
+        plate.</li>
+      </ol>
+    </div>
+    <div>
+      <h5>Lower thread breaks:</h5>
+      <ol>
+        <li>Bobbin case not inserted correctly. See page 3.</li>
+        <li>Lower thread tension too hard. See page 5.</li>
+        <li>Bobbin case not threaded correctly. See page 5.</li>
+        <li>Bobbin wound unevenly.</li>
+        <li>Bobbin wound too fully.</li>
+        <li>Poor quality thread.</li>
+        <li>Damaged hole in the throat plate. Hone or replace plate.</li>
+      </ol>
+      <h5>Lower thread doesn&rsquo;t come up.</h5>
+      <ol><li>Needle inserted incorrectly. See Fig. 3.</li></ol>
+      <h5>Needle breaks:</h5>
+      <ol><li>Don&rsquo;t try to help the feeding by pulling the fabric. If you do, the needle may easily hit the throat
+      plate and break off.</li></ol>
+      <h5>Machine sewing poorly:</h5>
+      <ol>
+        <li>Needle bent or blunted. Insert new needle.</li>
+        <li>Needle inserted incorrectly. See Fig. 3.</li>
+        <li>Machine threaded incorrectly. See page 6.</li>
+        <li>Wrong size of needle used. See Table, page 2.</li>
+        <li>Thread too heavy for the needle.</li>
+        <li>Insufficient pressure on the presser foot, especially when sewing thick fabrics. Turn the pressure regulating
+        screw (A, Fig. 64) to the right.</li>
+        <li>Bobbin unevenly wound. See page 4.</li>
+        <li>Upper thread tension not properly adjusted. See page 7.</li>
+        <li>Lower thread too heavy. Should at least be of the same size as the upper thread, or a little finer.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="folio l">42</div>
+</div>
+
+<!-- ============ PAGE 43 ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 58mm; column-gap:11mm; height:100%; align-content:start;">
+    <div>
+      <ol start="10"><li>Upper thread or needle not suited to the material. See Table, page 2.</li></ol>
+      <h5>Stitching loosely &mdash; with loops at the underside of the material:</h5>
+      <ol>
+        <li>Machine not threaded correctly. See page 6.</li>
+        <li>Presser foot not let down properly.</li>
+        <li>Upper thread tension too light. See page 7.</li>
+        <li>Thread take-up spring (12, Fig. 1) bent or broken off. Adjust or replace it.</li>
+      </ol>
+      <h5>Thread tension uneven:</h5>
+      <ol><li>Poor quality thread is a likely cause.</li></ol>
+      <h5>Wrinkling of material:</h5>
+      <ol>
+        <li>Needle thread tension too tight.</li>
+        <li>Needle and bobbin thread tensions too tight for material used.</li>
+        <li>Presser foot pressure too great. Turn regulator screw to left (A, Fig. 64)</li>
+      </ol>
+      <h5>Stitches of varying lengths:</h5>
+      <ol>
+        <li>Feed dog is clogged with lint. Clean it out (See page 41).</li>
+        <li>Worn teeth in feed dog. Replace feed dog.</li>
+      </ol>
+      <h5>Loosely stitched seams:</h5>
+      <ol><li>Upper (needle) and lower (bobbin) thread tensions too loose. See page 7.</li></ol>
+      <h5>Cloth gets chewed up:</h5>
+      <ol><li>Too much pressure on the presser foot. Reduce by turning the pressure regulating screw (A, Fig. 64).</li></ol>
+    </div>
+    <div>
+      <img class="mul" src="img/p43_tape_buttons.jpg" style="width:100%; display:block; margin-bottom:6mm;" alt="">
+      <div style="font-family:'Jost',sans-serif; font-weight:600; font-size:9pt; margin-bottom:2mm;">Table of contents:</div>
+      <div style="font-size:7.8pt; line-height:1.42;">
+        <div style="display:flex; justify-content:space-between;"><span>Applique</span><span>34</span></div>
+        <div style="height:1.4mm;"></div>
+        <div style="display:flex; justify-content:space-between;"><span>Bar tacks</span><span>18</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Basting</span><span>13</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Blindstitching</span><span>20</span></div>
+        <div style="height:1.4mm;"></div>
+        <div>Bobbin case</div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Inserting</span><span>6</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Removing from shuttle</span><span>3</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Threading</span><span>5</span></div>
+        <div style="height:1.4mm;"></div>
+        <div style="display:flex; justify-content:space-between;"><span>Bobbin winding</span><span>4</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Braiding</span><span>34</span></div>
+        <div>Buttonholes</div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Corded</span><span>17</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Plain</span><span>16</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Button sewing</span><span>17</span></div>
+        <div style="height:1.4mm;"></div>
+        <div style="display:flex; justify-content:space-between;"><span>Cleaning</span><span>41</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Cording</span><span>34</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Cord insertion</span><span>31</span></div>
+        <div style="display:flex; justify-content:space-between;"><span>Corner turning</span><span>8</span></div>
+        <div style="height:1.4mm;"></div>
+        <div style="display:flex; justify-content:space-between;"><span>Darning</span><span>35&mdash;37, 39</span></div>
+        <div>Decorative stitches</div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Basic seams</span><span>27</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Changing of pattern cam sets</span><span>26</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Pattern cam sets</span><span>25</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Pattern key</span><span>21</span></div>
+        <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Pattern selector</span><span>25</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="folio r">43</div>
+</div>
+
+<!-- ============ PAGE 44 ============ -->
+<div class="page">
+  <div style="text-align:center; margin-bottom:3mm;">
+    <div style="font-family:'Jost',sans-serif; font-weight:600; font-size:9.5pt;">Table of contents:</div>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:16mm; font-size:7.9pt; line-height:1.45;">
+    <div>
+      <div style="display:flex; justify-content:space-between;"><span>Edge guide</span><span>10</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Embroidery</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Eyelet attachment</span><span>29</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Feather stitch</span><span>28</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Sewing with twin and triple needles</span><span>30</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Solid raised stitching</span><span>29</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Zigzag stitching</span><span>28</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Feed dog</span><span>7</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Felled seams</span><span>13</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Finishing off</span><span>9</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Fringing</span><span>20</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Gathering</span><span>12</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Hemming</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Rolled edges</span><span>19</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Shell stitching</span><span>19</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Zigzag</span><span>18</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Hemstitching</span><span>18</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Lace</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Attaching edging</span><span>33</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Insertions</span><span>33</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Marking</span><span>13</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Mending</span><span>38</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Needle</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Insertion of needle</span><span>3</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Selection of needle</span><span>2</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Oiling</span><span>41</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Overcasting edges</span><span>15</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Patching woollen cloth</span><span>38</span></div>
+    </div>
+    <div>
+      <div style="display:flex; justify-content:space-between;"><span>Picot</span><span>20</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Presser foot</span><span>10</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Quilting and marking</span><span>10</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Raised seams</span><span>31</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Reinforcing edges</span><span>38</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Rolled edges</span><span>19</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Rugmaking</span><span>31&mdash;32</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Stitching</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Forward and reverse</span><span>9</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Straight</span><span>8</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Zigzag</span><span>14</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Shell stitching</span><span>19</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Soutache</span><span>34</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Speed reducer</span><span>9</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Stitch length setting</span><span>8</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Stitched edges</span><span>11</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Thread</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Selection</span><span>2</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Tension</span><span>5, 7</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Troubles</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Causes and remedies</span><span>42</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Tucks</span><span>11</span></div>
+      <div style="height:1.4mm;"></div>
+      <div>Zigzag</div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Hemming</span><span>18</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Starting positions</span><span>15</span></div>
+      <div style="display:flex; justify-content:space-between; padding-left:3mm;"><span>Stitching</span><span>14</span></div>
+      <div style="display:flex; justify-content:space-between;"><span>Zippers &#8211; attaching</span><span>11</span></div>
+    </div>
+  </div>
+  <div class="folio l">44</div>
+</div>
+
+<!-- ============ PLEASE NOTE ============ -->
+<div class="page">
+  <div style="display:flex; height:100%; align-items:center; justify-content:center;">
+    <div style="width:128mm;">
+      <div style="display:flex; align-items:flex-start; gap:8mm;">
+        <div style="flex:1 1 auto;">
+          <h3 style="font-size:14pt; font-weight:400; margin-bottom:4mm;">Please note</h3>
+          <p class="flush" style="font-size:9.2pt; line-height:1.4;">The manufacturer of the Husqvarna Automatic does not
+          consider the machine sold until you are really satisfied and have found how to get the best out of it. If there
+          are any questions to which you cannot find an answer in this manual, we suggest you turn to your Husqvarna
+          dealer.</p>
+          <p style="font-size:9.2pt; line-height:1.4;">If the machine should not operate satisfactorily, do not try to
+          adjust or repair it yourself. Let an authorized Husqvarna dealer look at it, and thus ensure getting the best
+          possible service. Your Husqvarna Automatic deserves it!</p>
+        </div>
+        <img class="mul" src="img/p01_emblem.jpg" style="width:17mm; margin-top:1mm;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REAR FLAP — FIG. 2 AND PARTS KEY ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 1fr 58mm; column-gap:8mm; height:100%;">
+    <figure style="align-self:center;">
+      <img src="img/foldout_fig2.jpg" alt="Fig. 2 — the Husqvarna Automatic, rear view">
+      <figcaption>Fig. 2.</figcaption>
+    </figure>
+    <div style="font-size:8.1pt; line-height:1.4; align-self:center;">
+      <div style="list-style:none;">
+        29.&nbsp; Presser foot lifter<br>
+        30.&nbsp; Knife for cutting thread<br>
+        31.&nbsp; Cord to electric wiring outlet<br>
+        32.&nbsp; Foot control cord<br>
+        33.&nbsp; Spindle for bobbin winding<br>
+        34.&nbsp; Speed control for slow sewing<br>
+        35.&nbsp; Tension discs and thread guide for bobbin winding<br>
+        36.&nbsp; Screw for adjusting tension discs<br>
+        37.&nbsp; Switch for sewing light<br>
+        38.&nbsp; Plug for control cord<br>
+        39.&nbsp; Access door for automatic fancy-stitching cams<br>
+        40.&nbsp; Thread guide for bobbin winding<br>
+        41.&nbsp; Spool pin<br>
+        42.&nbsp; Spool pin
+      </div>
+      <p class="it flush" style="margin-top:5mm; font-size:7.6pt;">We reserve the right to change at any time the
+      contents of the box of attachments and accessories.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REAR FLAP — ACCESSORIES ============ -->
+<div class="page">
+  <div style="display:grid; grid-template-columns: 62mm 1fr 1fr; column-gap:7mm; height:100%;">
+    <div>
+      <img src="img/foldout_boxes.jpg" style="width:100%; display:block;" alt="The attachment box and accessories">
+      <div style="font-size:7.8pt; line-height:1.4; margin-top:4mm;">
+        <h4 style="margin:0 0 1.5mm;">Accessories</h4>
+        S. 15411&nbsp; Box for attachments<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 Needles<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 Twin needle, 3/32 in. needle spread<br>
+        S. 11729&nbsp; 6 Bobbins<br>
+        S. 15399&nbsp; Buttonhole knife<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3029&nbsp; Embroidery frame<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3046&nbsp; Screwdriver, small<br>
+        S. 15406&nbsp; Screwdriver, large<br>
+        S. 15010&nbsp; Cleaning brush<br>
+        S. 15415&nbsp; Oilcan
+      </div>
+    </div>
+    <div style="font-size:7.8pt; line-height:1.4;">
+      <h4 style="margin:0 0 1.5mm;">Standard attachments</h4>
+      S. 15229&nbsp; Jointed presser foot (attached to the machine) for straight and zigzag stitching<br>
+      S. 15395&nbsp; Presser foot for zip fasteners<br>
+      S. 15420&nbsp; Edge guide<br>
+      S. 12111&nbsp; Screw for attachments<br>
+      S. 15428&nbsp; Buttonhole foot<br>
+      S. 15237&nbsp; Button foot<br>
+      S. 15236&nbsp; Hemmer for roll seam<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3035&nbsp; Hemmer for straight and zigzag stitching<br>
+      S. 15423&nbsp; Throat plate for 1/8 in. eyelets<br>
+      S. 15419&nbsp; Twin-needle foot with 3 grooves<br>
+      S. 15427&nbsp; Raised-seam attachment<br>
+      S. 15232&nbsp; Pattern presser foot<br>
+      S. 15460&nbsp; Darning foot
+    </div>
+    <div style="font-size:7.8pt; line-height:1.4;">
+      <h4 style="margin:0 0 1.5mm;">Special attachments</h4>
+      <div class="it" style="margin-bottom:1.5mm;">can be supplied upon request at extra cost:</div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Twin needles with 1/16 in. needle spread<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Twin needles with 1/8 in. needle spread<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Twin needles with 5/32 in. needle spread<br>
+      S. 15100&nbsp; Jointed presser foot for straight stitching<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3019&nbsp; Gathering foot<br>
+      S. 15426&nbsp; Twin-needle foot with 1 groove<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3005&nbsp; Piping attachment<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3022&nbsp; Braider<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3002&nbsp; Hemmer 3/32 in. straight seam<br>
+      S. 15240&nbsp; Hemmer for scalloping<br>
+      S. 15432&nbsp; Throat plate for 3/16 in. eyelets<br>
+      S. 15433&nbsp; Throat plate for 7/32 in. eyelets<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3028&nbsp; Embroidery frame, dia. 25/64 in.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3030&nbsp; Embroidery frame, dia. 25/32 in.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9001&nbsp; Weaver&rsquo;s reed<br>
+      S. 15367&nbsp; Hemstitcher
+    </div>
+  </div>
+</div>
+
+<!-- ============ BACK COVER ============ -->
+<div class="page cover">
+  <img src="img/cover_back.jpg" alt="Husqvarna Vapenfabriks Aktiebolag — Huskvarna, Sweden">
+</div>
+
+</body>
+</html>
