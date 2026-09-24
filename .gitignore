@@ -15,3 +15,14 @@ thumb_*.png
 scratch_*.png
 new_pdf_*.png
 pdf_preview_*.png
+
+# Reconstruction intermediates (regenerate with scripts/extract_figures.py)
+figures/
+build/detect/*.png
+build/detect2/*.png
+build/crops*/
+build/grid/
+build/preview/
+build/prev_a4/
+build/_measure.*
+

@@ -1,0 +1,368 @@
+{
+  "_note": "Faithful transcription of Husqvarna Automatic 21A Operating Manual (English original, A5 landscape, 43 numbered pages). Source: original_scans/Husqvarna_21A_Automatic_Manual_EN.pdf. Book page N = scan page index N+2.",
+  "pages": [
+    {
+      "n": 1,
+      "scan": 3,
+      "layout": "full-width title page: crown/H emblem left, illustration of woman + girl right, then single wide text block of foreword",
+      "figures": [
+        {"id": "emblem_crown_h", "kind": "emblem", "caption": null},
+        {"id": "p01_mother_daughter", "kind": "line-art", "caption": null}
+      ],
+      "blocks": [
+        {"t": "p", "x": "This manual has been prepared to help you learn to use your new Husqvarna Automatic in such a way that you will get the very best out of it — to enable you to take full advantage of all the machine's special features which put skill into your fingers and make sewing fun."},
+        {"t": "p", "x": "Maybe you are thoroughly accustomed to sewing by machine and feel you can skip reading these instructions. Our advice is: Don't. We can say with fair certainty that you will find quite a number of ideas here that you hadn't thought of before, as well as simple sewing tricks that you had forgotten."},
+        {"t": "p", "x": "Have the machine in front of you as you read, and try out the various operations. Even if you have had some previous instruction in the use of your Husqvarna Automatic, this is probably the first time you have been alone with it — so here is a splendid opportunity to get acquainted. You'll find it well worth while, too. For this machine can be used for all kinds of sewing operations — sewing the most beautiful straight seams, doing ordinary zigzag stitching, and producing without any trouble at all an amazing variety of automatic embroidery patterns."},
+        {"t": "p", "x": "Even after you have acquired the general technique of sewing on the Husqvarna Automatic, you will probably want to consult the manual from time to time in regard to details. So keep this booklet always at hand — preferably in the case with the machine."},
+        {"t": "p", "x": "Good luck — and good sewing with your Husqvarna Automatic!"}
+      ],
+      "note_italic": true
+    },
+    {
+      "n": 2,
+      "scan": 4,
+      "layout": "3 zones: green side-panel headline (left), narrow text column + needle art (middle), large 'Needle and thread selector' table (right)",
+      "sidebar": ["It's easy to", "get acquainted", "with your", "HUSQVARNA", "AUTOMATIC"],
+      "figures": [
+        {"id": "p02_spool", "kind": "engraving", "caption": null},
+        {"id": "p02_needles", "kind": "photo", "caption": null, "labels": ["Shank", "Eye", "Point"]},
+        {"id": "p02_bobbin_green", "kind": "line-art", "caption": null}
+      ],
+      "blocks": [
+        {"t": "h", "x": "Needle and Thread"},
+        {"t": "p", "x": "Unless a contrasting effect is desired, the stitching should match the fabric as closely as possible. It is therefore important to select a needle and thread suited to the material which is being sewn. The table on this page will help you to do this."},
+        {"t": "p", "x": "Needle System 705 (15×1) is the one used for the Husqvarna Automatic. In case you forget the number, it is engraved on a plate attached to the rear of the machine."}
+      ],
+      "table": {
+        "title": "Needle and thread selector",
+        "head": ["Sizes & grades of needles — System 750 — Grades", "Sizes", "Types of fabric and work", "Cotton", "Silk", "Linen"],
+        "rows": [
+          ["Fine", "60", "Delicate fabrics like georgette, chiffon, batiste, fine lace, fine linen and other sheer fabrics. For fine lingerie, infants' clothes and fine lace work.", "100 to 150", "00 and 000 twist", ""],
+          ["Medium-fine", "70", "Medium light-weight and summertime fabrics. For house dresses, children's dresses, cottons, aprons, curtains.", "80 to 100", "0 twist", ""],
+          ["Medium", "80", "Dress silks and cottons, light weight to woollens and decorators' fabrics. For dressmaking and general household sewing, men's dress shirts and light weight draperies.", "60 to 80", "A&B twist", ""],
+          ["Light-heavy", "90", "Heavy cretonne, madras, muslin, brocades and quilts. For men's work shirts and other work clothes, heavy quilting and decorators' articles.", "40 to 60", "C twist", ""],
+          ["Medium-heavy", "100 110", "Heavy woollens and suiting, light-weight canvas, bed ticking, upholstery and awning materials, slipcover fabrics. For men's suits, work and sports clothes, awnings, slipcovers, upholstery and mattresses.", "30 to 40", "D twist", ""],
+          ["Heavy", "120", "Heavy overcoating, duck, ticking, drills, canvas and sacking. For heavy washable uniforms, bedding for hospitals, hotels and camps. Extra heavy and coarse goods.", "24 to 30", "E twist", "60 to 80"],
+          ["Extra-heavy", "130", "For canvas bags and heavy canvas products.", "20 to 24", "", "40 to 60"]
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "scan": 5,
+      "layout": "two text columns at top, three photos in a row across the bottom",
+      "columns": [
+        [
+          {"t": "h", "x": "How to insert a needle"},
+          {"t": "p", "x": "Loosen the needle screw (A, Fig. 3). Insert the needle in the clamp (B) and push it up as far as it will go. See that the flat side of the needle is turned away from you. Tighten the screw securely, and check again to make sure that the needle is correctly inserted. The long groove over the needle's eye should be facing you."},
+          {"t": "p", "x": "When using a twin or triple needle, insert in the same way."}
+        ],
+        [
+          {"t": "h", "x": "Removing the bobbin case from the shuttle"},
+          {"t": "p", "x": "Turn the hand wheel (19, Fig. 1) towards you until the needle is in its highest position. Open the shuttle access door (26, Fig. 1)."},
+          {"t": "p", "x": "Take hold of the bobbin case with the thumb and forefinger (Fig. 4), so that the latch (A, Fig. 5) is depressed, and lift the case out."},
+          {"t": "p", "x": "As long as the latch is depressed, the bobbin is held in its case. To remove the bobbin, release the latch and turn the case downwards. The bobbin then falls out."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig03", "caption": "Fig. 3."},
+        {"id": "fig04", "caption": "Fig. 4."},
+        {"id": "fig05", "caption": "Fig. 5."}
+      ]
+    },
+    {
+      "n": 4,
+      "scan": 6,
+      "layout": "3 columns; col1 = Fig.6 photo above 'Bobbin winding is simple'; col2 = text + heading; col3 = Fig.7 photo and bobbin-winding diagram I/II/III",
+      "columns": [
+        [
+          {"t": "fig", "id": "fig06", "caption": "Fig. 6."},
+          {"t": "h", "x": "Bobbin winding is simple"},
+          {"t": "p", "x": "Place a spool of thread on the spool pin nearest the hand wheel. Run the thread through the thread guide (A, fig. 6) and down under the guide (B) on the tension device and back between the tension discs (C)."},
+          {"t": "p", "x": "Wind the thread two or three times around the bobbin (D), and push the bobbin as far as it will go onto the winder spindle. This automatically disengages the sewing mechanism."}
+        ],
+        [
+          {"t": "p", "x": "Start the bobbin winder by pressing the foot pedal, and wind at a moderate speed. Stop winding when the bobbin is filled to about 1/16 in. from the rim."},
+          {"t": "p", "x": "The spindle automatically engages the sewing mechanism again, when the bobbin is pulled off."},
+          {"t": "h", "x": "Bobbin must be evenly wound to produce an even seam"},
+          {"t": "p", "x": "If you find the machine is winding unevenly as in (I), loosen the screw (36, Fig. 2) and move the tension device slightly inwards toward the machine. Tighten the screw and test to see if the winding is now even. If the machine winds unevenly in the other direction, as in (II), move the tension device outwards, to the right. A correctly wound bobbin should look like (III) (somewhat higher in the middle)."}
+        ],
+        [
+          {"t": "fig", "id": "fig07", "caption": "Fig. 7."},
+          {"t": "fig", "id": "p04_bobbins_I_II_III", "caption": null, "labels": ["I", "II", "III"]}
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "scan": 7,
+      "layout": "top-left text column, Fig.9 photo centre, Fig.10 photo right; bottom-left Fig.8 photo, green thread ornament centre, 'Lower thread tension' text block right",
+      "columns": [
+        [
+          {"t": "h", "x": "Threading the bobbin case"},
+          {"t": "p", "x": "Hold the bobbin case in your left hand with the slot in the edge upwards or facing you (Fig. 7). Take the bobbin in your right hand, so that the thread end leads away from you, and drop it into the case. Then, still with your right hand, draw the thread into the slot in the edge of the case (Fig. 8)."},
+          {"t": "p", "x": "Now lead the thread under the tension spring and let it come out at the notch in the end of the spring (Fig. 9). Pull the thread out a few inches, and check to see that the bobbin rotates clockwise in the case."}
+        ],
+        [
+          {"t": "h", "x": "Lower thread tension"},
+          {"t": "p", "x": "The machine comes from the factory with the lower thread tension adjusted for normal use. Do not alter the tension unless it is absolutely necessary — as for example, when sewing very loosely or tightly woven fabrics, or when doing special jobs, such as sewing buttonholes, eyelets, etc. To adjust the lower thread tension, use the small screwdriver which you will find in the attachment box. Take out the bobbin case and turn the spring screw (Fig. 10) to the right to increase the tension or to the left to decrease it."},
+          {"t": "pi", "x": "Do not turn the spring screw more than 1/8 of a turn without testing to see if the adjustment is sufficient."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig08", "caption": "Fig. 8."},
+        {"id": "fig09", "caption": "Fig. 9."},
+        {"id": "fig10", "caption": "Fig. 10."}
+      ]
+    },
+    {
+      "n": 6,
+      "scan": 8,
+      "layout": "col1 Fig.11 photo + 'Inserting the bobbin case'; col2 'Upper thread' text; col3 Fig.12 photo (threading diagram); bottom band: 'Upper thread tension' spanning two columns",
+      "columns": [
+        [
+          {"t": "fig", "id": "fig11", "caption": "Fig. 11."},
+          {"t": "h", "x": "Inserting the bobbin case"},
+          {"t": "p", "x": "Turn the hand wheel (19, Fig. 1) towards you until the needle is in its highest position. Open the access door (26, Fig. 1) and pick up the bobbin case with the thumb and forefinger, gripping the latch (A, Fig. 5) firmly so the bobbin does not fall out."},
+          {"t": "p", "x": "Push the bobbin case onto the centre post of the shuttle (A, Fig. 11), with its projection upwards so as to fit the notch (B) in the shuttle race. Press the case firmly into place."},
+          {"t": "p", "x": "Leave the thread end hanging down from the bobbin case, and close the access door."}
+        ],
+        [
+          {"t": "h2", "x": "Upper thread:\nThis is the way to thread it"},
+          {"t": "p", "x": "Bring the thread take-up lever (6, Fig. 12) to its highest position by turning the hand wheel towards you. Put a spool of thread on one of the spool pins (41 and 42, Fig. 2)."},
+          {"t": "p", "x": "Pass thread through the thread guides (1 and 2, Fig. 12), then round from right to left between the innermost tension discs (3), over the crotch of the thread take-up spring (4), under the slack thread regulator (5) and up through one of the eyes in the thread take-up lever (6). From the take-up lever take the thread down through thread guide (7) and the guide on the needle clamp (8) and thread it through the needle from the front through the needle point, pulling out 3 or 4 inches behind."},
+          {"t": "p", "x": "To sew with thin or triple needles, you thread the machine with two or three threads in the same way as with one, except that the threads are passed between separate pairs of tension discs and through separate holes in the take-up lever (6)."},
+          {"t": "pi", "x": "Once the machine is threaded, be careful not to run it unless there is some fabric between the presser foot and the throat plate."}
+        ]
+      ],
+      "bottom": [
+        {"t": "h", "x": "Upper thread tension"},
+        {"t": "p", "x": "The tension of the upper thread is regulated by the pressure of the tension discs (3, Fig. 12) against each other. This pressure is adjusted by means of a knob calibrated from 0 to 9 with 0 as lowest and 9 as highest thread tension (Fig. 13). When the machine leaves the factory, it is adjusted for linen-sewing with mercerized thread No. 50."}
+      ],
+      "figures": [
+        {"id": "fig12", "caption": "Fig. 12."}
+      ]
+    },
+    {
+      "n": 7,
+      "scan": 9,
+      "layout": "col1 Fig.13 photo + green panel with three stitch cross-sections; col2 tension texts; col3 'Bringing up the lower thread' + Fig.14 photo, then two wide sections below",
+      "columns": [
+        [
+          {"t": "h", "x": "Correct tension"},
+          {"t": "p", "x": "When the tension of the upper and lower threads is correctly regulated, the stitches look alike on both sides of the material. The tieing up then occurs in the middle of the layer of the material."},
+          {"t": "h2", "x": "Upper thread tension\ntoo tight"},
+          {"t": "p", "x": "Upper thread is stretched out along the top of the material, while the lower thread is pulled up in small loops. (This will also happen if the tension of the lower thread is too light, but always try to correct by adjusting the upper thread tension.) Loosen the upper thread tension by turning the knob to a lower figure."},
+          {"t": "h2", "x": "Tension of upper thread\ntoo light"},
+          {"t": "p", "x": "Lower thread is stretched along the underside of the material, and the upper thread pulled down in loops. (Again, this will happen with too tight a tension on the lower thread, but before adjusting the lower thread tension, try adjusting the tension of the upper thread). Increase the upper thread tension by turning the knob to a higher figure."}
+        ],
+        [
+          {"t": "h2", "x": "Bringing up the\nlower thread"},
+          {"t": "p", "x": "After the upper thread has been threaded through the needle, hold the end loosely in your left hand, and with your right hand turn the balance wheel slowly towards you so that the needle goes down and comes up again to its highest position."},
+          {"t": "p", "x": "Now pull the upper thread, and the lower thread will come up through the hole in the throat plate (Fig. 14)."}
+        ]
+      ],
+      "bottom": [
+        {"t": "h", "x": "Increasing and decreasing of pressure of the presser foot"},
+        {"t": "p", "x": "If the pressure on the presser foot is insufficient, increase it by turning the regulating screw (A, fig. 64) to the right; if pressure is too great turn the screw to the left."},
+        {"t": "h", "x": "The feed dog"},
+        {"t": "p", "x": "When darning, embroidering, sewing on buttons, etc., you want the fabric to be free so you can move it by hand in any desired direction. This is made possible by lowering the feed dog (28, Fig. 1)."},
+        {"t": "p", "x": "To lower the feed dog, turn the knob (25, Fig. 1) half a turn to the right — so the mark on it points downwards."},
+        {"t": "p", "x": "When you want the feed mechanism to function again, simply turn the feed-drop knob to the left so that the mark comes uppermost."}
+      ],
+      "figures": [
+        {"id": "fig13", "caption": "Fig. 13."},
+        {"id": "p07_stitch_sections", "caption": null},
+        {"id": "fig14", "caption": "Fig. 14."}
+      ]
+    },
+    {
+      "n": 8,
+      "scan": 10,
+      "layout": "green side panel left with headline and fashion line-art; middle wide text column; right column with two short sections",
+      "sidebar": ["Now we", "are ready", "to sew!"],
+      "figures": [
+        {"id": "p08_lady", "kind": "line-art", "caption": null}
+      ],
+      "columns": [
+        [
+          {"t": "h", "x": "Ordinary straight stitching"},
+          {"t": "p", "x": "The Husqvarna Automatic does straight sewing and ordinary zigzag stitching and — in addition — embroiders repeating zigzag patterns automatically. Each of these three sewing techniques will be dealt with in turn."},
+          {"t": "p", "x": "When all is said and done, straight stitching remains the most important function of a sewing machine. With its jam-proof shuttle, the Husqvarna Automatic produces an excellent straight stitch. This shuttle is designed so as to release exactly the same length of thread at each revolution — no matter how fast the machine is run. A further advantage is that the zigzag mechanism is completely disengaged when the machine is doing straight stitching."},
+          {"t": "p", "x": "Now, if you have selected the right needle and thread, and have checked the thread tension, we are ready to start sewing."},
+          {"t": "p", "x": "The machine sews straight when the zigzag width control (24, Fig. 1) is set at 0."},
+          {"t": "p", "x": "Place the fabric under the presser foot and lower the presser bar. Place the motor foot control for greatest comfort and start the machine by depressing it gently. Remember that with the Husqvarna Automatic you have no need to manipulate the hand wheel to help the machine get started or slow it down. The foot control ensures smooth starts and accurate stopping — thus leaving both hands free for sewing."},
+          {"t": "pi", "x": "Mind you, start the seam in the fabric, not outside."},
+          {"t": "p", "x": "When you have got the seam started, the machine speed can be increased as desired. Regulate the sewing speed by means of the foot control only — and never try to alter the rate of feed by manipulating the fabric. If you try to pull the fabric forward or hold it back, you may easily bend or break a needle, and you may even damage other moving parts of the machine."}
+        ],
+        [
+          {"t": "h", "x": "Turning a corner"},
+          {"t": "p", "x": "To turn a corner, stop the machine with the needle in the fabric, raise the presser foot and rotate the fabric around the needle until it is in position for the new seam. Then lower the presser foot and continue sewing."},
+          {"t": "h", "x": "Setting the stitch length"},
+          {"t": "p", "x": "You can obtain different lengths of stitch by turning the stitch length knob (Fig. 15). The knob is graduated from 0 to 4, each of these units representing one millimetre. (N. B. 1 m. m. is approx 1/25 inch.) To facilitate accurate sewing of buttonholes and decorative stitching, knob has an even finer graduation between 0 and 0,5 each mark representing one-tenth of a millimetre (or about 1/250 inch.)"}
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "scan": 11,
+      "layout": "green banner across the top with headline; Fig.16 photo top-right overlapping banner; left text column with Fig.15 photo; wide 'Finishing off' paragraph at bottom-left; right column text",
+      "banner": ["Speed reducer for", "extra slow sewing"],
+      "columns": [
+        [
+          {"t": "h2", "x": "Reverse stitching,\nlocking seams"},
+          {"t": "p", "x": "When you want to sew backwards, for instance at locking seams, press in the knob (A fig. 15). The machine moves the fabric backwards with unaltered stitch length, as long as the knob is pressed in."}
+        ],
+        [
+          {"t": "p", "x": "You will find the special speed control invaluable when you want to sew particularly slowly — for instance, when doing careful work or embroidering. The reduction gear is engaged by pulling out the knob (Fig. 16) as far as it will go. This causes the machine to sew at about one/fifth its normal speed."},
+          {"t": "p", "x": "The speed reducer enables you to sew extremely slowly, stitch by stitch, and thus gives you complete control."},
+          {"t": "p", "x": "Push the knob in, and the machine again sews at normal speed."}
+        ]
+      ],
+      "bottom": [
+        {"t": "h", "x": "Finishing off"},
+        {"t": "p", "x": "After stopping the machine, turn the hand wheel towards you until the needle is in its highest position. Raise the presser bar lifter (29, Fig. 2) and draw the work out backwards — away from you. Pull out the thread 4-5 inches, and cut it off against the thread cutter at the back of the presser bar (30, Fig. 2)."}
+      ],
+      "figures": [
+        {"id": "fig15", "caption": "Fig. 15."},
+        {"id": "fig16", "caption": "Fig. 16."}
+      ]
+    },
+    {
+      "n": 10,
+      "scan": 12,
+      "layout": "col1 Fig.16a photo + 'Extension plate'; col2 two sections with small presser-foot line drawing; col3 continuation + Fig.17 photo + 'For quilting and marking'",
+      "columns": [
+        [
+          {"t": "fig", "id": "fig16a", "caption": "Fig. 16a."},
+          {"t": "h", "x": "Extension plate"},
+          {"t": "p", "x": "To facilitate the sewing of flat work, the extension plate can be installed on the machine. To secure this extension plate, slip open end into the free arm as shown in Fig. 16a. Guide fork (A) at underside of extension plate into pin (B) projecting from rear of free arm. At the same time pull bolt (C) on underside of extension plate near its right end and permit it to enter its seat hole (D) in the side of the arm. Finally swing the supporting leg downwards from the left end of extension plate. If necessary, screw in or out its ball-shaped bottom in order to obtain the required support and also for the purpose of levelling the extension plate."}
+        ],
+        [
+          {"t": "h", "x": "Find it difficult to sew straight?"},
+          {"t": "p", "x": "Even those who are used to sewing on a machine sometimes have difficulty in running a straight seam. This difficulty can be overcome simply and easily, by learning to use the presser foot as a guide — or by using the practical edge guide. Read how you can do this on pages 10 and 11."},
+          {"t": "h", "x": "Presser foot as guide"},
+          {"t": "p", "x": "You can use the edge of the presser foot as a guide by letting the edge of the fabric (or a previous seam) run past it. Alternatively, let the edge of the cloth or a row of stitching pass at a certain distance from the steps in the presser foot or from its edges."},
+          {"t": "p", "x": "The distance from the needle to the outer edges of the presser foot is 9/32 in. (7 mm). If you let the edge of the material run along the edge of the presser foot, the stitching will of course also be 9/32 in. (7 mm) from the edge. But if you guide the fabric by the first step in the presser foot, you get a distance of only 5/64 in. (2 mm), which is suitable for stitched edges, raised seams, etc. From the second step in the presser foot to the needles is 5/32 in. (4 mm)."},
+          {"t": "p", "x": "You can also guide the edge of the fabric or the stitching directly under centre line of the right-hand toe of the presser foot, or at a certain distance from centre line. This leaves a suitable space for gathering. Whatever you use as a guide, though, the main thing is to keep the same distance all along the row."}
+        ],
+        [
+          {"t": "h2", "x": "For quilting and marking,\nuse the edge guide"},
+          {"t": "p", "x": "You attach the edge guide (Fig. 17) by sliding it from left to right into the hole in the presser bar. Set it at the desired distance from the needle and fix it there by screwing the attachment screw into the hole in the back of the presser bar."},
+          {"t": "p", "x": "Use markings to guide you when sewing the first seam. To sew parallel rows of stitching, move the work to the right so that the row already sewn comes under the guide."},
+          {"t": "p", "x": "You will find quilting, as well as marking, quite easy when you use this guide."}
+        ]
+      ],
+      "figures": [
+        {"id": "p10_presser_foot_steps", "kind": "line-art", "caption": null, "labels": ["1", "2"]},
+        {"id": "fig17", "caption": "Fig. 17."}
+      ]
+    },
+    {
+      "n": 11,
+      "scan": 13,
+      "layout": "zipper-foot line drawing top-left, headline block centre-top, Fig.18 photo top-right; three text columns below",
+      "headline": ["It's easier", "to sew on a Zipper", "than you think!"],
+      "columns": [
+        [
+          {"t": "h2", "x": "Tucks and\nstitched edges"},
+          {"t": "p", "x": "The important thing when sewing tucks or stitching edges is that the tucks should be of even depth all along their length, and that the stitching is parallel to the edge of the fabric. This is where you can make use of the presser foot or the edge guide. Mark the distance between the folds of the tuck by machine stitching without thread, then fold the cloth along the markings. Guide the folded edge by the presser foot or the guide attachment."}
+        ],
+        [
+          {"t": "h", "x": "Zipper in centre of opening"},
+          {"t": "p", "x": "Baste together the opening with long stitches and the upper thread lightly tensioned. Leave about 3/4 in. (19 mm) open at the end. Force the seam apart and baste in the zipper by hand on the underside."},
+          {"t": "p", "x": "Change to the special presser foot for attaching zip fasteners (Fig. 18)."},
+          {"t": "p", "x": "Open the zipper about 3/4 in. (19 mm) and start stitching down the left side of the opening (with the work right side out). Stitch a bit, then leaving the needle in the fabric, raise the presser foot. Close the zipper and continue stitching round it. Finish off by opening the fastener slightly as before. Remove the basting."}
+        ],
+        [
+          {"t": "h", "x": "Zipper under the fly"},
+          {"t": "p", "x": "Baste the fly along the edge with long stitches and lightly tensioned upper thread. Then make a fold in the lower piece of cloth, about 1/16 in. (1.5 mm) from the basting stitches, and stitch the zipper to it, beginning at the bottom and running the zipper foot closely along its right side. Open the zipper as above to finish off. Turn the garment around, and with the right side of the cloth still uppermost, stitch the other side of the zipper from the top downwards."}
+        ]
+      ],
+      "figures": [
+        {"id": "p11_zipper_foot", "kind": "line-art", "caption": null},
+        {"id": "fig18", "caption": "Fig. 18."}
+      ]
+    },
+    {
+      "n": 12,
+      "scan": 14,
+      "layout": "top: ruffle line-art left with 'Gathering' staggered headline, Fig.20 photo right; horizontal rule; bottom: three columns with Fig.19 photo in the middle",
+      "top": [
+        {"t": "h", "x": "Gathering"},
+        {"t": "stagger", "lines": ["You can use", "the Husqvarna Automatic", "for gathering,", "in several ways."]}
+      ],
+      "columns": [
+        [
+          {"t": "h", "x": "Simple gathering"},
+          {"t": "p", "x": "Use the jointed presser foot (S 15229, inside front cover) which is mounted on the machine on delivery. Stitches should be rather long, and the upper thread tension sufficiently light to enable the lower thread to be pulled. Sew as usual, but preferably stitch two rows, using the presser foot as a guide. Instructions on page 10 tell you how to do this. When both rows have been stitched, pull the lower thread so as to form gathers in the fabric (Fig. 19)."},
+          {"t": "h2", "x": "Gathering in\nseveral rows"},
+          {"t": "p", "x": "This is where the edge guide comes in useful. Set it so that you guide by the row adjacent to the one you are stitching."}
+        ],
+        [
+          {"t": "h", "x": "Gathering with elastic thread"},
+          {"t": "p", "x": "By using Lastex thread you can make elastic gathers. Wind the elastic thread by hand on to the bobbin, and use ordinary thread for the upper thread. This kind of gathering is especially suitable for underwear, children's clothes, beachwear, etc."},
+          {"t": "h", "x": "... or elastic band"},
+          {"t": "p", "x": "By using zigzag stitching, you can also gather over an elastic band. To do so, stretch the band while sewing; the fabric then gathers naturally (Fig. 20)."}
+        ]
+      ],
+      "figures": [
+        {"id": "p12_ruffle", "kind": "line-art", "caption": null},
+        {"id": "fig19", "caption": "Fig. 19."},
+        {"id": "fig20", "caption": "Fig. 20."}
+      ]
+    },
+    {
+      "n": 13,
+      "scan": 15,
+      "layout": "col1 text + Fig.21 photo; col2 'Felled seams' text + 'Basting and marking'; col3 needle-thread ornament, Fig.22 and Fig.23 photos",
+      "columns": [
+        [
+          {"t": "h", "x": "Making narrow hems"},
+          {"t": "p", "x": "Among the attachments are hemmer feet for two widths of hem. To sew the hem shown below (Fig. 21), use hemmer foot No. 3035."},
+          {"t": "p", "x": "Remove the presser foot and attach the hemmer. Clip off 1/8 in. (3 mm) or so from the corner of the fabric where the hem starts, and fold over the edge for about 1/2 in. (13 mm) to a depth suited to the cloth and the hemmer foot. Sew a single stitch where the hem starts. Then holding the threads firmly with your right hand, lift the hemmer foot slightly in order to get the folded edge into the scroll more easily. Once started, the hemmer folds the fabric automatically — you just have to make sure that not too much cloth (particularly from a hard multiple-layer hem) gets into the scroll."},
+          {"t": "p", "x": "To produce an extra-narrow hem, use hemmer foot No. 3002 and sew as above."}
+        ],
+        [
+          {"t": "h", "x": "Felled seams"},
+          {"t": "p", "x": "The hemmer feet can also be used for felling. Place the pieces of cloth one on top of the other with the edge of the bottom piece sticking out slightly — just enough to enable the lower edge to be felled easily without folding. When stitching the two pieces together, see that their edges are the same distance apart all the way (Fig. 22)."},
+          {"t": "p", "x": "After sewing together, spread out the work so that the hem stands up. Then insert the hem in the hemmer and run the second seam (Fig. 23)."},
+          {"t": "h", "x": "Basting and marking (tailor tacks)"},
+          {"t": "p", "x": "Avoid unnecessary hand work by using the machine as much as possible. You have the machine out anyway, so you might as well take advantage of it. Basting is done with long stitches and light upper thread tension so that the threads can easily be pulled out."},
+          {"t": "p", "x": "To mark by machine, lower the feed dog so you can move the work about in any direction you like. Light tension of the thread should be employed."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig21", "caption": "Fig. 21."},
+        {"id": "fig22", "caption": "Fig. 22."},
+        {"id": "fig23", "caption": "Fig. 23."},
+        {"id": "p13_needle_thread_art", "kind": "line-art", "caption": null}
+      ]
+    },
+    {
+      "n": 14,
+      "scan": 16,
+      "layout": "green side panel left with needle/figure line-art; centred headline across top; two text columns; Fig.24 photo and stitch diagram at the bottom",
+      "headline_center": "Zigzag stitching is sheer fun!",
+      "columns": [
+        [
+          {"t": "h", "x": "Advantage of zigzag"},
+          {"t": "p", "x": "By making it possible to do hand finishing by machine, the Husqvarna Automatic has revolutionized home sewing. This machine turns out straight stitching and zigzag work with equal elegance — enabling you to sew complete garments by machine and thus avoid the wearisome hand work which was formerly necessary for finishing off."},
+          {"t": "p", "x": "Now we are going to show you how to do hand finishing by machine."}
+        ],
+        [
+          {"t": "h", "x": "Setting the controls for zigzag stitching"},
+          {"t": "p", "x": "The machine is set for straight stitching when the zigzag width control (24, Fig. 1) is at 0. Settings 1 to 4 make it sew zigzag stitches of increasing width — up to 5/32 in. (4 mm)."},
+          {"t": "p", "x": "On the knob for the needle starting positions (See Fig. 24 below) there is a sliding control with a dial marked 1 to 5. This is the pattern selector for automatic zigzag work, about which there is more on page 25."},
+          {"t": "pi", "x": "For all ordinary zigzag stitching the pattern selector should be set at 5 — no matter which cam set you have in the machine."}
+        ]
+      ],
+      "figures": [
+        {"id": "p14_needle_lady", "kind": "line-art", "caption": null},
+        {"id": "p14_green_garment", "kind": "line-art", "caption": null},
+        {"id": "fig24", "caption": "Fig. 24."},
+        {"id": "p14_middle_position", "caption": "Middle position."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "_note": "Pages 29-44 plus the unnumbered 'Please note' page, the two fold-out flaps and the covers.",
+  "pages": [
+    {
+      "n": 29,
+      "scan": 29,
+      "layout": "col1 'Embroidery with solid raised stitching' + Fig.43 photo; col2 'Eyelet embroidery attachment' with lettered list a-e; col3 Fig.44 and Fig.45 photos",
+      "columns": [
+        [
+          {"t": "h2", "x": "Embroidery with solid\nraised stitching"},
+          {"t": "p", "x": "Remove the presser foot and lower the feed dog. Thread the machine with an embroidery thread intended for sewing machines (silk or mercerized thread). Stretch the fabric with the outline design over an embroidery hoop. First sew a stitch or two by turning the hand wheel to bring up the lower thread; then holding both the upper and lower threads lock them again by sewing a couple of stitches. Run around the contours of the design with fine stitches (Fig. 43)."},
+          {"t": "p", "x": "Set the width control as you want it — either at 0 for straight stitching or 1 to 3 for zigzagging. Start filling in the design with rows of stitches by guiding the hoop slowly backwards and forwards under the needle. You will probably find it helpful to use the machine's slow speed (see page 9). After an even padding has been obtained, finish off with long straight stitches exactly as in hand work."}
+        ],
+        [
+          {"t": "h", "x": "Eyelet embroidery attachment"},
+          {"t": "p", "x": "With the aid of the eyelet embroidery attachment the Husqvarna Automatic permits the sewing of eyelets for embroidery, belts or lacing (Fig. 45)."},
+          {"t": "p", "x": "Eyelets can be made on nearly all types of fabric, those tightly woven and not excessively heavy being preferable."},
+          {"t": "p", "x": "The thread for sewing eyelets should be selected corresponding to the kind of material used."},
+          {"t": "p", "x": "For sewing eyelets prepare machine and work as follows:"},
+          {"t": "ol_alpha", "items": [
+            "Remove presser foot from presser foot bar.",
+            "Select eyelet embroidery cover plate with center stud matching the desired size of eyelet (1/8”, 3/16” or 7/32” diameter, fig. 44) and place it on the needle plate.",
+            "Set needle position control (16, Fig. 1) to ”left” needle position. Turn handwheel of machine towards you, making sure that needle passes through center of stud in cover plate.",
+            "Adjust stitch width control (24, Fig. 1) to marking ”3” on dial. Needle, on right hand stitch, should enter material well past the edge of hole.",
+            "Stretch material tightly over an embroidery hoop and cut holes with scissors, a bodkin or stiletto in material where marked. Holes should be made small enough to fit snugly over the center stud of the respective cover plates, as this will produce better looking and more uniform eyelet embroidery."
+          ]}
+        ]
+      ],
+      "figures": [
+        {"id": "fig43", "caption": "Fig. 43."},
+        {"id": "fig44", "caption": "Fig. 44."},
+        {"id": "fig45", "caption": "Fig. 45."}
+      ]
+    },
+    {
+      "n": 30,
+      "scan": 30,
+      "layout": "narrow col1 continues lettered list f-i; wide col2 'Sewing with twin and triple needles' + green-framed box with the max-width table; Fig.46 needle drawing right; bottom: 'Before you start sewing ...' two columns",
+      "columns": [
+        [
+          {"t": "ol_alpha", "start": 6, "items": [
+            "Adjust thread tensions by slightly loosening the tension of the needle (upper) thread. Increase somewhat the tension of the bobbin (lower) thread to obtain a desirable appearance of the eyelet embroidery.",
+            "Place the hole in material over center stud on cover plate. Turn hand wheel towards you to pick up the bobbin thread, hold it and the needle thread down onto the cloth when making the first few stitches.",
+            "Start sewing, turning the embroidery hoop two to three times slowly and uniformly clockwise around the center stud in the cover plate. To lock the threads of the embroidered eyelet, return stitch width control to ”0” and sew once around with straight stitches.",
+            "Even out the complete eyelet by turning a bodkin (stiletto) in it a few times."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Sewing with twin and triple needles"},
+          {"t": "p", "x": "With twin and triple needles (Fig. 46) you can sew a great variety of fancy seams — gathered and raised — which can be most effective on dresses, blouses, tablecloths, place mats, curtains and so on."},
+          {"t": "p", "x": "A size 14 (90) twin needle, with a spread of 5/64 in., is provided with the machine. If you want needles with a different spread (distance between the needles), you can obtain them from any Husqvarna dealer."},
+          {"t": "p", "x": "For heavier fabrics you need a greater distance between the needles to get the right effect."}
+        ]
+      ],
+      "framebox": {
+        "title": "Zigzag Sewing with twin and triple needles",
+        "text": "When sewing with twin and triple needles the maximum zigzag width is automatically decreased, depending on the increased needle distance. It is important therefore that the following maximum widths are not exceeded, otherwise a broken needle may result.",
+        "rows": [
+          ["Twin", "1/16 in. 1,6 mm needle spread", "max. zigzag width", "1/8 in. 3 mm"],
+          ["Twin", "5/64 in. 2 mm", "—", "3/32 in. 2,5 mm"],
+          ["Twin", "1/8 in. 3 mm", "—", "1/16 in. 1,5 mm"],
+          ["Twin", "5/32 in. 4 mm", "—", "0 in. 0 mm"],
+          ["Triple", "3/32 in. 2,5 mm", "—", "5/64 in. 2 mm"],
+          ["Triple", "7/64 in. 3 mm", "—", "1/16 in. 1,5 mm"]
+        ]
+      },
+      "bottom_columns": [
+        [
+          {"t": "h2", "x": "Before you start sewing with\ntwin and triple needles . . ."},
+          {"t": "p", "x": "Before actually sewing, it is best to experiment a little on a scrap piece of material to make sure you get seams of the desired breadth and width. The kind of seam produced depends largely on the material. Check also to see whether the weave permits sewing seams that cross each other — as not all fabrics allow this. With some materials it is impossible to sew a raised seam on the bias."},
+          {"t": "p", "x": "Use the regular presser foot and see that the needle starting control is in its centre position."}
+        ],
+        [
+          {"t": "p", "x": "With the twin needle supplied with the machine you can do straight stitching and zigzag up to dial setting 3."},
+          {"t": "pi", "x": "Make absolutely sure that the needles clear the opening in the presser foot. Otherwise you may find yourself with a broken needle."},
+          {"t": "p", "x": "If you want an even higher raised seam than you can obtain with the regular presser foot, use the special twin-needle foot (S 15419, inside front cover). This has three grooves for the raised seams to run in. You can sew both straight and curved seams with either presser foot (Fig. 47, 48)."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig46", "caption": "Fig. 46."}
+      ]
+    },
+    {
+      "n": 31,
+      "scan": 31,
+      "layout": "col1 Fig.47 and Fig.48 photos; col2 four short sections; col3 Fig.49 and Fig.50 photos",
+      "columns": [
+        [
+          {"t": "h", "x": "Raised seams with cord insertion"},
+          {"t": "p", "x": "To sew these you need the twin-needle presser foot (S 15419) and the raised seam attachment (S 15427, inside front cover). Fit the raised seam attachment in the holes in the throat plate and insert the cord as shown in Fig. 49. When you sew, the cord will be sewn in, forming a firm raised seam (Fig. 50)."},
+          {"t": "h", "x": "Parallel twin-needle seams"},
+          {"t": "p", "x": "There are several ways of guiding the work when sewing parallel raised seams (Fig. 47, 50). You can either let a previous one run in one of the grooves on the bottom of the presser foot, or let it run alongside the edge of the foot — depending on the distance required between the seams. For sewing widely spaced seams, the edge guide is useful (see page 10)."},
+          {"t": "h", "x": "Sewing corners and angles"},
+          {"t": "p", "x": "Leave the needle in the material and turn the work in the required direction. The needle bar should preferably be on the way up, with only the points of the twin needle remaining in the material."},
+          {"t": "h", "x": "Want to make a rug?"},
+          {"t": "p", "x": "Your Husqvarna Automatic comes from Sweden. So why not make a handsome, longpile Swedish rya rug — on the machine?"},
+          {"t": "p", "x": "This type of rug was not originally intended as a floor covering. Rya rugs were widely used in the Middle Ages instead of animal furs on beds and later as decorative wall hangings. Today they are widely used in the Scandinavian countries both as floor rugs and wall hangings, and the technique is often employed to decorate pillows as well."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig47", "caption": "Fig. 47."},
+        {"id": "fig48", "caption": "Fig. 48."},
+        {"id": "fig49", "caption": "Fig. 49."},
+        {"id": "fig50", "caption": "Fig. 50."}
+      ]
+    },
+    {
+      "n": 32,
+      "scan": 32,
+      "layout": "left green panel: interior colour illustration above Fig.51 photo; right: single wide text column, with scissors and yarn-skein line-art down the right edge",
+      "columns": [
+        [
+          {"t": "h", "x": "This is how you sew a ”rya,” rug . . ."},
+          {"t": "p", "x": "When making a rug on the Husqvarna Automatic a so-called weaver's reed is used in combination with the regular presser foot (Fig. 51). This reed is a flat piece of steel with a long slot and a device for locking the ends together. The machine stitches along the slot, fastening the wool loops to the rug base."},
+          {"t": "p", "x": "In addition to wool for the pile, you need No. 40 sewing thread in the same shade as the yarn, and 110 or 120 size needle. Get the thread tension tight and set for medium-length stitches."},
+          {"t": "p", "x": "As a base for pillows or wall hanging, canvas can be very effective, but for rugs a heavy jute weave is best. Divide the base into 7/16 in. (11 mm) squares with pencil lines, leaving about 3/8 in. (9.5 mm) around the edges."},
+          {"t": "p", "x": "Lock the ends of the reed and wind the yarn loosely around it, in close turns. If you wind too tightly, the narrow tongue of the reed may come too close to the broad part, leaving insufficient space for the needle to stitch in — and a bent or broken needle may result."},
+          {"t": "p", "x": "Push the yarn up towards the middle of the reed, lower the presser foot and sew along the slot to fasten the loops to the base. Wind more yarn on the reed — changing colour as required by the pattern — and stitch again. Cut the loops as you go along, without removing the work from the machine."},
+          {"t": "p", "x": "Open the lock and move the reed forward as you sew. As each row is completed, turn the work round and stitch back again in order to fasten the loops extra firmly. Repeat the whole procedure row by row until the rug is finished."}
+        ]
+      ],
+      "figures": [
+        {"id": "p32_interior", "kind": "colour-art", "caption": null},
+        {"id": "fig51", "caption": "Fig. 51."},
+        {"id": "p32_scissors_yarn", "kind": "line-art", "caption": null}
+      ]
+    },
+    {
+      "n": 33,
+      "scan": 33,
+      "layout": "decorative lace band across the top with centred title; col1 green right-aligned lead-in; col2 'Attaching lace edging' numbered list; col3 Fig.52 photo + 'Lace insertions'",
+      "headline_center": "Lace + Applique + Braiding + Soutache",
+      "lead": ["Here are", "directions for", "sewing on lace,", "appliques,", "cording,", "braiding,", "soutache"],
+      "columns": [
+        [
+          {"t": "h", "x": "Attaching lace edging"},
+          {"t": "p", "x": "Set the stitch width and stitch length controls to produce a zigzag stitch suitable for the fabric to which the lace is to be attached. Use a darning or embroidery thread which is intended for sewing machines — your Husqvarna dealer has it."},
+          {"t": "p", "x": "Lace edging can be attached in various ways:"},
+          {"t": "ol", "items": [
+            "Attach with zigzag stitches a short distance from the edge of the material and trim off the fabric close to the seam.",
+            "After attaching with straight stitches a short distance from the edge, fold over the fabric along the seam (on the wrong side, of course) and sew it down with small zigzag stitches over the straight stitching. Finish by trimming away the superfluous material. This method makes a stronger joint, and is recommended when attaching lace to loosely woven fabrics.",
+            "Place the edge of the lace close along the folded edge of the material and sew with zigzag stitches. Make sure that the needle stitches alternately into the material and the lace (Fig. 52).",
+            "Attach to pillowcases and sheets by sewing with zigzag stitches to the hem."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Lace insertions"},
+          {"t": "p", "x": "Lovely lace insertions are easily sewn with zigzag stitching. Using a fine needle and thread — preferably machine darning or embroidery thread — sew short, narrow zigzag stitches. If you like, you can make the stitching so short and narrow that it looks like a bar tack — but be sure that the needle stitches alternately into the material and the lace insertion. Finally, turn the work over and trim the fabric to about 1/8 in. (3 mm) from the stitching. Your insertion is ready!"}
+        ]
+      ],
+      "figures": [
+        {"id": "p33_lace_band", "kind": "ornament", "caption": null},
+        {"id": "fig52", "caption": "Fig. 52."}
+      ]
+    },
+    {
+      "n": 34,
+      "scan": 34,
+      "layout": "col1 Fig.53 and Fig.54 photos; col2 elephant/bird applique art + 'Applique' text; col3 'Cording, braiding, soutache' + Fig.55 photo",
+      "columns": [
+        [
+          {"t": "h", "x": "Applique"},
+          {"t": "p", "x": "The applique technique would appear to have been introduced specially for the zigzag sewing machine. Pleasant and often amusing effects can be obtained simply and easily by appliqueing flowers, animals, initials — and decorative designs generally — to tablecloths, pillows, bedspreads, children's clothes and many other things too."},
+          {"t": "p", "x": "Here again, try out the stitch length and stitch width on the material you are going to sew. You can either:"},
+          {"t": "ol", "items": [
+            "Cut out the applique design and attach it either with very close or somewhat wider spaced zigzag stitches with the stitch width control set at 2 (Fig. 53).",
+            "Outline the design on the material, without cutting it out, and then run narrow, short zigzag stitches around the contour. The controls for stitch width and stitch length should both be set at 1 for this. Trim off the material close to the stitching and sew along the edge with close zigzag stitches and a wider bight setting. The upper thread tension should also be rather light in order to make the seam lie properly. Fig. 54."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Cording, braiding, soutache"},
+          {"t": "p", "x": "The regular hinged presser foot can be used to attach braiding, cords and soutache with zigzag as well as straight stitching, and in straight or curved patterns."},
+          {"t": "p", "x": "To attach a thin cord or gimp, use the special presser foot with the cord hole. Insert the cord from the front and pull it out 2 to 3 inches (50 or 75 mm) past the needle. Set the stitch width so that the needle goes down on either side of the cord. The stitch length control should be set at 0.3, if you want the cord to be covered. If you want it to show, set the lever for longer stitches. (Fig. 55)."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig53", "caption": "Fig. 53."},
+        {"id": "fig54", "caption": "Fig. 54."},
+        {"id": "fig55", "caption": "Fig. 55."},
+        {"id": "p34_applique_animals", "kind": "colour-art", "caption": null}
+      ]
+    },
+    {
+      "n": 35,
+      "scan": 35,
+      "layout": "green side panel left with headline + checked-shirt art; col2 wide text with 'Basic rules' numbered list; col3 'This is how you attach the darning foot' + Fig.56 drawing",
+      "sidebar": ["Here are", "solutions", "to your", "darning and", "mending", "problems!"],
+      "columns": [
+        [
+          {"t": "p", "x": "Both darning and mending can be done quickly and without any difficulty on our Husqvarna Automatic. All that is necessary is a little practice in acquiring the technique. Before you set to work on garments that you value, it will probably by as well to try out your skill on simple things like handkerchiefs."},
+          {"t": "h", "x": "Darning"},
+          {"t": "p", "x": "Techniques vary depending on whether you are doing ordinary darning, darning edges or corners, or darning to reproduce a pattern. But there are certain basic rules which are common to all these operations."},
+          {"t": "h", "x": "Basic rules"},
+          {"t": "ol", "items": [
+            "It is important that you select a suitable needle and thread that really matches it. For darning, a special thread should be used which you can obtain from your Husqvarna dealer.",
+            "Thread tension is important too. A lighter tension of the upper thread is required for darning than for almost any other operation. You can obtain the right tension by experimenting a little; but do not alter the lower thread tension unless it is absolutely necessary.",
+            "The feed dog should be lowered so you can guide the material as required.",
+            "Use the embroidery hoop that comes with the machine, stretching the fabric over it and securing it firmly. To make sure that the material does not slip, it may be well to bind the inner ring of the hoop with tape. Such binding is also useful for holding the temporary threads used when darning edges.",
+            "When the material has been stretched over the hoop, place the work under the darning foot and lower the presser bar. Don't forget to lower the foot, otherwise you will get loops on the wrong side of the darn.",
+            "Bring the lower thread out on top of the material, and after locking the threads with a couple of stitches, cut them off."
+          ]}
+        ],
+        [
+          {"t": "h2", "x": "This is how you attach the\ndarning foot"},
+          {"t": "p", "x": "Move the needle bar up to its highest position and screw out the presser foot screw about 1/4 in. Then, holding the darning foot by its tubular part (A, Fig. 56), hook the spring (B) over the needle clamp. Press the holder (C) hard against the presser bar, push it up under the screw, and tighten the screw."}
+        ]
+      ],
+      "figures": [
+        {"id": "p35_shirt", "kind": "colour-art", "caption": null},
+        {"id": "fig56", "caption": "Fig. 56."}
+      ]
+    },
+    {
+      "n": 36,
+      "scan": 36,
+      "layout": "col1 'Ordinary darning' + Fig.57 drawing + two more paragraphs; col2 'Darning an edge' + Fig.58 drawing",
+      "columns": [
+        [
+          {"t": "h", "x": "Ordinary darning"},
+          {"t": "p", "x": "Straight stitching is used for darning. Start by sewing backwards and forwards over the hole, making long stitches across the fabric (that is, in the direction of the selvage). Since the feed dog is inoperative, you have to move the work by hand. The quicker you move it, the longer will be the stitches. The darn will be stronger and less visible if the stitches run off unevenly into the fabric. When you have stitched the ”weft”, turn the work around a quarter turn and start on the ”warp”. See Fig. 57."},
+          {"t": "p", "x": "Filling in can be done lengthwise, on the bias, or round in circles — all depending on the fabric. Move the work slowly, to keep the stitches short, and see that they match the material."},
+          {"t": "p", "x": "For a big hole you can use gauze as a base. Fold a piece double and lay it over the hole, then run a row of stitching around it about 1/4 in. (6 mm) from the edge of the hole, and trim off. This saves you the trouble of ”weaving” — all you need to do is to fill in."}
+        ],
+        [
+          {"t": "h", "x": "Darning an edge"},
+          {"t": "p", "x": "With the wrong side uppermost, stretch the fabric in the hoop so that the hole comes in the middle (Fig. 58). Then take a needle and thread and lace the free edge to the taped inner ring of the hoop. Having placed the work in the machine, bring up and lock the threads at the edge of the hole, and stitch four times up and down along the line of the new edge. Move the work quickly to make these stitches long. Then continue stitching parallel to the edge until the hole is covered. Fill in with short stitches (moving the work slowly) running at right angles to the edge, and finally reinforce the edge by stitching along it a couple of times."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig57", "caption": "Fig. 57."},
+        {"id": "fig58", "caption": "Fig. 58."}
+      ]
+    },
+    {
+      "n": 37,
+      "scan": 37,
+      "layout": "col1 'Darning corners' + sewing-basket colour art + 'Darning a patterned fabric'; col2 Fig.59 and Fig.60 drawings",
+      "columns": [
+        [
+          {"t": "h", "x": "Darning corners"},
+          {"t": "p", "x": "The simplest way to mend worn corners is to use tarlatan or gauze as a foundation. Stretch the gauze in the hoop with the worn corner on top of it (Fig. 59). First sew around the edges, and then darn the worn part in the way best suited to the fabric. Sometimes buttonhole or plain stitching should be used to reinforce the edges. Trim off the gauze when you have finished."},
+          {"t": "h", "x": "Darning a patterned fabric"},
+          {"t": "p", "x": "If the fabric has a pattern woven into it, you can hide the repair as follows (Fig. 60). Darn the hole first, then draw the missing pattern with a pencil. Remove the darning foot, and fill in the pattern by stitching at right angles to the stitches of the darn. If you follow the pattern closely, it will stand out and the darn will be less noticeable."}
+        ]
+      ],
+      "figures": [
+        {"id": "p37_basket", "kind": "colour-art", "caption": null},
+        {"id": "fig59", "caption": "Fig. 59."},
+        {"id": "fig60", "caption": "Fig. 60."}
+      ]
+    },
+    {
+      "n": 38,
+      "scan": 38,
+      "layout": "col1 'Patching and mending' sections + Fig.61 photo; col2 folded-linen colour art then three short sections",
+      "columns": [
+        [
+          {"t": "h", "x": "Patching and mending"},
+          {"t": "h", "x": "Patching woollen cloth"},
+          {"t": "p", "x": "One way to patch woollen cloth is to trim the hole in the form of a square, cut out a patch that fits exactly in the square, and lay a piece of thin cloth underneath as reinforcement. Pin or baste the patch in place, and sew it in with the darning stitch — pattern 3 on cam set A, with the stitch width control set at 4."},
+          {"t": "p", "x": "If garment is subject to severe wear, it may be better — and certainly quicker — simply to stitch a patch over the worn spot, using the same darning stitch."},
+          {"t": "h", "x": "Mending knitwear"},
+          {"t": "p", "x": "Use the darning stitch for this too — with cam set A and the pattern selector at 3. The darning stitch is particularly suitable, since it makes an elastic seam which stretches with the material. See Fig. 61."}
+        ],
+        [
+          {"t": "h", "x": "Mending rips"},
+          {"t": "p", "x": "Rips can be mended quickly and practically invisibly by sewing them up with the automatic darning stitch (cam set A, pattern selector at 3). You can further reinforce by straight stitching in the direction of the weave."},
+          {"t": "h", "x": "Reinforcing edges"},
+          {"t": "p", "x": "You can reinforce worn edges with ordinary zigzag stitches (pattern selector at 5, on all cams sets). Useful for repairing cuffs and pockets."},
+          {"t": "h", "x": "Buttonholes"},
+          {"t": "p", "x": "Worn buttonholes are, of course, no problem with a zigzag machine."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig61", "caption": "Fig. 61."},
+        {"id": "p38_linen", "kind": "colour-art", "caption": null}
+      ]
+    },
+    {
+      "n": 39,
+      "scan": 39,
+      "layout": "col1 'Darning with wool' + Fig.62 drawing; col2 continuation + sock/yarn colour art",
+      "columns": [
+        [
+          {"t": "h", "x": "Darning with wool"},
+          {"t": "p", "x": "Set the pattern selector (Fig. 37) at 5, the stitch width at 3 and the stitch length at 0. Lower the feed dog and see that the upper thread tension is really light. Attach the darning foot as described on page 35."},
+          {"t": "p", "x": "Thread the machine with darning thread for sewing machines, and lead the upper thread down under the foot."},
+          {"t": "p", "x": "Draw the sock or stocking over the free arm so that the hole comes under the darning foot. Bring up the lower thread at the right edge of the hole, lower the presser bar and lock the threads with a few stitches."}
+        ],
+        [
+          {"t": "p", "x": "If the hole is very big, it may be as well to sew round it with short, straight, stitches in order to make a firm edge."},
+          {"t": "p", "x": "Now take the woollen yarn, draw it through the oval opening in the darning foot, and lay it in the groove (A, Fig. 62)."},
+          {"t": "p", "x": "Stretching the sock sideways with your fingers — in the direction of the knitting rows — move it backwards and forwards lengthwise to the machine, so that the wool crosses the hole from side to side. The thread, which follows along, sews the wool into the edges of the hole (B, Fig. 62). When the hole has been completely covered in one direction, cut off the yarn and run zigzag or straight stitching across the darn with thread only (no wool)."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig62", "caption": "Fig. 62."},
+        {"id": "p39_sock_yarn", "kind": "colour-art", "caption": null}
+      ]
+    },
+    {
+      "n": 40,
+      "scan": 40,
+      "layout": "green side panel left with headline + brush and oilcan line-art; col2 'Look after your Husqvarna Automatic'; right: large Fig.63 photo with oiling arrows",
+      "sidebar": ["A sewing", "machine", "needs", "proper care"],
+      "columns": [
+        [
+          {"t": "h2", "x": "Look after your\nHusqvarna Automatic"},
+          {"t": "p", "x": "It's surprising how many people have never taken the trouble to find out how a sewing machine should be cared for. True, sewing machines are unusually tough pieces of equipment, which will go on working for year without being oiled or cleaned. But they don't like it, and they proclaim their dislike by running roughly and making a whining, scraping noise."},
+          {"t": "p", "x": "Like any precision-made machine, the Husqvarna Automatic will always operate smoothly, silently and efficiently if it is properly attended to and oiled regularly."}
+        ]
+      ],
+      "figures": [
+        {"id": "p40_brush_oilcan", "kind": "line-art", "caption": null},
+        {"id": "fig63", "caption": "Fig. 63."}
+      ]
+    },
+    {
+      "n": 41,
+      "scan": 41,
+      "layout": "col1 'Oiling' at the top and 'Cleaning' at the bottom; col2 large Fig.64 photo; col3 Fig.65 and Fig.66 photos; screwdriver line-art at the bottom",
+      "columns": [
+        [
+          {"t": "h", "x": "Oiling"},
+          {"t": "p", "x": "If it is continuously in use, the machine should get a drop of oil once per week in places indicated by arrow (Fig. 63 opposite). If used only occasionally, oil every three months."},
+          {"t": "p", "x": "Oil extremely sparingly. Over-oiling doesn't help — it causes the oil to run out and stain the work when you are sewing."},
+          {"t": "p", "x": "Other places where the machine needs oiling occasionally are shown by arrows in Figs. 64 and 65. To get at them you pull open the cover plates at the left end of the upper arm and at the back of the machine (with the spool pins fixed to it)."},
+          {"t": "p", "x": "The jam-proof shuttle never needs oiling — one of the reasons why your Husqvarna Automatic is unusually easy to look after."},
+          {"t": "h", "x": "Cleaning"},
+          {"t": "p", "x": "To clean the machine, use the brush you will find in the attachment box. Open the cover plate at the left end of the upper arm and brush off the fuzz that has accumulated in the mechanism. Then screw off the throat plate and brush the feed dog clean — brushing underneath the teeth as well as between them (Fig. 66)."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig64", "caption": "Fig. 64."},
+        {"id": "fig65", "caption": "Fig. 65."},
+        {"id": "fig66", "caption": "Fig. 66."},
+        {"id": "p41_screwdriver", "kind": "line-art", "caption": null}
+      ]
+    },
+    {
+      "n": 42,
+      "scan": 42,
+      "layout": "page title over a rule, then two columns of italic-headed trouble lists",
+      "title_lines": ["How to remedy some", "of the most common sewing", "machine troubles"],
+      "columns": [
+        [
+          {"t": "hi", "x": "Machine running roughly:"},
+          {"t": "ol", "items": [
+            "Cause may be lubrication with lowgrade or unsuitable oil. Pour a few drops of kerosene in each oil hole and let the machine run for a few seconds. Then oil with high-grade sewing machine oil.",
+            "Drive belt may be too tight. Call your Husqvarna dealer."
+          ]},
+          {"t": "hi", "x": "Machine not feeding properly?"},
+          {"t": "ol", "items": [
+            "Make sure the stitch length control (20, Fig. 1) is not set at 0.",
+            "Feed dog may be lowered. Drop feed knob (25) should be turned so that the stitch symbol is in front.",
+            "Insufficient pressure on the pressure foot. Increase the pressure by turning the regulating screw (A, Fig. 64) to the right."
+          ]},
+          {"t": "hi", "x": "Bobbin winding irregularly:"},
+          {"t": "ol", "items": [
+            "See if the machine is correctly threaded for winding.",
+            "The thread may not lie between the tension discs (C, Fig. 6).",
+            "Tension device may not be set in correct position. See page 4."
+          ]},
+          {"t": "hi", "x": "Upper thread breaks:"},
+          {"t": "ol", "items": [
+            "Needle not inserted correctly. See Fig. 3.",
+            "Machine not threaded properly. See Fig. 12.",
+            "Tension on the upper thread too tight. See page 7.",
+            "Knots in thread.",
+            "Needle too fine for the thread used. See Table, page 2.",
+            "Needle bent or point broken. Change needle.",
+            "Edges of the stitch hole in the throat plate may be nicked and sharp. Either hone them smooth or get a new plate."
+          ]}
+        ],
+        [
+          {"t": "hi", "x": "Lower thread breaks:"},
+          {"t": "ol", "items": [
+            "Bobbin case not inserted correctly. See page 3.",
+            "Lower thread tension too hard. See page 5.",
+            "Bobbin case not threaded correctly. See page 5.",
+            "Bobbin wound unevenly.",
+            "Bobbin wound too fully.",
+            "Poor quality thread.",
+            "Damaged hole in the throat plate. Hone or replace plate."
+          ]},
+          {"t": "hi", "x": "Lower thread doesn't come up."},
+          {"t": "ol", "items": ["Needle inserted incorrectly. See Fig. 3."]},
+          {"t": "hi", "x": "Needle breaks:"},
+          {"t": "ol", "items": ["Don't try to help the feeding by pulling the fabric. If you do, the needle may easily hit the throat plate and break off."]},
+          {"t": "hi", "x": "Machine sewing poorly:"},
+          {"t": "ol", "items": [
+            "Needle bent or blunted. Insert new needle.",
+            "Needle inserted incorrectly. See Fig. 3.",
+            "Machine threaded incorrectly. See page 6.",
+            "Wrong size of needle used. See Table, page 2.",
+            "Thread too heavy for the needle.",
+            "Insufficient pressure on the presser foot, especially when sewing thick fabrics. Turn the pressure regulating screw (A, Fig. 64) to the right.",
+            "Bobbin unevenly wound. See page 4.",
+            "Upper thread tension not properly adjusted. See page 7.",
+            "Lower thread too heavy. Should at least be of the same size as the upper thread, or a little finer."
+          ]}
+        ]
+      ]
+    },
+    {
+      "n": 43,
+      "scan": 43,
+      "layout": "col1 continuation of the trouble list (item 10 onwards); col2 tape-measure/buttons/spools line-art then the first column of the Table of contents",
+      "columns": [
+        [
+          {"t": "ol", "start": 10, "items": ["Upper thread or needle not suited to the material. See Table, page 2."]},
+          {"t": "hi", "x": "Stitching loosely — with loops at the underside of the material:"},
+          {"t": "ol", "items": [
+            "Machine not threaded correctly. See page 6.",
+            "Presser foot not let down properly.",
+            "Upper thread tension too light. See page 7.",
+            "Thread take-up spring (12, Fig. 1) bent or broken off. Adjust or replace it."
+          ]},
+          {"t": "hi", "x": "Thread tension uneven:"},
+          {"t": "ol", "items": ["Poor quality thread is a likely cause."]},
+          {"t": "hi", "x": "Wrinkling of material:"},
+          {"t": "ol", "items": [
+            "Needle thread tension too tight.",
+            "Needle and bobbin thread tensions too tight for material used.",
+            "Presser foot pressure too great. Turn regulator screw to left (A, Fig. 64)"
+          ]},
+          {"t": "hi", "x": "Stitches of varying lengths:"},
+          {"t": "ol", "items": [
+            "Feed dog is clogged with lint. Clean it out (See page 41).",
+            "Worn teeth in feed dog. Replace feed dog."
+          ]},
+          {"t": "hi", "x": "Loosely stitched seams:"},
+          {"t": "ol", "items": ["Upper (needle) and lower (bobbin) thread tensions too loose. See page 7."]},
+          {"t": "hi", "x": "Cloth gets chewed up:"},
+          {"t": "ol", "items": ["Too much pressure on the presser foot. Reduce by turning the pressure regulating screw (A, Fig. 64)."]}
+        ]
+      ],
+      "toc_title": "Table of contents:",
+      "toc": [
+        ["Applique", "34"],
+        ["", ""],
+        ["Bar tacks", "18"],
+        ["Basting", "13"],
+        ["Blindstitching", "20"],
+        ["", ""],
+        ["Bobbin case", ""],
+        ["  Inserting", "6"],
+        ["  Removing from shuttle", "3"],
+        ["  Threading", "5"],
+        ["", ""],
+        ["Bobbin winding", "4"],
+        ["Braiding", "34"],
+        ["Buttonholes", ""],
+        ["  Corded", "17"],
+        ["  Plain", "16"],
+        ["Button sewing", "17"],
+        ["", ""],
+        ["Cleaning", "41"],
+        ["Cording", "34"],
+        ["Cord insertion", "31"],
+        ["Corner turning", "8"],
+        ["", ""],
+        ["Darning", "35—37, 39"],
+        ["Decorative stitches", ""],
+        ["  Basic seams", "27"],
+        ["  Changing of pattern cam sets", "26"],
+        ["  Pattern cam sets", "25"],
+        ["  Pattern key", "21"],
+        ["  Pattern selector", "25"]
+      ],
+      "figures": [
+        {"id": "p43_tape_buttons", "kind": "line-art", "caption": null}
+      ]
+    },
+    {
+      "n": 44,
+      "scan": 44,
+      "layout": "Table of contents continued in two columns, tape-measure line-art at the top centre",
+      "toc_title": "Table of contents:",
+      "toc_col1": [
+        ["Edge guide", "10"],
+        ["", ""],
+        ["Embroidery", ""],
+        ["  Eyelet attachment", "29"],
+        ["  Feather stitch", "28"],
+        ["  Sewing with twin and triple needles", "30"],
+        ["  Solid raised stitching", "29"],
+        ["  Zigzag stitching", "28"],
+        ["Feed dog", "7"],
+        ["Felled seams", "13"],
+        ["Finishing off", "9"],
+        ["Fringing", "20"],
+        ["Gathering", "12"],
+        ["", ""],
+        ["Hemming", ""],
+        ["  Rolled edges", "19"],
+        ["  Shell stitching", "19"],
+        ["  Zigzag", "18"],
+        ["Hemstitching", "18"],
+        ["", ""],
+        ["Lace", ""],
+        ["  Attaching edging", "33"],
+        ["  Insertions", "33"],
+        ["Marking", "13"],
+        ["Mending", "38"],
+        ["", ""],
+        ["Needle", ""],
+        ["  Insertion of needle", "3"],
+        ["  Selection of needle", "2"],
+        ["Oiling", "41"],
+        ["Overcasting edges", "15"],
+        ["Patching woollen cloth", "38"]
+      ],
+      "toc_col2": [
+        ["Picot", "20"],
+        ["Presser foot", "10"],
+        ["Quilting and marking", "10"],
+        ["Raised seams", "31"],
+        ["Reinforcing edges", "38"],
+        ["Rolled edges", "19"],
+        ["Rugmaking", "31—32"],
+        ["", ""],
+        ["Stitching", ""],
+        ["  Forward and reverse", "9"],
+        ["  Straight", "8"],
+        ["  Zigzag", "14"],
+        ["Shell stitching", "19"],
+        ["Soutache", "34"],
+        ["Speed reducer", "9"],
+        ["Stitch length setting", "8"],
+        ["Stitched edges", "11"],
+        ["", ""],
+        ["Thread", ""],
+        ["  Selection", "2"],
+        ["  Tension", "5, 7"],
+        ["", ""],
+        ["Troubles", ""],
+        ["  Causes and remedies", "42"],
+        ["Tucks", "11"],
+        ["", ""],
+        ["Zigzag", ""],
+        ["  Hemming", "18"],
+        ["  Starting positions", "15"],
+        ["  Stitching", "14"],
+        ["Zippers - attaching", "11"]
+      ]
+    },
+    {
+      "n": null,
+      "id": "please_note",
+      "scan": 45,
+      "layout": "unnumbered closing page: 'Please note' heading with crowned H emblem at the right, two paragraphs",
+      "blocks": [
+        {"t": "h3", "x": "Please note"},
+        {"t": "p", "x": "The manufacturer of the Husqvarna Automatic does not consider the machine sold until you are really satisfied and have found how to get the best out of it. If there are any questions to which you cannot find an answer in this manual, we suggest you turn to your Husqvarna dealer."},
+        {"t": "p", "x": "If the machine should not operate satisfactorily, do not try to adjust or repair it yourself. Let an authorized Husqvarna dealer look at it, and thus ensure getting the best possible service. Your Husqvarna Automatic deserves it!"}
+      ]
+    }
+  ],
+  "front_cover": {
+    "scan": 0,
+    "spine_text": "OPERATING MANUAL",
+    "title": "HUSQVARNA AUTOMATIC",
+    "subtitle": "KNOWN AS: VIKING IN THE US. AND NORDIC-HUSQVARNA IN CANADA",
+    "badge": "21 A",
+    "art": "green woven-fabric background, machine head top-left, red pincushion with needles and two black spools right"
+  },
+  "inside_front_flap": {
+    "scan": 1,
+    "heading": "Note!",
+    "text": "Your study of this Operating Manual will be greatly facilitated if you fold out the flaps of the front and back cover. By so doing you will all the time have easy access to the illustrations of the machine with numeral references to the various parts.",
+    "emblem": "crowned H"
+  },
+  "front_foldout": {
+    "scan": 2,
+    "fig": "Fig. 1.",
+    "key_left": [
+      "1. Presser foot", "2. Presser foot screw", "3. Presser bar", "4. Thread guide", "5. Needle clamp",
+      "6. Needle set screw", "7. Needle bar", "8. Thread guide", "9. Slash thread regulator",
+      "10. Three tension discs", "11. Graduated tension regulator knob", "12. Take-up spring",
+      "13. Take-up lever", "14. Thread guide"
+    ],
+    "key_right": [
+      "15. Markings for needle starting positions", "16. Needle position control", "17. Pattern selector",
+      "18. Scale for pattern selector", "19. Balance wheel", "20. Stitch length knob", "21. Reverse feed knob",
+      "22. Scale for stitch width", "23. Stop for buttonhole sewing", "24. Stitch width control",
+      "25. Drop feed knob", "26. Shuttle access door", "27. Throat plate", "28. Feed dog"
+    ],
+    "attachments_list": [
+      "S. 15229 Jointed presser foot attached to the machine) for straight and zigzag stitching",
+      "S. 15237 Button foot",
+      "S. 15428 Buttonhole foot",
+      "S. 15419 Twin-needle foot with 3 grooves",
+      "S. 15427 Raised-seam attachment",
+      "S. 15399 Buttonhole knife",
+      "3035 Hemmer for straight and zigzag stitching",
+      "S. 15236 Hemmer for roll seam",
+      "S. 15395 Presser foot for zip fasteners",
+      "S. 15460 Darning foot",
+      "S. 15423 Needle plate for 1/8 in. eyelets",
+      "S. 15420 Edge guide",
+      "S. 15232 Pattern presser foot",
+      "Twin needle, 3/32 in. needle spread"
+    ],
+    "photos": ["machine in carrying case", "Fig. 1 machine front view", "row of attachments with part numbers"]
+  },
+  "rear_foldout": {
+    "scan": 46,
+    "fig": "Fig. 2.",
+    "key": [
+      "29. Presser foot lifter", "30. Knife for cutting thread", "31. Cord to electric wiring outlet",
+      "32. Foot control cord", "33. Spindle for bobbin winding", "34. Speed control for slow sewing",
+      "35. Tension discs and thread guide for bobbin winding", "36. Screw for adjusting tension discs",
+      "37. Switch for sewing light", "38. Plug for control cord", "39. Access door for automatic fancy-stitching cams",
+      "40. Thread guide for bobbin winding", "41. Spool pin", "42. Spool pin"
+    ],
+    "disclaimer": "We reserve the right to change at any time the contents of the box of attachments and accessories.",
+    "accessories": [
+      "S. 15411 Box for attachments", "5 Needles", "1 Twin needle, 3/32 in. needle spread",
+      "6 Bobbins S. 11729", "S. 15399 Buttonhole knife", "3029 Embroidery frame", "3046 Screwdriver, small",
+      "S. 15406 Screwdriver, large", "S. 15010 Cleaning brush", "S. 15415 Oilcan"
+    ],
+    "standard_attachments": [
+      "S. 15229 Jointed presser foot attached to the machine) for straight and zigzag stitching",
+      "S. 15395 Presser foot for zip fasteners", "S. 15420 Edge guide", "S. 12111 Screw for attachments",
+      "S. 15428 Buttonhole foot", "S. 15237 Button foot", "S. 15236 Hemmer for roll seam",
+      "3035 Hemmer for straight and zigzag stitching", "S. 15423 Throat plate for 1/8 in. eyelets",
+      "S. 15419 Twin-needle foot with 3 grooves", "S. 15427 Raised-seam attachment",
+      "S. 15232 Pattern presser foot", "S. 15460 Darning foot"
+    ],
+    "special_attachments_intro": "can be supplied upon request at extra cost:",
+    "special_attachments": [
+      "Twin needles with 1/16 in. needle spread", "Twin needles with 1/8 in. needle spread",
+      "Twin needles with 5/32 in. needle spread", "S. 15100 Jointed presser foot for straight stitching",
+      "3019 Gathering foot", "S. 15426 Twin-needle foot with 1 groove", "3005 Piping attachment",
+      "3022 Braider", "3002 Hemmer 3/32 in. straight seam", "S. 15240 Hemmer for scalloping",
+      "S. 15432 Throat plate for 3/16 in. eyelets", "S. 15433 Throat plate for 7/32 in. eyelets",
+      "3028 Embroidery frame, dia. 25/64 in.", "3030 Embroidery frame, dia. 25/32 in.",
+      "9001 Weaver's reed", "S. 15367 Hemstitcher"
+    ]
+  },
+  "back_cover": {
+    "scan": 47,
+    "emblem": "crowned H",
+    "line1": "HUSQVARNA VAPENFABRIKS AKTIEBOLAG",
+    "line2": "HUSKVARNA - SWEDEN",
+    "imprint_left": "Sym. 7903-1",
+    "imprint_center": "Engelsk",
+    "imprint_right": "Printed in Sweden",
+    "art": "same green woven-fabric background as the front cover"
+  }
+}

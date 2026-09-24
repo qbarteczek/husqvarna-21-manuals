@@ -1,0 +1,924 @@
+{
+  "_note": "figure id -> source. 'auto' = box from build/detect/boxes.json, 'lineart' = box from build/detect2/boxes.json, 'box' = manual box in 150-dpi page coordinates of the rotated page.",
+  "figures": {
+    "fig03": {
+      "scan": 5,
+      "auto": 1
+    },
+    "fig04": {
+      "scan": 5,
+      "auto": 2
+    },
+    "fig05": {
+      "scan": 5,
+      "auto": 0
+    },
+    "fig06": {
+      "scan": 6,
+      "auto": 0
+    },
+    "fig07": {
+      "scan": 6,
+      "auto": 1
+    },
+    "fig08": {
+      "scan": 7,
+      "auto": 2
+    },
+    "fig09": {
+      "scan": 7,
+      "auto": 0
+    },
+    "fig10": {
+      "scan": 7,
+      "auto": 1
+    },
+    "fig11": {
+      "scan": 8,
+      "auto": 0
+    },
+    "fig12": {
+      "scan": 8,
+      "auto": 1
+    },
+    "fig13": {
+      "scan": 9,
+      "auto": 0
+    },
+    "fig14": {
+      "scan": 9,
+      "auto": 1
+    },
+    "fig15": {
+      "scan": 11,
+      "auto": 1
+    },
+    "fig16": {
+      "scan": 11,
+      "auto": 0
+    },
+    "fig16a": {
+      "scan": 12,
+      "auto": 0
+    },
+    "fig17": {
+      "scan": 12,
+      "auto": 1
+    },
+    "fig18": {
+      "scan": 13,
+      "auto": 0
+    },
+    "fig19": {
+      "scan": 14,
+      "auto": 1
+    },
+    "fig20": {
+      "scan": 14,
+      "auto": 0
+    },
+    "fig21": {
+      "scan": 15,
+      "auto": 1
+    },
+    "fig22": {
+      "scan": 15,
+      "auto": 0
+    },
+    "fig23": {
+      "scan": 15,
+      "auto": 2
+    },
+    "fig24": {
+      "scan": 16,
+      "auto": 0
+    },
+    "fig25": {
+      "scan": 17,
+      "auto": 0
+    },
+    "fig26": {
+      "scan": 18,
+      "auto": 0
+    },
+    "fig26a": {
+      "scan": 18,
+      "auto": 1
+    },
+    "fig27": {
+      "scan": 19,
+      "auto": 1
+    },
+    "fig28": {
+      "scan": 19,
+      "auto": 2
+    },
+    "fig29": {
+      "scan": 19,
+      "auto": 0
+    },
+    "fig29a": {
+      "scan": 20,
+      "auto": 0
+    },
+    "fig30": {
+      "scan": 20,
+      "auto": 1
+    },
+    "fig31": {
+      "scan": 20,
+      "auto": 2
+    },
+    "fig32": {
+      "scan": 21,
+      "auto": 0
+    },
+    "fig33": {
+      "scan": 21,
+      "auto": 1
+    },
+    "fig34": {
+      "scan": 22,
+      "auto": 2
+    },
+    "fig35": {
+      "scan": 22,
+      "auto": 0
+    },
+    "fig36": {
+      "scan": 22,
+      "auto": 1
+    },
+    "fig37": {
+      "scan": 25,
+      "auto": 1
+    },
+    "fig38": {
+      "scan": 25,
+      "auto": 0
+    },
+    "fig39": {
+      "scan": 26,
+      "auto": 0
+    },
+    "fig40": {
+      "scan": 26,
+      "auto": 1
+    },
+    "fig41": {
+      "scan": 28,
+      "auto": 0
+    },
+    "fig42": {
+      "scan": 28,
+      "auto": 1
+    },
+    "fig43": {
+      "scan": 29,
+      "auto": 1
+    },
+    "fig44": {
+      "scan": 29,
+      "auto": 0
+    },
+    "fig45": {
+      "scan": 29,
+      "auto": 2
+    },
+    "fig46": {
+      "scan": 30,
+      "lineart": 2,
+      "bg": "paper"
+    },
+    "fig47": {
+      "scan": 31,
+      "auto": 0
+    },
+    "fig48": {
+      "scan": 31,
+      "auto": 2
+    },
+    "fig49": {
+      "scan": 31,
+      "auto": 1
+    },
+    "fig50": {
+      "scan": 31,
+      "auto": 3
+    },
+    "fig51": {
+      "scan": 32,
+      "auto": 1
+    },
+    "fig52": {
+      "scan": 33,
+      "auto": 0
+    },
+    "fig53": {
+      "scan": 34,
+      "auto": 0
+    },
+    "fig54": {
+      "scan": 34,
+      "auto": 1
+    },
+    "fig55": {
+      "scan": 34,
+      "auto": 2
+    },
+    "fig56": {
+      "scan": 35,
+      "box": [
+        812,
+        298,
+        1158,
+        642
+      ],
+      "bg": "paper"
+    },
+    "fig57": {
+      "scan": 36,
+      "box": [
+        92,
+        293,
+        497,
+        522
+      ],
+      "bg": "paper"
+    },
+    "fig58": {
+      "scan": 36,
+      "box": [
+        650,
+        440,
+        1168,
+        757
+      ],
+      "bg": "paper"
+    },
+    "fig59": {
+      "scan": 37,
+      "auto": 0,
+      "bg": "paper"
+    },
+    "fig60": {
+      "scan": 37,
+      "auto": 1,
+      "bg": "paper"
+    },
+    "fig61": {
+      "scan": 38,
+      "auto": 0
+    },
+    "fig62": {
+      "scan": 39,
+      "lineart": 2,
+      "bg": "paper"
+    },
+    "fig63": {
+      "scan": 40,
+      "auto": 0
+    },
+    "fig64": {
+      "scan": 41,
+      "auto": 0
+    },
+    "fig65": {
+      "scan": 41,
+      "auto": 1
+    },
+    "fig66": {
+      "scan": 41,
+      "auto": 2
+    },
+    "p01_emblem": {
+      "scan": 3,
+      "box": [
+        345,
+        145,
+        435,
+        285
+      ],
+      "bg": "paper"
+    },
+    "p01_mother_daughter": {
+      "scan": 3,
+      "lineart": 0,
+      "bg": "paper"
+    },
+    "p02_spool": {
+      "scan": 4,
+      "auto": 0,
+      "bg": "paper"
+    },
+    "p02_needles": {
+      "scan": 4,
+      "auto": 1
+    },
+    "p04_bobbins": {
+      "scan": 6,
+      "box": [
+        860,
+        645,
+        1205,
+        805
+      ],
+      "bg": "paper"
+    },
+    "p07_stitch1": {
+      "scan": 9,
+      "box": [
+        15,
+        352,
+        288,
+        428
+      ],
+      "bg": "panel"
+    },
+    "p07_stitch2": {
+      "scan": 9,
+      "box": [
+        15,
+        508,
+        288,
+        592
+      ],
+      "bg": "panel"
+    },
+    "p07_stitch3": {
+      "scan": 9,
+      "box": [
+        15,
+        676,
+        288,
+        766
+      ],
+      "bg": "panel"
+    },
+    "p08_lady": {
+      "scan": 10,
+      "box": [
+        22,
+        232,
+        302,
+        858
+      ],
+      "bg": "panel"
+    },
+    "p10_presser_steps": {
+      "scan": 12,
+      "box": [
+        733,
+        322,
+        833,
+        478
+      ],
+      "bg": "paper"
+    },
+    "p11_zipper_foot": {
+      "scan": 13,
+      "box": [
+        105,
+        90,
+        280,
+        295
+      ],
+      "bg": "paper"
+    },
+    "p12_ruffle": {
+      "scan": 14,
+      "box": [
+        115,
+        12,
+        705,
+        145
+      ],
+      "bg": "paper"
+    },
+    "p13_needle_thread": {
+      "scan": 15,
+      "box": [
+        925,
+        15,
+        1215,
+        255
+      ],
+      "bg": "paper",
+      "clip": 215
+    },
+    "p14_needle_lady": {
+      "scan": 16,
+      "lineart": 1,
+      "bg": "panel"
+    },
+    "p14_middle_position": {
+      "scan": 16,
+      "lineart": 2,
+      "bg": "paper"
+    },
+    "p14_green_garment": {
+      "scan": 16,
+      "lineart": 3,
+      "bg": "paper"
+    },
+    "p15_left_start": {
+      "scan": 17,
+      "lineart": 0,
+      "bg": "paper"
+    },
+    "p15_right_start": {
+      "scan": 17,
+      "lineart": 1,
+      "bg": "paper"
+    },
+    "p15_pincushion": {
+      "scan": 17,
+      "lineart": 4,
+      "bg": "paper"
+    },
+    "p16_buttonhole_emblem": {
+      "scan": 18,
+      "box": [
+        528,
+        128,
+        685,
+        212
+      ],
+      "bg": "paper"
+    },
+    "p16_sample_a": {
+      "scan": 18,
+      "box": [
+        1100,
+        160,
+        1150,
+        305
+      ],
+      "bg": "paper"
+    },
+    "p16_sample_b": {
+      "scan": 18,
+      "box": [
+        1100,
+        440,
+        1150,
+        585
+      ],
+      "bg": "paper"
+    },
+    "p16_sample_c": {
+      "scan": 18,
+      "box": [
+        1100,
+        625,
+        1150,
+        780
+      ],
+      "bg": "paper"
+    },
+    "p17_sample_d": {
+      "scan": 19,
+      "box": [
+        95,
+        40,
+        150,
+        185
+      ],
+      "bg": "paper"
+    },
+    "p17_sample_e": {
+      "scan": 19,
+      "box": [
+        95,
+        245,
+        150,
+        400
+      ],
+      "bg": "paper"
+    },
+    "p19_fashion": {
+      "scan": 21,
+      "box": [
+        600,
+        8,
+        1198,
+        514
+      ],
+      "bg": "paper"
+    },
+    "p21_pattern_key": {
+      "scan": 23,
+      "auto": 0
+    },
+    "p24_napkin": {
+      "scan": 24,
+      "lineart": 0,
+      "bg": "paper"
+    },
+    "p24_towels": {
+      "scan": 24,
+      "auto": 0
+    },
+    "p24_hanky": {
+      "scan": 24,
+      "auto": 1
+    },
+    "p24_placemat_a": {
+      "scan": 24,
+      "auto": 2
+    },
+    "p24_placemat_b": {
+      "scan": 24,
+      "auto": 3
+    },
+    "p25_girl": {
+      "scan": 25,
+      "auto": 2,
+      "bg": "panel"
+    },
+    "p27_samples_A": {
+      "scan": 27,
+      "box": [
+        55,
+        545,
+        528,
+        800
+      ]
+    },
+    "p27_samples_B": {
+      "scan": 27,
+      "box": [
+        710,
+        182,
+        1145,
+        420
+      ]
+    },
+    "p27_samples_C": {
+      "scan": 27,
+      "box": [
+        668,
+        552,
+        1145,
+        800
+      ]
+    },
+    "p28_floral_top": {
+      "scan": 28,
+      "box": [
+        8,
+        22,
+        240,
+        150
+      ],
+      "bg": "panel"
+    },
+    "p28_floral_left": {
+      "scan": 28,
+      "box": [
+        0,
+        148,
+        96,
+        368
+      ],
+      "bg": "panel"
+    },
+    "p28_dress": {
+      "scan": 28,
+      "box": [
+        0,
+        362,
+        288,
+        768
+      ]
+    },
+    "p28_flowers_right": {
+      "scan": 28,
+      "lineart": 2,
+      "bg": "paper"
+    },
+    "p32_interior": {
+      "scan": 32,
+      "auto": 0,
+      "bg": "panel"
+    },
+    "p32_scissors": {
+      "scan": 32,
+      "box": [
+        665,
+        40,
+        1135,
+        145
+      ],
+      "bg": "paper"
+    },
+    "p32_yarn": {
+      "scan": 32,
+      "box": [
+        985,
+        255,
+        1095,
+        765
+      ],
+      "bg": "paper"
+    },
+    "p33_lace_band": {
+      "scan": 33,
+      "box": [
+        0,
+        0,
+        1242,
+        218
+      ],
+      "bg": "paper"
+    },
+    "p34_applique_animals": {
+      "scan": 34,
+      "box": [
+        452,
+        25,
+        805,
+        235
+      ],
+      "bg": "paper"
+    },
+    "p35_shirt": {
+      "scan": 35,
+      "box": [
+        0,
+        345,
+        302,
+        645
+      ],
+      "bg": "panel"
+    },
+    "p37_basket": {
+      "scan": 37,
+      "lineart": 0,
+      "bg": "paper"
+    },
+    "p38_linen": {
+      "scan": 38,
+      "lineart": 1,
+      "bg": "paper"
+    },
+    "p39_sock_yarn": {
+      "scan": 39,
+      "lineart": 3,
+      "bg": "paper"
+    },
+    "p40_brush_oilcan": {
+      "scan": 40,
+      "box": [
+        48,
+        205,
+        248,
+        710
+      ],
+      "bg": "panel"
+    },
+    "p41_screwdriver": {
+      "scan": 41,
+      "box": [
+        545,
+        655,
+        1180,
+        795
+      ],
+      "bg": "paper",
+      "clip": 205
+    },
+    "p43_tape_buttons": {
+      "scan": 44,
+      "lineart": 0,
+      "bg": "paper"
+    },
+    "foldout_fig1": {
+      "scan": 2,
+      "box": [
+        412,
+        10,
+        1152,
+        592
+      ]
+    },
+    "foldout_case": {
+      "scan": 2,
+      "box": [
+        2,
+        455,
+        660,
+        1028
+      ],
+      "mask": [
+        [
+          432,
+          0,
+          658,
+          158
+        ]
+      ]
+    },
+    "foldout_attachments": {
+      "scan": 2,
+      "box": [
+        393,
+        1022,
+        1205,
+        1705
+      ]
+    },
+    "foldout_fig2": {
+      "scan": 46,
+      "box": [
+        118,
+        138,
+        785,
+        648
+      ]
+    },
+    "foldout_boxes": {
+      "scan": 46,
+      "auto": 2
+    },
+    "cover_emblem": {
+      "scan": 47,
+      "auto": 0,
+      "bg": "paper",
+      "clip": 200
+    },
+    "cover_front": {
+      "scan": 0,
+      "box": [
+        8,
+        0,
+        1236,
+        862
+      ],
+      "noclean": true
+    },
+    "cover_back": {
+      "scan": 47,
+      "box": [
+        10,
+        0,
+        1236,
+        868
+      ],
+      "noclean": true
+    },
+    "p22_ribbon_red": {
+      "src": "no",
+      "scan": 25,
+      "box": [
+        105,
+        0,
+        215,
+        859
+      ]
+    },
+    "p22_ribbon_green": {
+      "src": "no",
+      "scan": 25,
+      "box": [
+        283,
+        0,
+        392,
+        859
+      ]
+    },
+    "p22_pram": {
+      "src": "no",
+      "scan": 25,
+      "box": [
+        655,
+        15,
+        840,
+        310
+      ],
+      "bg": "paper"
+    },
+    "p22_child": {
+      "src": "no",
+      "scan": 25,
+      "box": [
+        882,
+        145,
+        1185,
+        859
+      ],
+      "bg": "paper"
+    },
+    "p22_napkins": {
+      "src": "no",
+      "scan": 25,
+      "box": [
+        410,
+        515,
+        855,
+        780
+      ],
+      "bg": "paper"
+    },
+    "p23_bedspread": {
+      "src": "no",
+      "scan": 26,
+      "box": [
+        18,
+        112,
+        695,
+        440
+      ],
+      "bg": "paper",
+      "mask": [
+        [
+          648,
+          225,
+          677,
+          315
+        ]
+      ],
+      "mask_fill": [
+        255,
+        255,
+        255
+      ]
+    },
+    "p23_blouse": {
+      "src": "no",
+      "scan": 26,
+      "box": [
+        135,
+        425,
+        475,
+        845
+      ],
+      "bg": "paper",
+      "mask": [
+        [
+          0,
+          246,
+          74,
+          334
+        ],
+        [
+          0,
+          100,
+          42,
+          148
+        ],
+        [
+          222,
+          100,
+          278,
+          148
+        ]
+      ],
+      "mask_fill": [
+        255,
+        255,
+        255
+      ]
+    },
+    "p23_dress": {
+      "src": "no",
+      "scan": 26,
+      "box": [
+        735,
+        0,
+        1205,
+        850
+      ],
+      "bg": "paper",
+      "mask": [
+        [
+          0,
+          340,
+          76,
+          424
+        ],
+        [
+          0,
+          536,
+          58,
+          592
+        ]
+      ],
+      "mask_fill": [
+        255,
+        255,
+        255
+      ]
+    },
+    "cover_texture": {
+      "scan": 47,
+      "box": [
+        20,
+        552,
+        1235,
+        800
+      ],
+      "noclean": true
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "_note": "Pages 15-28. NOTE: pages 22-23 (the colour centre spread with the cam pattern chart) are MISSING from the English scan; they must be taken from the Norwegian scan (same book, language-neutral chart) or reconstructed.",
+  "pages": [
+    {
+      "n": 15,
+      "scan": 17,
+      "layout": "left half: two zigzag stitch diagrams (Left / Right starting position) over a wide text block; right: 'Overcasting edges' column + Fig.25 photo + pincushion line-art",
+      "figures": [
+        {"id": "p15_left_start", "caption": "Left\nstarting position."},
+        {"id": "p15_right_start", "caption": "Right\nstarting position."},
+        {"id": "fig25", "caption": "Fig. 25."},
+        {"id": "p15_pincushion", "kind": "line-art", "caption": null}
+      ],
+      "columns": [
+        [
+          {"t": "p", "x": "For most zigzag sewing the needle starting position knob is set in the middle position, as in the picture. With the knob set thus, the machine will sew zigzag stitches which extend equally on either side of the straight stitching line."},
+          {"t": "p", "x": "With the starting position knob turned to the left, zigzag stitches extending to the right of the straight stitching line are produced."},
+          {"t": "p", "x": "And if the knob is switched to the right, the zigzag stitches will, on the contrary, all go to the left of the straight stitching line."},
+          {"t": "p", "x": "While the machine is running, the zigzag width can be altered precisely as desired. But if you want to alter the bight when the machine is stopped, see that the needle is not in its down position in the fabric — otherwise you may end up with a bent or broken needle."}
+        ],
+        [
+          {"t": "h", "x": "Overcasting edges"},
+          {"t": "p", "x": "Machine overcasting done with the Husqvarna Automatic (Fig. 25) looks better and is actually stronger than when done by hand. You can do it so much quicker, too."},
+          {"t": "p", "x": "Use the regular presser foot and set the zigzag width control at 3 or 4. For the stitch length, setting at 2 or 3 is usually about right. If the fabric is very loosely woven, however, you should increase both the bight setting and the stitch length to 3½ or 4. If in doubt, test the settings on an odd scrap of material before starting to sew."},
+          {"t": "p", "x": "The needle starting position knob should be set in the middle position."},
+          {"t": "p", "x": "Place the edge which is to be overcast under the presser foot so that the needle just clears the material with each right-hand stroke."}
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "scan": 18,
+      "layout": "col1 numbered set-up list; col2 buttonhole emblem, Fig.26 and Fig.26a photos; col3 numbered sewing steps with stitch samples a/b/c in the margin",
+      "columns": [
+        [
+          {"t": "h2", "x": "Using the zigzag to sew\nbuttonholes"},
+          {"t": "pi", "x": "Set up the machine like this:"},
+          {"t": "ol", "items": [
+            "Exchange the regular presser foot for the buttonhole foot (S 15428, inside front cover).",
+            "Switch the knob (16, Fig. 1) controlling the needle starting position to the left.",
+            "Try to get a suitable stitch length by switching the knob (20, Fig. 1) to 0.2—0.3.",
+            "Set the zigzag width control (24, Fig. 1) at 2.",
+            "Adjust the gauge on the buttonhole-foot (A, Fig. 26) to the length required for the buttonhole. The size of the buttonhole will correspond to the distance from the needle to the gauge. (Make buttonhole about 3/16 to 1/4 in. longer than size of button.)",
+            "Loosen the tension of the upper thread by turning the tension regulator knob (11, Fig. 1) to the next lower figure. This will cause the upper and lower threads to lock at the underside of the fabric. Check to see whether you get a good looking stitch by sewing on a scrap of material."
+          ]}
+        ],
+        [
+          {"t": "pi", "x": "Then, to sew the buttonholes:"},
+          {"t": "ol", "items": [
+            "Mark off the length of the buttonhole on the fabric.",
+            "Place one end of the buttonhole marking under the needle, with the rest facing towards you. Lower the presser foot and start sewing. Stop when the first stitch reaches the gauge (A, Fig. 26).",
+            "See that the needle is in the material, and in its right-hand position. The part you have sewn should now look like (a). [Needle is here →]",
+            "Raise the presser foot and turn the work round the needle. The buttonhole will now look like (b). [Needle is here →]",
+            "Lower the presser foot and raise the needle.",
+            "Set the zigzag width control (24, Fig. 1) at 3½, drop the feed dog by turning the knob (25, Fig. 1) and sew three or four stitches on top of each other to form the first closing bar. Stop the machine with the needle raised. The half-finished buttonhole will appear as in (c).",
+            "While the needle is still raised, press in the stop (Fig. 26 a) and turn the control to the right. The stitch width will then be automatically stopped at 3/32” (2 mm). Then sew the second line of stitches, stopping the machine when the needle is in its lefthand position. The buttonhole, almost finished, now looks like (d)."
+          ], "start": 1}
+        ]
+      ],
+      "figures": [
+        {"id": "p16_buttonhole_emblem", "kind": "emblem", "caption": null},
+        {"id": "fig26", "caption": "Fig. 26."},
+        {"id": "fig26a", "caption": "Fig. 26a."},
+        {"id": "p16_samples_abc", "caption": null, "labels": ["a", "b", "c"]}
+      ]
+    },
+    {
+      "n": 17,
+      "scan": 19,
+      "layout": "col1 continued numbered steps 8-10 with stitch samples d/e in the margin; col2 'Corded buttonholes'; col3 'Machine sews on buttons too'; three photos across the bottom",
+      "columns": [
+        [
+          {"t": "ol", "start": 8, "items": [
+            "Turn the control to the left, setting at 4. Make the second closing bar by sewing three or four stitches on top of each other as before — and you have a finished buttonhole as in (e).",
+            "Lock the threads by moving the width control to 0. Move the stop (See 23, Fig. 1) backwards, and sew a few stitches. (Remember to keep the needle raised when you alter the bight settings.)",
+            "Carefully cut the material between the two rows of stitches with the buttonhole cutter (S 15399, inside front cover) which is included among the attachments (Fig. 27)."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Corded buttonholes"},
+          {"t": "p", "x": "In soft woollens, and garments in which the buttonholes are particularly subject to wear, it may be wise to sew corded buttonholes (Fig. 28)."},
+          {"t": "p", "x": "A corded buttonhole is made in exactly the same way as an ordinary buttonhole, except that a gimp is sewn in as well. It is best to start from within the garment and work toward the edge, so that the gimp goes round that end of the buttonhole which is most subject to stress."}
+        ],
+        [
+          {"t": "h", "x": "Machine sews on buttons too"},
+          {"t": "p", "x": "Fit the button sewing foot (S 15237 inside front cover) on the presser bar and drop the feed dog by turning the knob (25, Fig. 1). Switch the needle position knob (16, Fig. 1) to the left starting position, and set the zigzag width control (24, Fig. 1) at 3."},
+          {"t": "p", "x": "Place the work under the button foot so that two of the holes in the button come under the needle opening in the foot. Slowly turn handwheel to check whether the needle passes through the centre of each hole on its left and right-hand strokes. If necessary, move the button or alter the bight setting. Sew on the button with 5 or 6 stitches, and lock the threads by sewing a few stitches into the same hole (making sure the needle is up before you move the bight setting to 0). When attaching four-hole buttons, first sew two holes and then move the work to the next pair of holes. (Fig. 29.)"}
+        ]
+      ],
+      "figures": [
+        {"id": "p17_samples_de", "caption": null, "labels": ["d", "e"]},
+        {"id": "fig27", "caption": "Fig. 27."},
+        {"id": "fig28", "caption": "Fig. 28."},
+        {"id": "fig29", "caption": "Fig. 29."}
+      ]
+    },
+    {
+      "n": 18,
+      "scan": 20,
+      "layout": "col1 Fig.29a photo; col2 'Hemstitching' numbered instructions continuing full width beneath the figure; col3 'Zigzag hemming'; bottom: Fig.30 photo, 'Making bar tacks' text, Fig.31 photo",
+      "columns": [
+        [
+          {"t": "h", "x": "Hemstitching"},
+          {"t": "p", "x": "The hemstitcher (Part S 15367) produces a hemstitch-like effect through butt seaming the pieces of material and subsequent finishing, according to these instructions:"},
+          {"t": "ol", "items": [
+            "Place the two pieces of fabric to be hemstitched with their right sides facing one another.",
+            "Insert between them the hemstitcher, close to the edge to be hemstitched, so that its open end is at the spot where the hemstitching is to begin. The rounded (looped) end of the hemstitcher points towards you, with the bulge to the right.",
+            "Adjust machine to sew a stitch length suitable to the type of material to be hemstitched. (Shorter stitches for thin fabrics, longer stitches for coarsely woven material.) Slightly loosen thread tension.",
+            "Now enter two pieces of material with hemstitcher between them under presser foot, making sure that the needle makes a straight stitch between the two arms of the hemstitcher. Sew along its length and move the hemstitcher towards you as the needle gets close to the looped end. The inserted hemstitcher keeps the two pieces of material apart while they are being stitched. The hemstitch will appear when they are spread out. After completion of the hemstitched seam, readjust machine for normal sewing tension and stitch along both edges of the hemstitch. Trim off excess material near hemstitched seam."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Zigzag hemming"},
+          {"t": "p", "x": "It is especially useful to be able to sew zigzag stitches when hemming garments of stretchable material, such as knitwear, tricot, etc."},
+          {"t": "p", "x": "You do this with the hemmer foot, in the same way as straight hemming (page 13), except that a zigzag stitch of suitable width is used (Fig. 31)."},
+          {"t": "p", "x": "A decorative effect can be obtained, on children's clothes, for instance, by sewing the hem with a thread of contrasting colour."}
+        ],
+        [
+          {"t": "h", "x": "Making bar tacks"},
+          {"t": "p", "x": "Fig. 30 shows how you can secure pocket openings by sewing bar tacks across the ends. The procedure is this:"},
+          {"t": "p", "x": "Set the zigzag width control at 1½, and the stitch length almost at 0. Then sew bar tacks, about 1/4 in. (6 mm) long, across the seam at either end of the pocket."},
+          {"t": "p", "x": "Lock the threads by straight stitching a couple of times — with the width control at 0 and the feed dog lowered."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig29a", "caption": "Fig. 29a."},
+        {"id": "fig30", "caption": "Fig. 30."},
+        {"id": "fig31", "caption": "Fig. 31."}
+      ]
+    },
+    {
+      "n": 19,
+      "scan": 21,
+      "layout": "col1 'Rolled edges'; col2 'Shell stitching'; right: fashion line-art (two figures + skirt); bottom: Fig.32 and Fig.33 photos with rules",
+      "columns": [
+        [
+          {"t": "h", "x": "Rolled edges"},
+          {"t": "p", "x": "To sew rolled edges (Fig. 32), use the narrow hemmer foot (S 15236, inside front cover)."},
+          {"t": "p", "x": "Set the width control at 3 and the stitch length at 2 and insert the edge of the fabric in the hemmer in the manner described for making narrow hems (page 13)."},
+          {"t": "p", "x": "See that the stitch straddles the hem — in other words, the needle should enter alternatively along the left and right edges. The tension of the upper thread should be rather tight."},
+          {"t": "p", "x": "Rolled edges look well on thin silk scarves, insertions, ruffles on curtains, etc. You can learn very quickly to sew the most beautiful rolled edges on the machine."}
+        ],
+        [
+          {"t": "h", "x": "Shell stitching"},
+          {"t": "p", "x": "The most appropriate application for shell stitching (Fig. 33) is when hemming light, soft materials like tricot, crêpe de chine, etc. When thus used, it gives the impression of French hand hemming."},
+          {"t": "p", "x": "To do this you have to use the special hemmer foot, No. S 15240. Otherwise the procedure is the same as when sewing rolled edges, except that the settings for the zigzag width and the stitch length should both be increased to 4. Tension on the upper thread should be extra tight, so as to make each shell stand out prominently."}
+        ]
+      ],
+      "figures": [
+        {"id": "p19_fashion_art", "kind": "line-art", "caption": null},
+        {"id": "fig32", "caption": "Fig. 32."},
+        {"id": "fig33", "caption": "Fig. 33."}
+      ]
+    },
+    {
+      "n": 20,
+      "scan": 22,
+      "layout": "left two-thirds: 'Blindstitching of hems' numbered list, with Fig.34 photo + drawing at the bottom; right column: Fig.35 photo + 'Picot', Fig.36 photo + 'Fringing'",
+      "columns": [
+        [
+          {"t": "h", "x": "Blindstitching of hems"},
+          {"t": "p", "x": "Perhaps you've just finished a dress and have only the hem left to complete. You thinks, maybe, that you ought to do this by hand so that it shows as little as possible? Well you don't have to, you know! Use your Husqvarna Automatic. If you fit a special blindstitching attachment plate S 15818 (Fig. 34) and pattern cam set D, you can sew a hem which is almost completely invisible on the right side. Both these attachments are available, at extra cost. Do it like this:"},
+          {"t": "ol", "items": [
+            "Insert pattern cam set D and fix blindstitching plate with presser foot screw (2, Fig. 1). The plate must be attached so that it covers the left part of the standard presser foot (Fig. 34).",
+            "Set the needle position control (16, Fig. 1) to the right and the pattern selector (17, Fig. 1) at 4. The stitch length will depend on the distance you want to have between the invisible stitches, normal position about 2.5 on the stitch length regulator knob. Stitch width will be at position 2.5 to 3, depending on the thickness of the material.",
+            "Fold a hem and then turn it with the right sides of the material facing one upon the other. Allow the edge of the hem to project about 1/8 in. (3 mm) beyond the fold (see Fig. 34).",
+            "Place the work so that the blindstitching-plate follows the folded edge. The straight stitches will then fall in the edge of the hem and the zigzag stitches in the edge of the fold. See that the needle barely sews into the fold — catching only one or two threads; this is essential if the stitching is to be made as invisible as possible. Finish off by straightening out the hem and pressing as usual.",
+            "You can also use zigzag sewing (stitch length 4, stitch width 2.5 to 2.75)."
+          ]}
+        ],
+        [
+          {"t": "h", "x": "Picot"},
+          {"t": "p", "x": "A picot edge is produced by sewing small zigzag stitches over a folded edge. This is an attractive way of finishing off ruffles, flounces, insertions, etc. (Fig. 35)."},
+          {"t": "h", "x": "Fringing"},
+          {"t": "p", "x": "Whenever you want to prevent threads from unravelling — in tablecloths, place mats, scarves, etc. — fringe the edge with zigzag stitching. You can either do this with thread in the same colour as the material, or use a contrasting colour as a decorative effect (Fig. 36)."}
+        ]
+      ],
+      "figures": [
+        {"id": "fig34", "caption": "Fig. 34."},
+        {"id": "fig35", "caption": "Fig. 35."},
+        {"id": "fig36", "caption": "Fig. 36."}
+      ]
+    },
+    {
+      "n": 21,
+      "scan": 23,
+      "layout": "left column of text; right: large circular colour illustration of the red plastic pattern key disc",
+      "columns": [
+        [
+          {"t": "h3", "x": "Key helps you set the machine for various patterns"},
+          {"t": "p", "x": "By using the plastic pattern key that comes with each machine, you can easily get an idea of the patterns which can be sewn with one or two needles. At the same time, it will also give you information on how to set the controls for the stitch pattern you have chosen. You can produce many of your own variations on these basic patterns just by altering stitch lengths and stitch widths."},
+          {"t": "p", "x": "The stitch length on the pattern key refers to twin needle with 5/64 in. (2 mm) needle distance which is supplied with the machine as standard."}
+        ]
+      ],
+      "figures": [
+        {"id": "p21_pattern_key", "kind": "colour", "caption": null}
+      ]
+    },
+    {
+      "n": 22,
+      "scan": null,
+      "missing": true,
+      "layout": "centre spread (colour chart of pattern cam sets) — NOT PRESENT in the English scan"
+    },
+    {
+      "n": 23,
+      "scan": null,
+      "missing": true,
+      "layout": "centre spread (colour chart of pattern cam sets) — NOT PRESENT in the English scan"
+    },
+    {
+      "n": 24,
+      "scan": 24,
+      "layout": "full-page colour plate: 4 painted illustrations with captions (no body text)",
+      "plate": true,
+      "figures": [
+        {"id": "p24_napkin", "kind": "colour", "caption": "Monogramming and\nsewing hems on\ntowels and napkins."},
+        {"id": "p24_towels", "kind": "colour", "caption": "Corded monograms\non terry cloth\ntowels."},
+        {"id": "p24_hanky", "kind": "colour", "caption": "Monogramming handkerchiefs\nwith narrow\nzigzag stitches."},
+        {"id": "p24_placemats", "kind": "colour", "caption": "Hemstitching and\nembroidering tablecloths\nand place mats."}
+      ]
+    },
+    {
+      "n": 25,
+      "scan": 25,
+      "layout": "green side panel left with headline + girl line-art; col2 'Decorative stitches produced automatically' + Fig.37 photo + 'Pattern selector'; col3 Fig.38 cam photo + 'Cam sets produce patterns'",
+      "sidebar": ["Select a", "pattern...", "and the", "HUSQVARNA", "AUTOMATIC", "sews it", "for you!"],
+      "columns": [
+        [
+          {"t": "h2", "x": "Decorative stitches produced\nautomatically"},
+          {"t": "p", "x": "The amazing variety of continuous embroidery patterns which the Husqvarna Automatic can turn out completely — automatically — means that you have here a creative tool, which enables you to do intricate work, whether you are skilled or not. It won't take you long, either, to find applications for the skills the machine literally puts at your fingertips: Baby's dress will be lovelier still with a pretty border on the collar and yoke ... those place mats with decorative stitching will look as if they were hand embroidered."},
+          {"t": "h", "x": "Pattern selector"},
+          {"t": "p", "x": "To set the machine for the zigzag pattern you wish to sew, there is a numbered scale (A, Fig. 37) with a pointer (B, Fig. 37) on the left-hand side of the needle position knob. The numbers on the pattern key on page 21 correspond to the numbers on this dial. If you want to do ordinary zigzag stitching — for overcasting edges, for instance — set the pattern selector at 5. This applies to whichever cam set you happen to have in the machine."}
+        ],
+        [
+          {"t": "h", "x": "Cam sets produce patterns"},
+          {"t": "p", "x": "When the machine is sewing decorative stitches automatically, the movements of the needle are controlled by cams, which are built together in one solid piece to form a set. If you open the door at the back of the machine (39, Fig. 2) you will find a set installed. Use pattern presser foot S 15801 (inside front cover), except while doing pattern stitching in very thin material. In that case use the standard presser foot S 15229. The sets which come with the machine, are marked A, B, C etc, and the various patterns they produce will be found on the chart in the centre spread."},
+          {"t": "p", "x": "If you want further patterns, more pattern cam sets can be supplied at extra cost through your Husqvarna dealer. By altering the stitch length and the stitch width you can produce an infinite number of variations from these basic patterns. The chart also shows decorative stitches made with twin needles; still further variations can be obtained by using different coloured threads."}
+        ]
+      ],
+      "figures": [
+        {"id": "p25_girl", "kind": "line-art", "caption": null},
+        {"id": "fig37", "caption": "Fig. 37."},
+        {"id": "fig38", "caption": "Fig. 38.", "labels": ["Groove"]}
+      ]
+    },
+    {
+      "n": 26,
+      "scan": 26,
+      "layout": "left column wide text (two sections, generous white space); right column Fig.39 and Fig.40 photos",
+      "columns": [
+        [
+          {"t": "h", "x": "Switching from one automatic pattern to another"},
+          {"t": "p", "x": "Whether you have the machine set for plain zigzag stitching, with pattern selector at 5, or for some decorative pattern, a cam will always be engaged. Before you move the selector to another number, be sure to turn the stitch width control (24, Fig. 1) to 0. But you need only do this if the machine is stopped — when it is running, you can switch from one pattern to another just by moving the pattern selector and without bothering about the width control."},
+          {"t": "h", "x": "Cam sets are easily changed . . . like this:"},
+          {"t": "ol", "items": [
+            "Set the stitch width control at 0, as for straight stitching.",
+            "Set the pattern selector at 5.",
+            "Open the door at the back of the machine (Fig. 39).",
+            "Take hold of the cam set with the thumb and forefinger of your right hand, and push down the locking arm (A, Fig. 40) into the vertical position. Pull out the cam set.",
+            "Holding the new cam set in the same way, push it into the shaft with its code letter uppermost so that the locking arm (A, Fig. 40) will fall into the groove (Fig. 38)."
+          ]}
+        ]
+      ],
+      "figures": [
+        {"id": "fig39", "caption": "Fig. 39."},
+        {"id": "fig40", "caption": "Fig. 40."}
+      ]
+    },
+    {
+      "n": 27,
+      "scan": 27,
+      "layout": "col1 green-framed NOTE box + 'Basic patterns' + cam set A table & stitch sample strip; col2 cam set B table & samples, cam set C table & samples",
+      "notebox": ["N O T E.", "Never start the machine unless you are", "sure a pattern cam set has been inserted!"],
+      "columns": [
+        [
+          {"t": "h", "x": "Basic patterns"},
+          {"t": "p", "x": "Basic pattern of cam sets A, B and C can be varied by altering the settings of the stitch width and stitch length controls, see the pattern key."}
+        ]
+      ],
+      "cam_tables": [
+        {"title": "Pattern cam set A. Basic pattern.", "rows": [["Pattern selector", "1", "2", "3", "4", "5"], ["Stitch width", "4", "4", "4", "4", "4"], ["Stitch length", "0.3", "0.3", "1", "0.3", "1.5"]], "sample": "p27_samples_A"},
+        {"title": "Pattern cam set B. Basic pattern.", "rows": [["Pattern selector", "1", "2", "3", "4", "5"], ["Stitch width", "4", "4", "4", "4", "4"], ["Stitch length", "1.5", "0.3", "0.3", "0.3", "1.5"]], "sample": "p27_samples_B"},
+        {"title": "Pattern cam set C. Basic pattern.", "rows": [["Pattern selector", "1", "2", "3", "4", "5"], ["Stitch width", "4", "4", "4", "4", "4"], ["Stitch length", "0.3", "0.3", "0.3", "0.3", "1.5"]], "sample": "p27_samples_C"}
+      ]
+    },
+    {
+      "n": 28,
+      "scan": 28,
+      "layout": "green side panel left with floral line-art and headline; centred page title; two text columns; Fig.41 and Fig.42 photos below; small flower line-art at the right edge",
+      "sidebar": ["Give your", "imagination", "a free", "rein!"],
+      "headline_center": "All sorts of possibilities for embroidering on the machine",
+      "columns": [
+        [
+          {"t": "h", "x": "Feather stitch"},
+          {"t": "p", "x": "This beautiful type of embroidery looks much more difficult than it actually is. To do it you use the regular presser foot and set the stitch width at 4. Stretch the fabric over an embroidery hoop (Fig. 41)."},
+          {"t": "p", "x": "Run the machine at high speed, moving the hoop with the fabric stretched over it backwards and forwards to make the embroidery pattern."},
+          {"t": "p", "x": "Feather stitching can also be done with a twin needle and threads of different colours — with striking decorative effect. Feather stitching is suitable for embroidering place mats, aprons, bed jackets, blouses, etc."}
+        ],
+        [
+          {"t": "h", "x": "Embroidery with zigzag stitching"},
+          {"t": "p", "x": "is another type of embroidery which is easily carried out (Fig. 42). Start by outlining the contour of the pattern with fine zigzag stitches. Then remove the presser foot, and, with the feed dog lowered, cover the areas which are to be filled in, with rows of extended stitches all going in the same direction. To do this you move the hoop with the work stretched on it backvards and forwards. The zigzag width control's set at 1.5. Embroidery done in this way can be very goodlooking — producing somewhat the effect of applique."}
+        ]
+      ],
+      "figures": [
+        {"id": "p28_floral", "kind": "line-art", "caption": null},
+        {"id": "fig41", "caption": "Fig. 41."},
+        {"id": "fig42", "caption": "Fig. 42."},
+        {"id": "p28_flowers_right", "kind": "line-art", "caption": null}
+      ]
+    }
+  ]
+}
